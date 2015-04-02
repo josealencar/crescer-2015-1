@@ -40,15 +40,15 @@ public class Elfo
         //flechas = flechas - 1;
         flechas--;
         experiencia++;
+        Orcs.levarFlechada();
     }
     
-<<<<<<< HEAD
+
     /*public void setNome(String novoNome) {
         nome = novoNome;
     }*/
-    
-=======
->>>>>>> 4ca13a1d4303b665a741cd6a027b18368a2740b2
+
+
     /*public void setFlechas(int novaQtdFlechas) {
         if (novaQtdFlechas > flechas) {
             flechas = novaQtdFlechas;
