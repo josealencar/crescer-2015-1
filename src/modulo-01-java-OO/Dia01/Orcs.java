@@ -30,4 +30,8 @@ public class Orcs
             vida=vida-10;
         }
     }
+    
+    public int getVida(){
+        return this.vida;
+    }
 }
