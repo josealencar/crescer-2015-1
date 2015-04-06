@@ -50,7 +50,7 @@ public class Elfo
         umOrc.recebeAtaque();
     }
     
-<<<<<<< HEAD
+
     public String getNome(){
         return this.nome;
     }
@@ -63,25 +63,15 @@ public class Elfo
         return this.experiencia;
     }
     
+    public String toString(){
+        return this.nome+" possui "+this.flechas+" flechas e "+this.experiencia+" níveis de experiência.";
+    }
+    
     /*public void setNome(String novoNome) {
         nome = novoNome;
     }*/
 
 
-=======
-    public String getNome() {
-        return this.nome;
-    }
-    
-    public int getFlechas() {
-        return this.flechas;
-    }
-    
-    public int getExperiencia() {
-        return this.experiencia;
-    }
-    
->>>>>>> 48edd962379c28721428de9fe01092bd5fc74457
     /*public void setFlechas(int novaQtdFlechas) {
         if (novaQtdFlechas > flechas) {
             flechas = novaQtdFlechas;

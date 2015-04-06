@@ -27,7 +27,6 @@ public class OrcTest
     }
     
     @Test
-<<<<<<< HEAD
     public void orcRecebeAtaque() {
         /**
          * @param teste = número de Orcs e Elfos criados nos arrayOrc e arrayElfo
@@ -74,7 +73,8 @@ public class OrcTest
         int resultadoObtido2=umOrc.getVida();
         
         assertEquals(esperado2,resultadoObtido2);
-=======
+    }
+
     public void orcRecebeAtaqueUmaVez() {
         // Arrange - Montagem dos dados de teste
         Orc umOrc = new Orc();
@@ -140,7 +140,7 @@ public class OrcTest
         int resultadoObtido = umOrc.getVida();
         
         assertEquals(esperado, resultadoObtido);
->>>>>>> 48edd962379c28721428de9fe01092bd5fc74457
+
     }
     
     

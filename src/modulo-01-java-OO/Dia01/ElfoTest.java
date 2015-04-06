@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 48edd962379c28721428de9fe01092bd5fc74457
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -23,7 +19,6 @@ import org.junit.Test;
 public class ElfoTest
 {
     @Test
-<<<<<<< HEAD
     public void nasceComNomeEFlechasPadraoE0Exp(){
         String nome="Legolas";
         
@@ -166,8 +161,8 @@ public class ElfoTest
             assertEquals(esperado4, resultadoObtido4);
         }
     }
-}
-=======
+
+
     public void elfoNasceComNomeInformado() {
         // Arrange
         String esperado = "Celeborn";        
@@ -306,5 +301,3 @@ public class ElfoTest
 }
 
 
-
->>>>>>> 48edd962379c28721428de9fe01092bd5fc74457
