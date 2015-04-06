@@ -28,6 +28,51 @@ public class OrcTest
     
     @Test
     public void orcRecebeAtaque() {
+        /**
+         * @param teste = número de Orcs e Elfos criados nos arrayOrc e arrayElfo
+         */
+        
+        int teste=100;
+        
+        Orc umOrc;
+        Orc[] arrayOrc=new Orc[teste];
+        Elfo umElfo;
+        Elfo[] arrayElfo=new Elfo[teste];
+        umOrc=new Orc();
+        for(int i=0;i<teste;i++){
+            arrayOrc[i]=new Orc();
+        }
+        umElfo=new Elfo("Legolas");
+        for(int i=0;i<teste;i++){
+            String nome="Legolas";
+            nome+=i;
+            arrayElfo[i]=new Elfo(nome);
+        }
+        
+        //Um Elfo ataca um Orc
+        umElfo.atirarFlecha(umOrc);
+        int esperado=100;
+        int resultadoObtido=umOrc.getVida();
+        
+        assertEquals(esperado, resultadoObtido);
+        
+        //Um Elfo atacando vários Orcs
+        int esperado1=100;
+        for(int i=0;i<teste;i++){
+            umElfo.atirarFlecha(arrayOrc[i]);
+            int resultadoObtido1=arrayOrc[i].getVida();
+            assertEquals(esperado1,resultadoObtido1);
+        }
+        
+        //Vários Elfos atacando um Orc
+        int esperado2=100;
+        for(int i=0;i<teste;i++){
+            arrayElfo[i].atirarFlecha(umOrc);
+            esperado2-=10;
+        }
+        int resultadoObtido2=umOrc.getVida();
+        
+        assertEquals(esperado2,resultadoObtido2);
     }
 }
 

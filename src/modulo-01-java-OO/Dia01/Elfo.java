@@ -42,14 +42,21 @@ public class Elfo
         //flechas = flechas - 1;
         flechas--;
         experiencia++;
-<<<<<<< HEAD
-        Orcs.levarFlechada();
-=======
         umOrc.recebeAtaque();
->>>>>>> 6fbcffc4d0c351d0d84ab721e1dd116f0988c35a
     }
     
+    public String getNome(){
+        return this.nome;
+    }
+    
+    public int getFlechas(){
+        return this.flechas;
+    }
 
+    public int getExperiencia(){
+        return this.experiencia;
+    }
+    
     /*public void setNome(String novoNome) {
         nome = novoNome;
     }*/
