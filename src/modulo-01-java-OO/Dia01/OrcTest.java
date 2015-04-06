@@ -27,6 +27,7 @@ public class OrcTest
     }
     
     @Test
+<<<<<<< HEAD
     public void orcRecebeAtaque() {
         /**
          * @param teste = número de Orcs e Elfos criados nos arrayOrc e arrayElfo
@@ -73,9 +74,77 @@ public class OrcTest
         int resultadoObtido2=umOrc.getVida();
         
         assertEquals(esperado2,resultadoObtido2);
+=======
+    public void orcRecebeAtaqueUmaVez() {
+        // Arrange - Montagem dos dados de teste
+        Orc umOrc = new Orc();
+        // Act
+        umOrc.recebeAtaque();
+        // Assert - Verificação
+        int esperado = 100;
+        int resultadoObtido = umOrc.getVida();
+        
+        assertEquals(esperado, resultadoObtido);
     }
+    
+    @Test
+    public void orcRecebeAtaqueDuasVezes() {
+        // Arrange - Montagem dos dados de teste
+        Orc umOrc = new Orc();
+        // Act
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        // Assert - Verificação
+        int esperado = 90;
+        int resultadoObtido = umOrc.getVida();
+        
+        assertEquals(esperado, resultadoObtido);
+    }
+    
+    @Test
+    public void orcRecebeAtaqueCincoVezes() {
+        // Arrange - Montagem dos dados de teste
+        Orc umOrc = new Orc();
+        // Act
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        // Assert - Verificação
+        int esperado = 60;
+        int resultadoObtido = umOrc.getVida();
+        
+        assertEquals(esperado, resultadoObtido);
+    }
+    
+    @Test
+    public void orcRecebeAtaqueDozeVezes() {
+        // Arrange - Montagem dos dados de teste
+        Orc umOrc = new Orc();
+        // Act
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        umOrc.recebeAtaque();
+        // Assert - Verificação
+        int esperado = -10;
+        int resultadoObtido = umOrc.getVida();
+        
+        assertEquals(esperado, resultadoObtido);
+>>>>>>> 48edd962379c28721428de9fe01092bd5fc74457
+    }
+    
+    
 }
-
 
 
 
