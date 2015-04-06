@@ -35,12 +35,18 @@ public class Elfo
     
     /**
      * Atira uma flecha e perde uma unidade.
+     * 
+     * @param umOrc Orc que receberá uma flechada.
      */
-    public void atirarFlecha() {
+    public void atirarFlecha(Orc umOrc) {
         //flechas = flechas - 1;
         flechas--;
         experiencia++;
+<<<<<<< HEAD
         Orcs.levarFlechada();
+=======
+        umOrc.recebeAtaque();
+>>>>>>> 6fbcffc4d0c351d0d84ab721e1dd116f0988c35a
     }
     
 
