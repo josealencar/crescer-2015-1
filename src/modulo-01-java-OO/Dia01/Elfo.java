@@ -51,6 +51,10 @@ public class Elfo
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
     public String getNome(){
         return this.nome;
     }
@@ -63,11 +67,16 @@ public class Elfo
         return this.experiencia;
     }
     
+    public String toString(){
+        return this.nome+" possui "+this.flechas+" flechas e "+this.experiencia+" níveis de experiência.";
+    }
+    
     /*public void setNome(String novoNome) {
         nome = novoNome;
     }*/
 
 
+<<<<<<< HEAD
 =======
     public String getNome() {
         return this.nome;
@@ -82,6 +91,8 @@ public class Elfo
     }
     
 >>>>>>> 75262ee16a900ba75c82dcd8d0f2f9e6eaff89ea
+=======
+>>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
     /*public void setFlechas(int novaQtdFlechas) {
         if (novaQtdFlechas > flechas) {
             flechas = novaQtdFlechas;

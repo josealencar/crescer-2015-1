@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> 75262ee16a900ba75c82dcd8d0f2f9e6eaff89ea
+=======
+
+>>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -18,12 +22,19 @@ import org.junit.Test;
  * Testes unitários para a classe Elfo.
  *
  * @author  CWI Software
+<<<<<<< HEAD
 >>>>>>> 75262ee16a900ba75c82dcd8d0f2f9e6eaff89ea
+=======
+>>>>>>> 48edd962379c28721428de9fe01092bd5fc74457
+>>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
  */
 public class ElfoTest
 {
     @Test
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
     public void nasceComNomeEFlechasPadraoE0Exp(){
         String nome="Legolas";
         
@@ -166,8 +177,8 @@ public class ElfoTest
             assertEquals(esperado4, resultadoObtido4);
         }
     }
-}
-=======
+
+
     public void elfoNasceComNomeInformado() {
         // Arrange
         String esperado = "Celeborn";        
@@ -317,5 +328,8 @@ public class ElfoTest
 }
 
 
+<<<<<<< HEAD
 
 >>>>>>> 75262ee16a900ba75c82dcd8d0f2f9e6eaff89ea
+=======
+>>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
