@@ -33,13 +33,29 @@ public class Orc
             this.status=Status.MORTO.toString();
         }else{
             this.status=Status.VIVO.toString();
-            this.vida -= 10;
+            double numero=gerarNumero();
+            if(numero<0){
+                this.experiencia +=2;
+            }else if(numero>100){
+                this.vida -= 10;
+            }
         }
         // this.vida = this.vida - 10;
     }
     
+    public void setStatus(String status){
+        this.status = status.toUpperCase();
+    }
+    
     public String getNome(){
         return this.nome;
+    }
+    
+    /**
+     * Método setExperiencia criado para teste do gerarNumero()
+     */
+    public void setExperiencia(int exp){
+        this.experiencia=exp;
     }
     
     public int getExperiencia(){
@@ -63,5 +79,18 @@ public class Orc
      */
     public String toString() {
         return "Vida atual: " + this.vida;
+    }
+    
+    private double gerarNumero(){
+        double numero=0.0;
+        numero = this.nome.length() > 5 ? numero + 65 : numero - 60;
+        numero = this.vida > 30 && this.vida < 60 ? numero*2: this.vida < 20 ? numero*3 : numero*1;
+        numero = this.status.equals(Status.FUGINDO.toString()) ? numero/2 : 
+            this.status.equals(Status.DORMINDO.toString()) ||
+            this.status.equals(Status.CACANDO.toString()) ?
+            numero++ : numero*1;
+        numero = this.experiencia%2 == 0 && this.experiencia!=0 ? Math.pow(numero, 3) :
+            this.experiencia > 2 && this.experiencia%2 != 0? Math.pow(numero, 2) : numero;
+        return numero;
     }
 }

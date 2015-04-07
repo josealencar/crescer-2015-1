@@ -234,6 +234,49 @@ public class OrcTest
         String esperado = nome;
         assertEquals(esperado, umOrc.getNome());
     }
+    
+    @Test
+    public void gerarNumeroNegativo(){
+        // Arrange - Montagem dos dados de teste
+        Orc umOrc=new Orc("nome");
+        umOrc.setStatus("DORMINDO");
+        // Act
+        umOrc.recebeAtaque();
+        // Assert
+        String esperado = "Vida atual: 110";
+        assertEquals(esperado, umOrc.toString());
+        int esperadoExperiencia=2;
+        assertEquals(esperadoExperiencia, umOrc.getExperiencia());
+    }
+    
+    @Test
+    public void gerarNumeroPositivoMenorQue100(){
+        // Arrange - Montagem dos dados de teste
+        Orc umOrc=new Orc("umNomeGrande");
+        umOrc.setStatus("DORMINDO");
+        // Act
+        umOrc.recebeAtaque();
+        // Assert
+        String esperado = "Vida atual: 110";
+        assertEquals(esperado, umOrc.toString());
+        int esperadoExperiencia=0;
+        assertEquals(esperadoExperiencia, umOrc.getExperiencia());
+    }
+    
+    @Test
+    public void gerarNumeroPositivoMaiorQue100(){
+        // Arrange - Montagem dos dados de teste
+        Orc umOrc=new Orc("umNomeGrandeComExp");
+        umOrc.setStatus("cacando");
+        umOrc.setExperiencia(10);
+        // Act
+        umOrc.recebeAtaque();
+        // Assert
+        String esperado = "Vida atual: 100";
+        assertEquals(esperado, umOrc.toString());
+        int esperadoExperiencia=10;
+        assertEquals(esperadoExperiencia, umOrc.getExperiencia());
+    }
 }
 
 
