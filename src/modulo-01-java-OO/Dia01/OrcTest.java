@@ -35,13 +35,16 @@ public class OrcTest
         
         int teste=100;
         
-        Orc umOrc;
         Orc[] arrayOrc=new Orc[teste];
         Elfo umElfo;
         Elfo[] arrayElfo=new Elfo[teste];
-        umOrc=new Orc("nome");
+        Orc umOrc=new Orc("umNomeGrandeComExp");
+        umOrc.setStatus(Status.CACANDO);
+        umOrc.setExperiencia(10);
         for(int i=0;i<teste;i++){
-            arrayOrc[i]=new Orc("nome");
+            arrayOrc[i]=new Orc("umNomeGrandeComExp");
+            arrayOrc[i].setStatus(Status.CACANDO);
+            arrayOrc[i].setExperiencia(10);
         }
         umElfo=new Elfo("Legolas");
         for(int i=0;i<teste;i++){
@@ -90,7 +93,9 @@ public class OrcTest
     @Test
     public void orcRecebeAtaqueDuasVezes() {
         // Arrange - Montagem dos dados de teste
-        Orc umOrc = new Orc("nome");
+        Orc umOrc=new Orc("umNomeGrandeComExp");
+        umOrc.setStatus(Status.CACANDO);
+        umOrc.setExperiencia(10);
         // Act
         umOrc.recebeAtaque();
         umOrc.recebeAtaque();
@@ -104,7 +109,9 @@ public class OrcTest
     @Test
     public void orcRecebeAtaqueCincoVezes() {
         // Arrange - Montagem dos dados de teste
-        Orc umOrc = new Orc("nome");
+        Orc umOrc=new Orc("umNomeGrandeComExp");
+        umOrc.setStatus(Status.CACANDO);
+        umOrc.setExperiencia(10);
         // Act
         umOrc.recebeAtaque();
         umOrc.recebeAtaque();
@@ -122,7 +129,9 @@ public class OrcTest
     @Test
     public void orcRecebeAtaqueDozeVezes() {
         // Arrange - Montagem dos dados de teste
-        Orc umOrc = new Orc("nome");
+        Orc umOrc=new Orc("umNomeGrandeComExp");
+        umOrc.setStatus(Status.CACANDO);
+        umOrc.setExperiencia(10);
         // Act
         umOrc.recebeAtaque();
         umOrc.recebeAtaque();
@@ -158,7 +167,9 @@ public class OrcTest
     @Test
     public void orcToStringAposReceberAtaque() {
         // Arrange
-        Orc orc = new Orc("nome");
+        Orc orc=new Orc("umNomeGrandeComExp");
+        orc.setStatus(Status.CACANDO);
+        orc.setExperiencia(10);
         // Act
         orc.recebeAtaque();
         String resultadoObtido = orc.toString();
@@ -170,7 +181,9 @@ public class OrcTest
     @Test
     public void orcToStringAposReceberDozeAtaques() {
         // Arrange - Montagem dos dados de teste
-        Orc umOrc = new Orc("nome");
+        Orc umOrc=new Orc("umNomeGrandeComExp");
+        umOrc.setStatus(Status.CACANDO);
+        umOrc.setExperiencia(10);
         // Act
         umOrc.recebeAtaque();
         umOrc.recebeAtaque();
@@ -197,14 +210,16 @@ public class OrcTest
         //Act
         umOrc=new Orc("nome");
         //Assert
-        String esperado = "VIVO";
+        Status esperado = Status.VIVO;
         assertEquals(esperado, umOrc.getStatus());
     }
     
     @Test
     public void orcStatusMortoCom0Vida(){
         // Arrange - Montagem dos dados de teste
-        Orc umOrc = new Orc("nome");
+        Orc umOrc=new Orc("umNomeGrandeComExp");
+        umOrc.setStatus(Status.CACANDO);
+        umOrc.setExperiencia(10);
         // Act
         umOrc.recebeAtaque();
         umOrc.recebeAtaque();
@@ -219,7 +234,7 @@ public class OrcTest
         umOrc.recebeAtaque();
         umOrc.recebeAtaque();
         // Assert
-        String esperado = "MORTO";
+        Status esperado = Status.MORTO;
         assertEquals(esperado, umOrc.getStatus());
     }
     
@@ -239,7 +254,7 @@ public class OrcTest
     public void gerarNumeroNegativo(){
         // Arrange - Montagem dos dados de teste
         Orc umOrc=new Orc("nome");
-        umOrc.setStatus("DORMINDO");
+        umOrc.setStatus(Status.DORMINDO);
         // Act
         umOrc.recebeAtaque();
         // Assert
@@ -253,7 +268,7 @@ public class OrcTest
     public void gerarNumeroPositivoMenorQue100(){
         // Arrange - Montagem dos dados de teste
         Orc umOrc=new Orc("umNomeGrande");
-        umOrc.setStatus("DORMINDO");
+        umOrc.setStatus(Status.DORMINDO);
         // Act
         umOrc.recebeAtaque();
         // Assert
@@ -267,7 +282,7 @@ public class OrcTest
     public void gerarNumeroPositivoMaiorQue100(){
         // Arrange - Montagem dos dados de teste
         Orc umOrc=new Orc("umNomeGrandeComExp");
-        umOrc.setStatus("cacando");
+        umOrc.setStatus(Status.CACANDO);
         umOrc.setExperiencia(10);
         // Act
         umOrc.recebeAtaque();

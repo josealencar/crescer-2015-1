@@ -6,12 +6,13 @@
 public class Orc
 {
     private int vida = 110;
-    private String status, nome;
+    private String nome;
     private int experiencia = 0;
+    private Status status;
 
     {
         //vida = 110;
-        this.status=Status.VIVO.toString();
+        this.status=Status.VIVO;
     }
     
     /**
@@ -30,9 +31,9 @@ public class Orc
      */
     public void recebeAtaque() {
         if(this.vida<=0){
-            this.status=Status.MORTO.toString();
+            this.status=Status.MORTO;
         }else{
-            this.status=Status.VIVO.toString();
+            this.status=Status.VIVO;
             double numero=gerarNumero();
             if(numero<0){
                 this.experiencia +=2;
@@ -40,11 +41,12 @@ public class Orc
                 this.vida -= 10;
             }
         }
+        if(this.vida==0){this.status=Status.MORTO;}
         // this.vida = this.vida - 10;
     }
     
-    public void setStatus(String status){
-        this.status = status.toUpperCase();
+    public void setStatus(Status status){
+        this.status = status;
     }
     
     public String getNome(){
@@ -66,7 +68,7 @@ public class Orc
         return this.vida;
     }
     
-    public String getStatus(){
+    public Status getStatus(){
         return this.status;
     }
     
