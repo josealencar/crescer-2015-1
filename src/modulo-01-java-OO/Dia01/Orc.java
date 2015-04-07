@@ -6,32 +6,52 @@
 public class Orc
 {
     private int vida = 110;
-    private String status;
+    private String status, nome;
+    private int experiencia = 0;
 
     {
         //vida = 110;
+        this.status=Status.VIVO.toString();
     }
     
     /**
      * Construtor para objetos da classe Orc
-    public Orc()
+     **/
+    public Orc(String nome)
     {
+        this.nome=nome;
         //vida = 110;
     }
-    **/
+    
     
     /**
      * Faz o Orc sofrer um ataque.
      * Atualmente 10 de dano será decrementado.
      */
     public void recebeAtaque() {
-        this.vida<=0 ? status=Statid.MORTO: Status.VIVO;
-        this.vida -= 10;
+        if(this.vida<=0){
+            this.status=Status.MORTO.toString();
+        }else{
+            this.status=Status.VIVO.toString();
+            this.vida -= 10;
+        }
         // this.vida = this.vida - 10;
+    }
+    
+    public String getNome(){
+        return this.nome;
+    }
+    
+    public int getExperiencia(){
+        return this.experiencia;
     }
     
     public int getVida() {
         return this.vida;
+    }
+    
+    public String getStatus(){
+        return this.status;
     }
     
     /**

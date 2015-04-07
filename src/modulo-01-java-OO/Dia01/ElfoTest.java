@@ -1,40 +1,20 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 75262ee16a900ba75c82dcd8d0f2f9e6eaff89ea
-=======
-
->>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
-<<<<<<< HEAD
  * The test class ElfoTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
-=======
  * Testes unitários para a classe Elfo.
  *
  * @author  CWI Software
-<<<<<<< HEAD
->>>>>>> 75262ee16a900ba75c82dcd8d0f2f9e6eaff89ea
-=======
->>>>>>> 48edd962379c28721428de9fe01092bd5fc74457
->>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
  */
 public class ElfoTest
 {
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
     public void nasceComNomeEFlechasPadraoE0Exp(){
         String nome="Legolas";
         
@@ -77,7 +57,7 @@ public class ElfoTest
         Elfo[] arrayElfos=new Elfo[teste];
         
         umElfo=new Elfo(nome);
-        umOrc=new Orc();
+        umOrc=new Orc("nome");
         
         for(int i=0;i<teste;i++){
             arrayElfos[i]=new Elfo(nome);
@@ -134,7 +114,7 @@ public class ElfoTest
         Elfo[] arrayElfos=new Elfo[teste];
         
         umElfo=new Elfo(nome);
-        umOrc=new Orc();
+        umOrc=new Orc("nome");
         
         for(int i=0;i<teste;i++){
             arrayElfos[i]=new Elfo(nome);
@@ -258,7 +238,7 @@ public class ElfoTest
     public void elfoAtiraFlechaEmUmOrc() {
         // Arrange
         Elfo elfo = new Elfo("Legolas");
-        Orc orc = new Orc();
+        Orc orc = new Orc("nome");
         // Act
         elfo.atirarFlecha(orc);
         // Assert
@@ -273,7 +253,7 @@ public class ElfoTest
     public void elfoAtiraFlechasDuasVezesNoMesmoOrc() {
         // Arrange
         Elfo elfo = new Elfo("Legolas");
-        Orc orc = new Orc();
+        Orc orc = new Orc("nome");
         // Act
         elfo.atirarFlecha(orc);
         elfo.atirarFlecha(orc);
@@ -289,7 +269,7 @@ public class ElfoTest
     public void elfoAtiraFlechasCincoVezesNoMesmoOrc() {
         // Arrange
         Elfo elfo = new Elfo("Legolas", 4);
-        Orc orc = new Orc();
+        Orc orc = new Orc("nome");
         // Act
         elfo.atirarFlecha(orc);
         elfo.atirarFlecha(orc);
@@ -313,23 +293,5 @@ public class ElfoTest
         String resultadoObtido = elfo.toString();
         // Assert
         assertEquals(resultadoEsperado, resultadoObtido);
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    }   
 }
-
-
-<<<<<<< HEAD
-
->>>>>>> 75262ee16a900ba75c82dcd8d0f2f9e6eaff89ea
-=======
->>>>>>> a201db61e5f67987d31192710c56cf8c365356ea
