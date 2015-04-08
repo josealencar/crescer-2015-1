@@ -122,4 +122,9 @@ public class Orc
         int contador = inventario.size();
         return contador;
     }
+    
+    public ItemDoInventario getItem(int i){
+        ItemDoInventario umItem = inventario.get(i);
+        return umItem;
+    }
 }

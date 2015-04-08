@@ -1,5 +1,5 @@
 
-
+import java.util.*;
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -436,6 +436,31 @@ public class OrcTest
         //Assert
         int esperado = 3;
         assertEquals(esperado, umOrc.getContarItensDoInventario());
+    }
+    
+    @Test
+    public void verificarArrayListDeItens(){
+        //Arrange
+        String nomeItem="itemUm";
+        int quantidadeItem=1;
+        ItemDoInventario umItem=new ItemDoInventario(nomeItem, quantidadeItem);
+        
+        String nomeItem2="itemDois";
+        int quantidadeItem2=1;
+        ItemDoInventario umItem2=new ItemDoInventario(nomeItem2, quantidadeItem2);
+        
+        Orc umOrc = new Orc("umNome");
+        
+        //Act
+        umOrc.adicionarItem(umItem);
+        umOrc.adicionarItem(umItem2);
+        
+        //Assert
+        ItemDoInventario esperado = umItem;
+        ItemDoInventario esperado2 = umItem2;
+        
+        assertEquals(esperado, umOrc.getItem(0));
+        assertEquals(esperado2, umOrc.getItem(1));
     }
 }
 
