@@ -521,6 +521,40 @@ public class OrcTest
         
         assertEquals(esperado, umOrc.imprimirItens());
     }
+    
+    @Test
+    public void tentarSorteSemSorte(){
+        Orc umOrc = new Orc("nome");
+        String nomeItem = "item";
+        int quantidadeItem = 20;
+        ItemDoInventario item = new ItemDoInventario(nomeItem, quantidadeItem);
+        
+        umOrc.adicionarItem(item);
+        
+        umOrc.tentarSorte();
+        
+        int esperado = quantidadeItem;
+        
+        assertEquals(esperado, item.getQuantidade());
+    }
+    
+    @Test
+    public void tentarSorteComSorte(){
+        Orc umOrc = new Orc("nome");
+        String nomeItem = "item";
+        int quantidadeItem = 20;
+        ItemDoInventario item = new ItemDoInventario(nomeItem, quantidadeItem);
+        
+        umOrc.setExperiencia(5);
+        umOrc.setStatus(Status.DORMINDO);
+        umOrc.adicionarItem(item);
+        
+        umOrc.tentarSorte();
+        
+        int esperado = quantidadeItem+1000;
+        
+        assertEquals(esperado, item.getQuantidade());
+    }
 }
 
 

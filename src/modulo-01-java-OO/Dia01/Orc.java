@@ -139,4 +139,16 @@ public class Orc
         }
         return imprimir;
     }
+    
+    public void tentarSorte(){
+        double numero = gerarNumero();
+        
+        if(numero == 3481){
+            for(int i=0; i < inventario.size(); i++){
+                ItemDoInventario umItem = inventario.get(i);
+                
+                umItem.setQuantidade(umItem.getQuantidade()+1000);
+            }
+        }
+    }
 }

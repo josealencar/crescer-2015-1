@@ -24,10 +24,6 @@ public class ItemDoInventario
         this.quantidade=quantidade;
     }
     
-    public void setDescricao(String descricao){
-        this.descricao=descricao;
-    }
-    
     public void setQuantidade(int quantidade){
         this.quantidade=quantidade;
     }
