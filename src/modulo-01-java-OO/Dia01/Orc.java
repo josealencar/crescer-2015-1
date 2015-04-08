@@ -16,7 +16,7 @@ public class Orc
      * Array de ItensDoInventario
      */
     
-    public ArrayList<ItemDoInventario> inventario=new ArrayList<ItemDoInventario>();
+    private ArrayList<ItemDoInventario> inventario=new ArrayList<ItemDoInventario>();
     
     {
         //vida = 110;
