@@ -129,7 +129,7 @@ public class Orc
     }
     
     public String imprimirItens(){
-        String imprimir = "";
+        String imprimir = inventario.size() > 0 ? "" : null;
         for(int i = 0; i < inventario.size() ; i++){
             ItemDoInventario umItem= inventario.get(i);
             imprimir += umItem.getDescricao();

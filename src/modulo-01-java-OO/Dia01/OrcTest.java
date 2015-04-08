@@ -464,7 +464,7 @@ public class OrcTest
     }
     
     @Test
-    public void imprimirItens(){
+    public void imprimirItensCom3Itens(){
         //Arrange
         String nomeItem1 = "Adaga";
         String nomeItem2 = "Escudo";
@@ -486,6 +486,38 @@ public class OrcTest
         
         //Assert
         String esperado = nomeItem1 + "," + nomeItem2 + "," + nomeItem3;
+        
+        assertEquals(esperado, umOrc.imprimirItens());
+    }
+    
+    @Test
+    public void imprimirItensCom1Item(){
+        //Arrange
+        String nomeItem1 = "Adaga";
+        int qtdItem1 = 5;
+        
+        ItemDoInventario itemUm = new ItemDoInventario (nomeItem1, qtdItem1);
+        
+        Orc umOrc = new Orc("teste");
+        
+        //Act
+        umOrc.adicionarItem(itemUm);
+        
+        //Assert
+        String esperado = nomeItem1;
+        
+        assertEquals(esperado, umOrc.imprimirItens());
+    }
+    
+    @Test
+    public void imprimirItensComListaVazia(){
+        //Arrange
+        Orc umOrc = new Orc("teste");
+        
+        //Act
+        
+        //Assert
+        String esperado = null;
         
         assertEquals(esperado, umOrc.imprimirItens());
     }
