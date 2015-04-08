@@ -462,6 +462,33 @@ public class OrcTest
         assertEquals(esperado, umOrc.getItem(0));
         assertEquals(esperado2, umOrc.getItem(1));
     }
+    
+    @Test
+    public void imprimirItens(){
+        //Arrange
+        String nomeItem1 = "Adaga";
+        String nomeItem2 = "Escudo";
+        String nomeItem3 = "Bracelete";
+        int qtdItem1 = 5;
+        int qtdItem2 = 1;
+        int qtdItem3 = 10;
+        
+        ItemDoInventario itemUm = new ItemDoInventario (nomeItem1, qtdItem1);
+        ItemDoInventario itemDois = new ItemDoInventario (nomeItem2, qtdItem2);
+        ItemDoInventario itemTres = new ItemDoInventario (nomeItem3, qtdItem3);
+        
+        Orc umOrc = new Orc("teste");
+        
+        //Act
+        umOrc.adicionarItem(itemUm);
+        umOrc.adicionarItem(itemDois);
+        umOrc.adicionarItem(itemTres);
+        
+        //Assert
+        String esperado = nomeItem1 + "," + nomeItem2 + "," + nomeItem3;
+        
+        assertEquals(esperado, umOrc.imprimirItens());
+    }
 }
 
 

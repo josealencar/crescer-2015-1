@@ -127,4 +127,16 @@ public class Orc
         ItemDoInventario umItem = inventario.get(i);
         return umItem;
     }
+    
+    public String imprimirItens(){
+        String imprimir = "";
+        for(int i = 0; i < inventario.size() ; i++){
+            ItemDoInventario umItem= inventario.get(i);
+            imprimir += umItem.getDescricao();
+            if(i != (inventario.size()-1)){
+                imprimir += ",";
+            }
+        }
+        return imprimir;
+    }
 }
