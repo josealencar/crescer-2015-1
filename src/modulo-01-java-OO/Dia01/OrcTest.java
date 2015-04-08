@@ -292,6 +292,151 @@ public class OrcTest
         int esperadoExperiencia=10;
         assertEquals(esperadoExperiencia, umOrc.getExperiencia());
     }
+    
+    @Test
+    public void adicionarUmItemNoInventario(){
+        //Arrange
+        String nomeItem="umItem";
+        int quantidadeItem=1;
+        ItemDoInventario umItem=new ItemDoInventario(nomeItem, quantidadeItem);
+        Orc umOrc = new Orc("umNome");
+        //Act
+        umOrc.adicionarItem(umItem);
+        //Assert
+        int esperado = 1;
+        assertEquals(esperado, umOrc.getContarItensDoInventario());
+    }
+    
+    @Test
+    public void adicionarDoisItensNoInventario(){
+        //Arrange
+        String nomeItem="itemUm";
+        int quantidadeItem=1;
+        ItemDoInventario umItem=new ItemDoInventario(nomeItem, quantidadeItem);
+        String nomeItem2="itemDois";
+        int quantidadeItem2=1;
+        ItemDoInventario umItem2=new ItemDoInventario(nomeItem2, quantidadeItem2);
+        Orc umOrc = new Orc("umNome");
+        //Act
+        umOrc.adicionarItem(umItem);
+        umOrc.adicionarItem(umItem2);
+        //Assert
+        int esperado = 2;
+        assertEquals(esperado, umOrc.getContarItensDoInventario());
+    }
+    
+    @Test
+    public void adicionarCincoItensNoInventario(){
+        //Arrange
+        String nomeItem="itemUm";
+        int quantidadeItem=1;
+        ItemDoInventario umItem=new ItemDoInventario(nomeItem, quantidadeItem);
+        
+        String nomeItem2="itemDois";
+        int quantidadeItem2=1;
+        ItemDoInventario umItem2=new ItemDoInventario(nomeItem2, quantidadeItem2);
+        
+        String nomeItem3="itemTres";
+        int quantidadeItem3=1;
+        ItemDoInventario umItem3=new ItemDoInventario(nomeItem3, quantidadeItem3);
+        
+        String nomeItem4="itemQuatro";
+        int quantidadeItem4=1;
+        ItemDoInventario umItem4=new ItemDoInventario(nomeItem4, quantidadeItem4);
+        
+        String nomeItem5="itemCinco";
+        int quantidadeItem5=1;
+        ItemDoInventario umItem5=new ItemDoInventario(nomeItem5, quantidadeItem5);
+        
+        Orc umOrc = new Orc("umNome");
+        
+        //Act
+        umOrc.adicionarItem(umItem);
+        umOrc.adicionarItem(umItem2);
+        umOrc.adicionarItem(umItem3);
+        umOrc.adicionarItem(umItem4);
+        umOrc.adicionarItem(umItem5);
+        //Assert
+        int esperado = 5;
+        assertEquals(esperado, umOrc.getContarItensDoInventario());
+    }
+    
+    @Test
+    public void removerUmItemNoInventario(){
+        //Arrange
+        String nomeItem="umItem";
+        int quantidadeItem=1;
+        ItemDoInventario umItem=new ItemDoInventario(nomeItem, quantidadeItem);
+        
+        Orc umOrc = new Orc("umNome");
+        umOrc.adicionarItem(umItem);
+        
+        //Act
+        umOrc.perderItem(umItem);
+        
+        //Assert
+        int esperado = 0;
+        assertEquals(esperado, umOrc.getContarItensDoInventario());
+    }
+    
+    @Test
+    public void adicionarDoisItensNoInventarioERemoverUm(){
+        //Arrange
+        String nomeItem="itemUm";
+        int quantidadeItem=1;
+        ItemDoInventario umItem=new ItemDoInventario(nomeItem, quantidadeItem);
+        String nomeItem2="itemDois";
+        int quantidadeItem2=1;
+        ItemDoInventario umItem2=new ItemDoInventario(nomeItem2, quantidadeItem2);
+        Orc umOrc = new Orc("umNome");
+        umOrc.adicionarItem(umItem);
+        umOrc.adicionarItem(umItem2);
+        //Act
+        umOrc.perderItem(umItem);
+        //Assert
+        int esperado = 1;
+        assertEquals(esperado, umOrc.getContarItensDoInventario());
+    }
+    
+    @Test
+    public void adicionarCincoItensNoInventarioERemoverDois(){
+        //Arrange
+        String nomeItem="itemUm";
+        int quantidadeItem=1;
+        ItemDoInventario umItem=new ItemDoInventario(nomeItem, quantidadeItem);
+        
+        String nomeItem2="itemDois";
+        int quantidadeItem2=1;
+        ItemDoInventario umItem2=new ItemDoInventario(nomeItem2, quantidadeItem2);
+        
+        String nomeItem3="itemTres";
+        int quantidadeItem3=1;
+        ItemDoInventario umItem3=new ItemDoInventario(nomeItem3, quantidadeItem3);
+        
+        String nomeItem4="itemQuatro";
+        int quantidadeItem4=1;
+        ItemDoInventario umItem4=new ItemDoInventario(nomeItem4, quantidadeItem4);
+        
+        String nomeItem5="itemCinco";
+        int quantidadeItem5=1;
+        ItemDoInventario umItem5=new ItemDoInventario(nomeItem5, quantidadeItem5);
+        
+        Orc umOrc = new Orc("umNome");
+        
+        umOrc.adicionarItem(umItem);
+        umOrc.adicionarItem(umItem2);
+        umOrc.adicionarItem(umItem3);
+        umOrc.adicionarItem(umItem4);
+        umOrc.adicionarItem(umItem5);
+        
+        //Act
+        umOrc.perderItem(umItem3);
+        umOrc.perderItem(umItem5);
+        
+        //Assert
+        int esperado = 3;
+        assertEquals(esperado, umOrc.getContarItensDoInventario());
+    }
 }
 
 

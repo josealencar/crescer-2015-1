@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * Define objetos do tipo Orc
  * 
@@ -10,6 +12,12 @@ public class Orc
     private int experiencia = 0;
     private Status status;
 
+    /**
+     * Array de ItensDoInventario
+     */
+    
+    public ArrayList<ItemDoInventario> inventario=new ArrayList<ItemDoInventario>();
+    
     {
         //vida = 110;
         this.status=Status.VIVO;
@@ -94,5 +102,24 @@ public class Orc
         numero = this.experiencia%2 == 0 && this.experiencia!=0 ? Math.pow(numero, 3) :
             this.experiencia > 2 && this.experiencia%2 != 0? Math.pow(numero, 2) : numero;
         return numero;
+    }
+    
+    public void adicionarItem(ItemDoInventario item){
+        inventario.add(item);
+    }
+    
+    public void perderItem(ItemDoInventario item){
+        for(int i = 0; i < inventario.size(); i++){
+            ItemDoInventario umItem = inventario.get(i);
+            if(umItem.getDescricao().equals(item.getDescricao())){
+                inventario.remove(umItem);
+                break;
+            }
+        }
+    }
+    
+    public int getContarItensDoInventario(){
+        int contador = inventario.size();
+        return contador;
     }
 }
