@@ -602,8 +602,32 @@ public class OrcTest
         
         assertEquals(esperado, umOrc.getItemComMaiorQuantidade());
     }
+    
+    @Test
+    public void getItemComMaiorQuantidadeComUmItem(){
+        ItemDoInventario itemMenor = new ItemDoInventario("Machado", 10);
+        
+        Orc umOrc = new Orc("orc");
+        
+        umOrc.adicionarItem(itemMenor);
+        
+        ItemDoInventario esperado = itemMenor;
+        
+        assertEquals(esperado, umOrc.getItemComMaiorQuantidade());
+    }
+    
+    @Test
+    public void getItemComMaiorQuantidadeEntreDoisItensComMesmaQuantidade(){
+        ItemDoInventario itemMenor = new ItemDoInventario("Machado", 20);
+        ItemDoInventario itemMaior = new ItemDoInventario("Poção HP", 20);
+        
+        Orc umOrc = new Orc("orc");
+        
+        umOrc.adicionarItem(itemMenor);
+        umOrc.adicionarItem(itemMaior);
+        
+        ItemDoInventario esperado = itemMaior;
+        
+        assertEquals(esperado, umOrc.getItemComMaiorQuantidade());
+    }
 }
-
-
-
-
