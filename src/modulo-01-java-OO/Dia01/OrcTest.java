@@ -269,12 +269,13 @@ public class OrcTest
         // Arrange - Montagem dos dados de teste
         Orc umOrc=new Orc("umNomeGrande");
         umOrc.setStatus(Status.DORMINDO);
+        umOrc.setExperiencia(1);
         // Act
         umOrc.recebeAtaque();
         // Assert
         String esperado = "Vida atual: 110";
         assertEquals(esperado, umOrc.toString());
-        int esperadoExperiencia=0;
+        int esperadoExperiencia=1;
         assertEquals(esperadoExperiencia, umOrc.getExperiencia());
     }
     
@@ -552,8 +553,9 @@ public class OrcTest
         umOrc.tentarSorte();
         
         int esperado = quantidadeItem+1000;
+        ItemDoInventario novo = umOrc.getItem(0);
         
-        assertEquals(esperado, item.getQuantidade());
+        assertEquals(esperado, novo.getQuantidade());
     }
 }
 

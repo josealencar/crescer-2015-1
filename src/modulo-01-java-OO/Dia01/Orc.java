@@ -11,6 +11,7 @@ public class Orc
     private String nome;
     private int experiencia = 0;
     private Status status;
+    private final int NUMERO_SORTE = 3481;
 
     /**
      * Array de ItensDoInventario
@@ -92,16 +93,44 @@ public class Orc
     }
     
     private double gerarNumero(){
-        double numero=0.0;
-        numero = this.nome.length() > 5 ? numero + 65 : numero - 60;
-        numero = this.vida > 30 && this.vida < 60 ? numero*2: this.vida < 20 ? numero*3 : numero*1;
-        numero = this.status.equals(Status.FUGINDO.toString()) ? numero/2 : 
-            this.status.equals(Status.DORMINDO.toString()) ||
-            this.status.equals(Status.CACANDO.toString()) ?
-            numero++ : numero*1;
-        numero = this.experiencia%2 == 0 && this.experiencia!=0 ? Math.pow(numero, 3) :
-            this.experiencia > 2 && this.experiencia%2 != 0? Math.pow(numero, 2) : numero;
-        return numero;
+        double numeroGerado = 0.0;
+        
+        // A. Se o orc possuir nome e o mesmo tiver mais de 5 letras, some 65 ao número. Caso contrário, subtraia 60.
+        boolean possuiNome = this.nome != null && this.nome.length() > 5;
+        
+        if (possuiNome && this.nome.length() > 5) {
+            numeroGerado += 65;
+        } else {
+            numeroGerado -= 60;
+        }
+        
+        // B. Se o orc possuir vida entre 30 e 60, multiple o número por dois,
+        // senão se a vida for menor que 20 multiplique por 3.
+        boolean possuiVidaEntre30e60 = this.vida >= 30 && this.vida <= 60;
+        
+        if (possuiVidaEntre30e60) {
+            numeroGerado *= 2;
+        } else if (this.vida < 20) {
+            numeroGerado *= 3;
+        }
+        
+        // C. Se o orc estiver fugindo, divida o número por 2. Senão se o orc estiver caçando ou dormindo adicione 1 ao número.
+        if (this.status == Status.FUGINDO) {
+            numeroGerado /= 2;
+        } else if (this.status == Status.CACANDO || this.status == Status.DORMINDO) { 
+            numeroGerado += 1;
+        }
+        
+        // D. Se a experiência do orc for par, eleve o número ao cubo. 
+        // Se for ímpar e o orc tiver mais que 2 de experiência, eleve o número ao quadrado.
+        boolean experienciaÉPar = this.experiencia % 2 == 0;
+        if (experienciaÉPar) {
+            numeroGerado = numeroGerado * numeroGerado * numeroGerado;
+        } else if (this.experiencia > 2) {
+            numeroGerado = numeroGerado * numeroGerado;
+        }
+                
+        return numeroGerado;
     }
     
     public void adicionarItem(ItemDoInventario item){
@@ -141,13 +170,12 @@ public class Orc
     }
     
     public void tentarSorte(){
-        double numero = gerarNumero();
+        double numeroGerado = gerarNumero();
         
-        if(numero == 3481){
-            for(int i=0; i < inventario.size(); i++){
-                ItemDoInventario umItem = inventario.get(i);
-                
-                umItem.setQuantidade(umItem.getQuantidade()+1000);
+        if (numeroGerado == NUMERO_SORTE) {
+            for (ItemDoInventario item : this.inventario) {
+                int novaQuantidadeItem = item.getQuantidade() + 1000;
+                item.setQuantidade(novaQuantidadeItem);
             }
         }
     }
