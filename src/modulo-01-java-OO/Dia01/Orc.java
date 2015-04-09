@@ -184,8 +184,8 @@ public class Orc
         ItemDoInventario item = this.inventario.size() > 0 ?  this.inventario.get(0) : null;
         //int posicao = this.inventario.size() > 0 ? item.getQuantidade() : null;
         
-        if(this.inventario.size() > 0){
-            for(int i = 0; i < this.inventario.size(); i++){
+        if(this.inventario.size() > 1){
+            for(int i = 1; i < this.inventario.size(); i++){
                 ItemDoInventario itemParaComparar = this.inventario.get(i);
                 
                 item = item.getQuantidade() > itemParaComparar.getQuantidade() ? item : itemParaComparar;
