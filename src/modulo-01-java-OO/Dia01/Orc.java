@@ -194,4 +194,33 @@ public class Orc
         
         return item;
     }
+    
+    public void ordenarItens(){
+        boolean temItens = this.inventario.size() > 0;
+        boolean temMaisDeUmItem = this.inventario.size() > 1;
+        
+        if(temItens && temMaisDeUmItem){
+            ArrayList<ItemDoInventario> ordenado = new ArrayList<>();
+            ItemDoInventario auxiliar;
+            
+            do {
+                int i = 0;
+                auxiliar = this.inventario.get(i);
+                for(int o = i+1; o < this.inventario.size(); o++){
+                    boolean itemEMenor = this.inventario.get(i).getQuantidade() > 
+                        this.inventario.get(o).getQuantidade();
+                    if(itemEMenor){
+                        auxiliar = this.inventario.get(o);
+                    }
+                }
+                ordenado.add(auxiliar);
+                this.inventario.remove(auxiliar);
+            } while(this.inventario.size() > 0);
+            this.inventario = ordenado;
+        }
+    }
+    
+    public ArrayList<ItemDoInventario> getItens(){
+        return this.inventario;
+    }
 }

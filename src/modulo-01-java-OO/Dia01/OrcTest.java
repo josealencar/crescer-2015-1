@@ -630,4 +630,81 @@ public class OrcTest
         
         assertEquals(esperado, umOrc.getItemComMaiorQuantidade());
     }
+    
+    @Test
+    public void ordenarInventarioVazio(){
+        Orc umOrc = new Orc("nome");
+        
+        umOrc.ordenarItens();
+        
+        ArrayList<ItemDoInventario> esperado = new ArrayList<>();
+        
+        assertEquals(esperado, umOrc.getItens());
+    }
+    
+    @Test
+    public void ordenarInventarioComUmItem(){
+        ItemDoInventario adaga = new ItemDoInventario("Adaga" , 20);
+        Orc umOrc = new Orc("nome");
+        umOrc.adicionarItem(adaga);
+        
+        umOrc.ordenarItens();
+        
+        ArrayList<ItemDoInventario> esperado = new ArrayList<>();
+        esperado.add(adaga);
+        ArrayList<ItemDoInventario> resultado = new ArrayList<>();
+        
+        for(int i=0; i < umOrc.getContarItensDoInventario(); i++){
+            resultado.add(umOrc.getItem(i));
+        }
+        
+        assertEquals(esperado, resultado);
+    }
+    
+    @Test
+    public void ordenarInventarioComDoisItens(){
+        ItemDoInventario adaga = new ItemDoInventario("Adaga" , 20);
+        ItemDoInventario escudo = new ItemDoInventario("Escudo" , 10);
+        Orc umOrc = new Orc("nome");
+        umOrc.adicionarItem(adaga);
+        umOrc.adicionarItem(escudo);
+        
+        umOrc.ordenarItens();
+        
+        ArrayList<ItemDoInventario> esperado = new ArrayList<>();
+        esperado.add(escudo);
+        esperado.add(adaga);
+        ArrayList<ItemDoInventario> resultado = new ArrayList<>();
+        
+        for(int i=0; i < umOrc.getContarItensDoInventario(); i++){
+            resultado.add(umOrc.getItem(i));
+        }
+        
+        assertEquals(esperado, resultado);
+    }
+    
+    @Test
+    public void ordenarInventarioComTresItensSendoUmNegativo(){
+        ItemDoInventario adaga = new ItemDoInventario("Adaga" , 20);
+        ItemDoInventario escudo = new ItemDoInventario("Escudo" , 10);
+        ItemDoInventario flecha = new ItemDoInventario("Flecha" , -10);
+        Orc umOrc = new Orc("nome");
+        umOrc.adicionarItem(adaga);
+        umOrc.adicionarItem(escudo);
+        umOrc.adicionarItem(flecha);
+        
+        umOrc.ordenarItens();
+        
+        ArrayList<ItemDoInventario> esperado = new ArrayList<>();
+        esperado.add(flecha);
+        esperado.add(escudo);
+        esperado.add(adaga);
+        ArrayList<ItemDoInventario> resultado = new ArrayList<>();
+        
+        for(int i=0; i < umOrc.getContarItensDoInventario(); i++){
+            resultado.add(umOrc.getItem(i));
+        }
+        
+        assertEquals(esperado, resultado);
+    }
 }
