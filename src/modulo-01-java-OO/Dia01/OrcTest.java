@@ -557,6 +557,51 @@ public class OrcTest
         
         assertEquals(esperado, novo.getQuantidade());
     }
+    
+    @Test
+    public void getItemComMaiorQuantidadeEntreDoisItens(){
+        ItemDoInventario itemMenor = new ItemDoInventario("Machado", 10);
+        ItemDoInventario itemMaior = new ItemDoInventario("Poção HP", 20);
+        
+        Orc umOrc = new Orc("orc");
+        
+        umOrc.adicionarItem(itemMenor);
+        umOrc.adicionarItem(itemMaior);
+        
+        ItemDoInventario esperado = itemMaior;
+        
+        assertEquals(esperado, umOrc.getItemComMaiorQuantidade());
+    }
+    
+    @Test
+    public void getItemComMaiorQuantidadeEntreCincoItens(){
+        ItemDoInventario itemMenor = new ItemDoInventario("Machado", 10);
+        ItemDoInventario itemMenor2 = new ItemDoInventario("Adaga", 13);
+        ItemDoInventario itemMenor3 = new ItemDoInventario("Escudo", 16);
+        ItemDoInventario itemMenor4 = new ItemDoInventario("Flecha", 19);
+        ItemDoInventario itemMaior = new ItemDoInventario("Poção HP", 20);
+        
+        Orc umOrc = new Orc("orc");
+        
+        umOrc.adicionarItem(itemMenor);
+        umOrc.adicionarItem(itemMenor2);
+        umOrc.adicionarItem(itemMenor3);
+        umOrc.adicionarItem(itemMenor4);
+        umOrc.adicionarItem(itemMaior);
+        
+        ItemDoInventario esperado = itemMaior;
+        
+        assertEquals(esperado, umOrc.getItemComMaiorQuantidade());
+    }
+    
+    @Test
+    public void getItemComMaiorQuantidadeSemItemNoInventario(){
+        Orc umOrc = new Orc("orc");
+        
+        ItemDoInventario esperado = null;
+        
+        assertEquals(esperado, umOrc.getItemComMaiorQuantidade());
+    }
 }
 
 
