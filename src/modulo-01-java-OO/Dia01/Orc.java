@@ -5,22 +5,12 @@ import java.util.*;
  * 
  * @author CWI Software
  */
-public class Orc
+public class Orc extends Personagem
 {
-    private int vida = 110;
-    private String nome;
-    private int experiencia = 0;
-    private Status status;
     private final int NUMERO_SORTE = 3481;
-
-    /**
-     * Array de ItensDoInventario
-     */
-    
-    private ArrayList<ItemDoInventario> inventario=new ArrayList<ItemDoInventario>();
     
     {
-        //vida = 110;
+        this.vida = 110;
         this.status=Status.VIVO;
     }
     
@@ -32,7 +22,6 @@ public class Orc
         this.nome=nome;
         //vida = 110;
     }
-    
     
     /**
      * Faz o Orc sofrer um ataque.
@@ -58,27 +47,11 @@ public class Orc
         this.status = status;
     }
     
-    public String getNome(){
-        return this.nome;
-    }
-    
     /**
      * Método setExperiencia criado para teste do gerarNumero()
      */
     public void setExperiencia(int exp){
         this.experiencia=exp;
-    }
-    
-    public int getExperiencia(){
-        return this.experiencia;
-    }
-    
-    public int getVida() {
-        return this.vida;
-    }
-    
-    public Status getStatus(){
-        return this.status;
     }
     
     /**
@@ -133,42 +106,6 @@ public class Orc
         return numeroGerado;
     }
     
-    public void adicionarItem(ItemDoInventario item){
-        inventario.add(item);
-    }
-    
-    public void perderItem(ItemDoInventario item){
-        for(int i = 0; i < inventario.size(); i++){
-            ItemDoInventario umItem = inventario.get(i);
-            if(umItem.getDescricao().equals(item.getDescricao())){
-                inventario.remove(umItem);
-                break;
-            }
-        }
-    }
-    
-    public int getContarItensDoInventario(){
-        int contador = inventario.size();
-        return contador;
-    }
-    
-    public ItemDoInventario getItem(int i){
-        ItemDoInventario umItem = inventario.get(i);
-        return umItem;
-    }
-    
-    public String imprimirItens(){
-        String imprimir = inventario.size() > 0 ? "" : null;
-        for(int i = 0; i < inventario.size() ; i++){
-            ItemDoInventario umItem= inventario.get(i);
-            imprimir += umItem.getDescricao();
-            if(i != (inventario.size()-1)){
-                imprimir += ",";
-            }
-        }
-        return imprimir;
-    }
-    
     public void tentarSorte(){
         double numeroGerado = gerarNumero();
         
@@ -178,49 +115,5 @@ public class Orc
                 item.setQuantidade(novaQuantidadeItem);
             }
         }
-    }
-    
-    public ItemDoInventario getItemComMaiorQuantidade(){
-        ItemDoInventario item = this.inventario.size() > 0 ?  this.inventario.get(0) : null;
-        //int posicao = this.inventario.size() > 0 ? item.getQuantidade() : null;
-        
-        if(this.inventario.size() > 1){
-            for(int i = 1; i < this.inventario.size(); i++){
-                ItemDoInventario itemParaComparar = this.inventario.get(i);
-                
-                item = item.getQuantidade() > itemParaComparar.getQuantidade() ? item : itemParaComparar;
-            }
-        }
-        
-        return item;
-    }
-    
-    public void ordenarItens(){
-        boolean temItens = this.inventario.size() > 0;
-        boolean temMaisDeUmItem = this.inventario.size() > 1;
-        
-        if(temItens && temMaisDeUmItem){
-            ArrayList<ItemDoInventario> ordenado = new ArrayList<>();
-            ItemDoInventario auxiliar;
-            
-            do {
-                int i = 0;
-                auxiliar = this.inventario.get(i);
-                for(int o = i+1; o < this.inventario.size(); o++){
-                    boolean itemEMenor = this.inventario.get(i).getQuantidade() > 
-                        this.inventario.get(o).getQuantidade();
-                    if(itemEMenor){
-                        auxiliar = this.inventario.get(o);
-                    }
-                }
-                ordenado.add(auxiliar);
-                this.inventario.remove(auxiliar);
-            } while(this.inventario.size() > 0);
-            this.inventario = ordenado;
-        }
-    }
-    
-    public ArrayList<ItemDoInventario> getItens(){
-        return this.inventario;
     }
 }

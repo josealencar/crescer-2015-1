@@ -4,12 +4,10 @@
  * 
  * @author CWI Software
  */
-public class Elfo
+public class Elfo extends Personagem
 {
     // Versão correção do tema!!
-    
-    private String nome;
-    private int flechas, experiencia;
+    private int flechas;
 
     // type initializer
     {
@@ -50,27 +48,9 @@ public class Elfo
         umOrc.recebeAtaque();
     }
     
-    public String getNome(){
-        return this.nome;
-    }
-    
     public int getFlechas(){
         return this.flechas;
     }
-
-    public int getExperiencia(){
-        return this.experiencia;
-    }
-    
-    /*public void setNome(String novoNome) {
-        nome = novoNome;
-    }*/
-
-    /*public void setFlechas(int novaQtdFlechas) {
-        if (novaQtdFlechas > flechas) {
-            flechas = novaQtdFlechas;
-        }
-    }*/
     
     // camelCase: public void atirarFlechaDourada
     // PascalCase: public void AtirarFlechaDourada
@@ -131,8 +111,4 @@ public class Elfo
         builder.append(textoNiveis);
         builder.append(" de experiência.");*/
     }
-    
-    
-    
-    
 }
