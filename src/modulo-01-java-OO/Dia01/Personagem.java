@@ -31,6 +31,12 @@ public class Personagem
         return this.nome;
     }
     
+    public void atualizaEstatusSeMerecerMorrer(){
+        if(this.vida == 0){
+            this.status = Status.MORTO;
+        }
+    }
+    
     public void adicionarItem(ItemDoInventario item){
         inventario.add(item);
     }

@@ -22,6 +22,7 @@ public class ElfoNoturno extends Elfo
         flechas--;
         experiencia+=3;
         vida *= 0.95;
+        super.atualizaEstatusSeMerecerMorrer();
         umOrc.recebeAtaque();
     }
 }

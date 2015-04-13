@@ -77,4 +77,22 @@ public class ElfoNoturnoTest
         assertEquals(esperado, umElfo.getExperiencia());
         assertEquals(esperadoVida, umElfo.getVida());
     }
+    
+    @Test
+    public void elfoNoturnoMorreAtirandoFlecha(){
+        String nome = "umElfo";
+        ElfoNoturno umElfo;
+        
+        umElfo = new ElfoNoturno(nome);
+        
+        for(int i=0; i < 45; i++){
+            umElfo.atirarFlecha(new Orc("nome"));
+        }
+        
+        int esperadoVida = 0;
+        Status statusEsperado = Status.MORTO;
+        
+        assertEquals(esperadoVida, umElfo.getVida());
+        assertEquals(statusEsperado, umElfo.getStatus());
+    }
 }
