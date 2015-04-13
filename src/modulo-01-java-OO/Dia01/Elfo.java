@@ -12,6 +12,7 @@ public class Elfo extends Personagem
     // type initializer
     {
         flechas = 42;
+        vida = 100;
     }
     
     /**

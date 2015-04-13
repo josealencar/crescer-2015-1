@@ -117,4 +117,16 @@ public class ElfoVerdeTest
         
         assertEquals(esperado, umElfo.getExperiencia());
     }
+    
+    @Test
+    public void elfoVerdeNasceCom100DeVida(){
+        String nome = "umElfoVerde";
+        ElfoVerde umElfo;
+        
+        umElfo = new ElfoVerde(nome);
+        
+        int esperado = 100;
+        
+        assertEquals(esperado, umElfo.getVida());
+    }
 }
