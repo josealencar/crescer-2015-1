@@ -7,7 +7,7 @@
 public class Elfo extends Personagem
 {
     // Versão correção do tema!!
-    private int flechas;
+    protected int flechas;
 
     // type initializer
     {

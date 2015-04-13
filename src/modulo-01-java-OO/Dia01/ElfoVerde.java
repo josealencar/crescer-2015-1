@@ -30,4 +30,12 @@ public class ElfoVerde extends Elfo
             inventario.add(item);
         }
     }
+    
+    @Override
+    public void atirarFlecha(Orc umOrc) {
+        //flechas = flechas - 1;
+        flechas--;
+        experiencia += 2;
+        umOrc.recebeAtaque();
+    }
 }
