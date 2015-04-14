@@ -8,6 +8,8 @@ public class Elfo extends Personagem
 {
     // Versão correção do tema!!
     protected int flechas;
+    
+    public static int contadorElfo = 0;
 
     // type initializer
     {
@@ -35,6 +37,15 @@ public class Elfo extends Personagem
      */
     public Elfo(String nome) {
         this.nome = nome;
+        contadorElfo++;
+    }
+    
+    public static int getIncremento(){
+        return contadorElfo;
+    }
+    
+    public static void setIncremento(){
+        contadorElfo = 0;
     }
     
     /**

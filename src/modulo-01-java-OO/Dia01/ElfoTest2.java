@@ -13,7 +13,8 @@ import org.junit.Test;
  */
 public class ElfoTest2
 {
-    @Test
+    private final double DELTA = 0.005;
+    
     public void nasceComNomeEFlechasPadraoE0Exp(){
         String nome="Legolas";
         
@@ -298,8 +299,35 @@ public class ElfoTest2
     public void elfoNasceCom100deVida(){
         Elfo umElfo = new Elfo("Legolas");
         
-        int esperado = 100;
+        double esperado = 100;
         
-        assertEquals(esperado, umElfo.getVida());
+        assertEquals(esperado, umElfo.getVida(), DELTA);
+    }
+    
+    @Test
+    public void contadorDeElfosComUmElfo(){
+        Elfo.setIncremento();
+        Elfo umElfo = new Elfo("Legolas");
+        int esperado = 1;
+        assertEquals(esperado, Elfo.getIncremento());
+    }
+    
+    @Test
+    public void contadorDeElfosComDoisElfos(){
+        Elfo.setIncremento();
+        Elfo umElfo = new Elfo("Legolas");
+        Elfo outroElfo = new Elfo("Legolas");
+        int esperado = 2;
+        assertEquals(esperado, Elfo.getIncremento());
+    }
+    
+    @Test
+    public void contadorDeElfosComTresElfosSendoUmDeCadaTipo(){
+        Elfo.setIncremento();
+        Elfo umElfo = new Elfo("Legolas");
+        ElfoVerde elfoVerde = new ElfoVerde("Legolas");
+        ElfoNoturno elfoNoturno = new ElfoNoturno("Legolas");
+        int esperado = 3;
+        assertEquals(esperado, Elfo.getIncremento());
     }
 }

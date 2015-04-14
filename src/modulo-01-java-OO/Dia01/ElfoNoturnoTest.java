@@ -13,6 +13,8 @@ import org.junit.Test;
  */
 public class ElfoNoturnoTest
 {
+    private final double DELTA = 0.005;
+    
     @Test
     public void elfoNoturnoNasceCom100DeVida(){
         String nome = "umElfo";
@@ -20,9 +22,9 @@ public class ElfoNoturnoTest
         
         umElfo = new ElfoNoturno(nome);
         
-        int esperado = 100;
+        double esperado = 100;
         
-        assertEquals(esperado, umElfo.getVida());
+        assertEquals(esperado, umElfo.getVida(), DELTA);
     }
     
     @Test
@@ -35,10 +37,10 @@ public class ElfoNoturnoTest
         umElfo.atirarFlecha(new Orc("nome"));
         
         int esperado = 3;
-        int esperadoVida = 95;
+        double esperadoVida = 95;
         
         assertEquals(esperado, umElfo.getExperiencia());
-        assertEquals(esperadoVida, umElfo.getVida());
+        assertEquals(esperadoVida, umElfo.getVida(), DELTA);
     }
     
     @Test
@@ -52,10 +54,10 @@ public class ElfoNoturnoTest
         umElfo.atirarFlecha(new Orc("nome"));
         
         int esperado = 6;
-        int esperadoVida = 90;
+        double esperadoVida = 90.25;
         
         assertEquals(esperado, umElfo.getExperiencia());
-        assertEquals(esperadoVida, umElfo.getVida());
+        assertEquals(esperadoVida, umElfo.getVida(), DELTA);
     }
     
     @Test
@@ -72,9 +74,9 @@ public class ElfoNoturnoTest
         umElfo.atirarFlecha(new Orc("nome"));
         
         int esperado = 15;
-        int esperadoVida = 76;
+        double esperadoVida = 77.3781;
         
         assertEquals(esperado, umElfo.getExperiencia());
-        assertEquals(esperadoVida, umElfo.getVida());
+        assertEquals(esperadoVida, umElfo.getVida(), DELTA);
     }
 }
