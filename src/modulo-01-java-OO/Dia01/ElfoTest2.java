@@ -15,6 +15,11 @@ public class ElfoTest2
 {
     private final double DELTA = 0.005;
     
+    @Before
+    public void setUP(){
+        Elfo.setIncremento();
+    }
+    
     public void nasceComNomeEFlechasPadraoE0Exp(){
         String nome="Legolas";
         
@@ -306,7 +311,6 @@ public class ElfoTest2
     
     @Test
     public void contadorDeElfosComUmElfo(){
-        Elfo.setIncremento();
         Elfo umElfo = new Elfo("Legolas");
         int esperado = 1;
         assertEquals(esperado, Elfo.getIncremento());
@@ -314,7 +318,6 @@ public class ElfoTest2
     
     @Test
     public void contadorDeElfosComDoisElfos(){
-        Elfo.setIncremento();
         Elfo umElfo = new Elfo("Legolas");
         Elfo outroElfo = new Elfo("Legolas");
         int esperado = 2;
@@ -323,7 +326,6 @@ public class ElfoTest2
     
     @Test
     public void contadorDeElfosComTresElfosSendoUmDeCadaTipo(){
-        Elfo.setIncremento();
         Elfo umElfo = new Elfo("Legolas");
         ElfoVerde elfoVerde = new ElfoVerde("Legolas");
         ElfoNoturno elfoNoturno = new ElfoNoturno("Legolas");
