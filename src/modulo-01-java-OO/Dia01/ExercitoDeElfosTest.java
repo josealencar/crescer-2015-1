@@ -69,4 +69,30 @@ public class ExercitoDeElfosTest
         
         assertEquals(esperado, exercito.getElfoAlistado(nome));
     }
+    
+    @Test
+    public void alistarDoisElfosPermitidosVivos(){
+        ElfoVerde umElfo = new ElfoVerde("Legolas");
+        ElfoNoturno outroElfo = new ElfoNoturno("umElfo");
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        HashMap <Status, Elfo> exercitoEsperado = new HashMap<>();
+        exercitoEsperado.put(umElfo.getStatus(), umElfo);
+        exercitoEsperado.put(outroElfo.getStatus(), outroElfo);
+        exercito.alistarElfo(umElfo);
+        exercito.alistarElfo(outroElfo);
+        
+        assertEquals(exercitoEsperado, exercito.getExercitoPorStatus());
+    }
+    
+    @Test
+    public void retornaUmElfoAlistadoVivo(){
+        ElfoVerde umElfo = new ElfoVerde("Legolas");
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        
+        exercito.alistarElfo(umElfo);
+        
+        Elfo esperado = umElfo;
+        
+        assertEquals(esperado, exercito.getElfoPorStatus(Status.VIVO));
+    }
 }
