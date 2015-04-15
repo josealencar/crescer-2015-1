@@ -10,7 +10,8 @@ public class Personagem
 {
     // instance variables - replace the example below with your own
     protected Status status = Status.VIVO;
-    protected int vida, experiencia;
+    protected double vida;
+    protected int experiencia;
     protected String nome;
     
     protected ArrayList<ItemDoInventario> inventario=new ArrayList<ItemDoInventario>();
@@ -19,7 +20,7 @@ public class Personagem
         return this.status;
     }
     
-    public int getVida(){
+    public double getVida(){
         return this.vida;
     }
     

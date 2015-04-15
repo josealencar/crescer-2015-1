@@ -13,6 +13,8 @@ import org.junit.Test;
  */
 public class ElfoVerdeTest
 {
+    private final double DELTA = 0.005;
+    
     @Test
     public void criarUmElfoVerdeComFlechasPadrao(){
         String nome = "Elfo Verde";
@@ -125,8 +127,8 @@ public class ElfoVerdeTest
         
         umElfo = new ElfoVerde(nome);
         
-        int esperado = 100;
+        double esperado = 100;
         
-        assertEquals(esperado, umElfo.getVida());
+        assertEquals(esperado, umElfo.getVida(), DELTA);
     }
 }
