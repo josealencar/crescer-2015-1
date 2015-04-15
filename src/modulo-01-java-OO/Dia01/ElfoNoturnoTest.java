@@ -87,14 +87,14 @@ public class ElfoNoturnoTest
         
         umElfo = new ElfoNoturno(nome);
         
-        for(int i=0; i < 45; i++){
+        for(int i=0; i < 100; i++){
             umElfo.atirarFlecha(new Orc("nome"));
         }
         
-        int esperadoVida = 0;
+        double esperadoVida = 0;
         Status statusEsperado = Status.MORTO;
         
-        assertEquals(esperadoVida, umElfo.getVida());
+        assertEquals(esperadoVida, umElfo.getVida(), DELTA);
         assertEquals(statusEsperado, umElfo.getStatus());
     }
 }

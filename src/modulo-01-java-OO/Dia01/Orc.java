@@ -23,6 +23,10 @@ public class Orc extends Personagem
         //vida = 110;
     }
     
+    public Orc(){
+        
+    }
+    
     /**
      * Faz o Orc sofrer um ataque.
      * Atualmente 10 de dano será decrementado.
