@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1568CA28-DDE3-3C87-A93A-54F3E0D117B4" name="Beneficiario">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:55:45 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDBeneficiario" id="F17D5238-0B2F-FA62-B871-665EAB59CE99">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:56:37 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDContrato" id="10CB7F04-5346-ABA2-8C8C-2C850DEBB4C1">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:01:55 UTC</createdTime>
+<generatorID>E4F3F934-64A2-7A0D-CEEC-7A45005CCF70</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<referedAttribute>58B93536-816A-97B0-AF2B-1B31DC4BC5A9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDCliente" id="A84E94BF-D83B-3DDA-5E79-8160345026C1">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:03:25 UTC</createdTime>
+<generatorID>CC41F6B8-A632-DE2D-2F0B-D11E14956414</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<referedAttribute>237B341A-7D8D-3FC0-4968-410B8CD9617B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4446F047-BB06-EAB8-7A25-1D2E164E2E8B" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:56:55 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F17D5238-0B2F-FA62-B871-665EAB59CE99</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

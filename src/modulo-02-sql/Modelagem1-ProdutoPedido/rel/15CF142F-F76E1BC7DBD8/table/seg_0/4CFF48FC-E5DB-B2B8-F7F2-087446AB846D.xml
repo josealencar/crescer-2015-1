@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4CFF48FC-E5DB-B2B8-F7F2-087446AB846D" name="Item">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>E54BCDB6-650A-73F4-5BE3-4B01430F13A5</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDItem" id="A59108D5-157C-E9D1-8433-4C195895633A">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>90C3370E-3CA7-3D40-1912-34FAE14D01B5</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Quantidade" id="057B12AF-8F9E-F2DB-8464-E56A9F61EACB">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>FA44D61C-925E-E98E-9EF9-C614F59AE62E</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor_item" id="22025C77-350E-912C-B530-A03C49906DAC">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>F65E239F-71E8-B084-ECF8-CC6539B69535</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDProduto" id="D74CD87F-4B4D-F975-DBEC-D23220D5268D">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>06E70CD8-6527-3AF1-95AB-23C1A27EC191</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0F81FA8E-B265-4FFF-03AE-63F2B3F26D06</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2740F690-B021-46E4-6847-CB3CD7626612" referredColumn="0F81FA8E-B265-4FFF-03AE-63F2B3F26D06"/>
+</associations>
+</Column>
+<Column name="IDPedido" id="1F04FB5D-3B15-63E2-3DDB-A96B936B31C7">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>61AA4871-F14E-DB87-A909-587D91B02F80</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>1B51E41D-1E79-1715-3CD8-1C7E043939D1</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F17530A3-C2FB-8B45-66CD-01D3C13FB469" referredColumn="1B51E41D-1E79-1715-3CD8-1C7E043939D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="775EE04A-5048-9AF2-4C27-00D6BAF2E62C" name="Item_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>A9BBE6F3-AD65-4CA5-7AA4-EEAA7C3FFB44</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A59108D5-157C-E9D1-8433-4C195895633A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43108C45-1667-B138-0764-502BC2D1EAF8" name="Item_Pedido_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>38BB1C36-4960-07BA-ED5F-1489F6269128</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F04FB5D-3B15-63E2-3DDB-A96B936B31C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CA21B09-DAC2-E490-B1C3-93F178F216D7" name="Item_Produto_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>CC1579C1-7D31-F4C7-33EA-87A59453761D</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D74CD87F-4B4D-F975-DBEC-D23220D5268D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

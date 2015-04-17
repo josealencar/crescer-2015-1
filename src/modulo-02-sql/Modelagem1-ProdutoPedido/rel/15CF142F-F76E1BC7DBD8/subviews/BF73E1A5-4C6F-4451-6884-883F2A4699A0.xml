@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="BF73E1A5-4C6F-4451-6884-883F2A4699A0">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="092D8148-6197-B90A-7282-8F93B814CDA9" otype="Table" vid="A2A347E2-551C-8F9B-3C00-D0B3E813602E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="32" y="15" width="204" height="120"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4CFF48FC-E5DB-B2B8-F7F2-087446AB846D" otype="Table" vid="2FEF0BE6-448C-ECB2-CB9E-D0A4BC7BA582">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="126" y="206" width="232" height="176"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7233B3D5-2026-255A-B07E-00AB33E148C5" otype="Table" vid="7F70A632-2497-DB5F-9E93-9B20B25E94F5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="303" y="23" width="224" height="118"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2740F690-B021-46E4-6847-CB3CD7626612" otype="FKIndexAssociation" vid_source="A2A347E2-551C-8F9B-3C00-D0B3E813602E" vid_target="2FEF0BE6-448C-ECB2-CB9E-D0A4BC7BA582">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="181" y="135"/>
+<point x="181" y="206"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F17530A3-C2FB-8B45-66CD-01D3C13FB469" otype="FKIndexAssociation" vid_source="7F70A632-2497-DB5F-9E93-9B20B25E94F5" vid_target="2FEF0BE6-448C-ECB2-CB9E-D0A4BC7BA582">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="330" y="141"/>
+<point x="330" y="206"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

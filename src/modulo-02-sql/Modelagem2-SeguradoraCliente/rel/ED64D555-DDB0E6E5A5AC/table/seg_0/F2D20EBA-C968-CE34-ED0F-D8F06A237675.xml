@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2D20EBA-C968-CE34-ED0F-D8F06A237675" name="Contrato">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>6564C3BE-AAE2-B618-49A1-DA466B51C438</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDContrato" id="FD5093C2-AB6E-6196-CCAD-CACDACF78F11">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>58B93536-816A-97B0-AF2B-1B31DC4BC5A9</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DataInicio" id="0E756FB1-D311-FEB3-0FD9-6E6D79D92638">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>7AD05AF9-11C9-FCC6-05AA-77F2E8943B90</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DataFinal" id="BAFB85BA-8F65-6255-55DF-2C639FD028F4">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>BE42C0CE-E20B-10A9-6DEA-CDA00F83DAC9</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EnderecoEnvio" id="C50EA409-7076-9998-0046-51B26B7CC70C">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>809C23EF-028A-3E52-60E3-8008044668D1</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEPEnvio" id="D4924726-DC3C-E9A7-DEFB-1473B6AD84A1">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>D5236AF6-D6E3-8355-D1A3-0E7FE37D8D47</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EnderecoCobranca" id="51E6BE6F-9D2F-C310-5D6F-282AE8992BE1">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>56EE7279-A403-1659-9400-59940BBD0582</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEPCobranca" id="A0FA25A4-4F91-B674-BFF1-94D3389DFB3F">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>D121F797-8CAA-621F-BB8E-40C71A2C2BF3</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDCliente" id="02A5E596-1106-A8DC-0AE0-B01F6C98BDEF">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>DD72CE72-F20F-1DC3-1399-B9B43A0BDE15</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>84004197-7E9E-504F-A676-42A958364AC2</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB60ABF2-CF72-F4D8-F715-50BA7B8B07DD" referredColumn="84004197-7E9E-504F-A676-42A958364AC2"/>
+</associations>
+</Column>
+<Column name="IDSeguro" id="99C2E951-9552-ACB8-2B8D-31CF920CC256">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>CC9A3AF7-6E98-B434-5B90-CDD5E053C318</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>FC9DD4D7-38CA-B277-7A47-DDCFD5B42621</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FE53D03-4CFB-2F34-38B2-DA7A856D843B" referredColumn="FC9DD4D7-38CA-B277-7A47-DDCFD5B42621"/>
+</associations>
+</Column>
+<Column name="BairroEnvio" id="56D612EE-F5BF-1D4E-4482-17EE9FFA2ADA">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:12:06 UTC</createdTime>
+<generatorID>86D04176-5538-0B33-A6B9-A01965361BAE</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CidadeEnvio" id="BCC2846C-FBFC-973A-54B9-4DF46225FEA1">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:12:06 UTC</createdTime>
+<generatorID>23460A8C-3AE0-DE08-80AA-947185A75BB9</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BairroCobranca" id="037DE386-03FB-BC97-522D-91BEA96A3C1A">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:12:06 UTC</createdTime>
+<generatorID>43C4714E-2042-EAE9-50C3-5397935F8CC1</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CidadeCobranca" id="BA5441DB-DF51-1EC0-6BBC-6E5D271F8AC5">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:12:06 UTC</createdTime>
+<generatorID>18373679-E306-B985-8DA2-8B17060D4250</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46949386-D51D-C96A-C6C3-1DEFAC5E2C06" name="Contrato_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>946D5073-2B04-AF0B-1BB9-4770AF30942E</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD5093C2-AB6E-6196-CCAD-CACDACF78F11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A391E09-7877-AC5C-FE7F-90EF9C7D551A" name="Contrato_Cliente_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>0480EE26-18C7-041E-B4DB-AB9EB055CBE2</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02A5E596-1106-A8DC-0AE0-B01F6C98BDEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3479685D-AAE4-6BD2-20D3-0737B1B962F2" name="Contrato_Seguro_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>1B844CE3-0570-7AA9-D126-421E85FA0B48</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99C2E951-9552-ACB8-2B8D-31CF920CC256"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

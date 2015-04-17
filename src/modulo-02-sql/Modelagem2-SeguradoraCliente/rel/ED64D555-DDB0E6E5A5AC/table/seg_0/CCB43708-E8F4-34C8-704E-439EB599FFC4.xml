@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCB43708-E8F4-34C8-704E-439EB599FFC4" name="Cliente">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>98AA311F-6F4D-2909-487C-6F257287076E</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDCliente" id="84004197-7E9E-504F-A676-42A958364AC2">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>237B341A-7D8D-3FC0-4968-410B8CD9617B</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="80D4FEF1-C105-AC05-4274-B9E0B26AC625">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>ABC38BA6-2978-02CE-9FE9-6CFDFA89DD26</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RG" id="3B1A787E-FC39-0159-F2C4-AD83834D7C29">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>EF2A8CAD-85C6-0878-ABA6-B1945635CF44</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF" id="BA211A0F-C16B-417F-048E-CD29E54B0DED">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>AC5FB222-D5FA-79E5-25DE-04010FC53BC1</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Idade" id="97BBB4E3-EBC1-CC90-35E2-FC92076508B6">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>DE01E2B4-EAD5-9E5A-7DFF-F76C63916ADE</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefone" id="66000473-2E64-C8A5-DB4B-66C7331A0596">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>4C60B3D5-AE33-74DC-0E5D-A1E169ECC092</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="7A8B5A09-4F1F-4725-716F-A15D35F99854">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>DEB5BEE4-4E37-1A28-A604-959ED52EA09B</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco" id="761F1529-6FAF-A395-F2D4-5F9B78CBE30A">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>351A043B-CC24-4143-FADF-56176AED565E</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="EDD38263-05C0-C78B-A91C-1E8134CDD76C">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>E0DBD3CB-D3B1-EC0E-1D3F-C249014A82AA</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bairro" id="CF6ABD11-95AA-7A8A-AE50-DEC6C577B3F9">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:12:06 UTC</createdTime>
+<generatorID>5F461B2C-1E66-662E-6F44-BC781D886F69</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cidade" id="657AAD8A-5DC8-C3C4-2CEF-F76781BF18BE">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:12:06 UTC</createdTime>
+<generatorID>15C63950-4CAF-A4EA-F4B9-5B317E709012</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="148A4E5E-8AFC-9C6B-A4CB-54A5A162594A" name="Cliente_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>B5C7A971-5256-79C1-3162-88FCA1030F31</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84004197-7E9E-504F-A676-42A958364AC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8EFACDA-A001-D37A-DC04-6B9DE6488045" name="Seguro">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>E642308A-3115-2B4C-B159-84B46D12B13E</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDSeguro" id="FC9DD4D7-38CA-B277-7A47-DDCFD5B42621">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>7F8B5BD8-857E-8AD1-CE2A-3D49B469CF37</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoSeguro" id="CA8BF99F-011A-5871-41B1-EDD0568AFDAD">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>FB3CF793-E782-6E02-521E-BF94AA0ACCCA</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ValorSeguro" id="25161CF0-BF5E-967D-F154-01B554E45142">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>054EE4E8-9737-CA1D-60DF-3C24D2203F61</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="869C340A-93BC-61BB-8F90-42DE80F29472" name="Seguro_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>C245AA0E-BBBF-A61A-2EA0-A46A00C55594</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC9DD4D7-38CA-B277-7A47-DDCFD5B42621"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

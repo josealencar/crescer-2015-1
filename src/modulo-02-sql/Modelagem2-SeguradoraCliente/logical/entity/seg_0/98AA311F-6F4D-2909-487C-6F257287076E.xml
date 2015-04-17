@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98AA311F-6F4D-2909-487C-6F257287076E" name="Cliente">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:31:23 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDCliente" id="237B341A-7D8D-3FC0-4968-410B8CD9617B">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:31:39 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Nome" id="ABC38BA6-2978-02CE-9FE9-6CFDFA89DD26">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:31:52 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="RG" id="EF2A8CAD-85C6-0878-ABA6-B1945635CF44">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:32:05 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+<Attribute name="CPF" id="AC5FB222-D5FA-79E5-25DE-04010FC53BC1">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:32:46 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+</Attribute>
+<Attribute name="Idade" id="DE01E2B4-EAD5-9E5A-7DFF-F76C63916ADE">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:33:18 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Telefone" id="4C60B3D5-AE33-74DC-0E5D-A1E169ECC092">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:44:25 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+</Attribute>
+<Attribute name="Email" id="DEB5BEE4-4E37-1A28-A604-959ED52EA09B">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:45:09 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+<Attribute name="Endereco" id="351A043B-CC24-4143-FADF-56176AED565E">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:46:40 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+</Attribute>
+<Attribute name="CEP" id="E0DBD3CB-D3B1-EC0E-1D3F-C249014A82AA">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:47:33 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+</Attribute>
+<Attribute name="Bairro" id="5F461B2C-1E66-662E-6F44-BC781D886F69">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:08:15 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="Cidade" id="15C63950-4CAF-A4EA-F4B9-5B317E709012">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:08:40 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B5C7A971-5256-79C1-3162-88FCA1030F31" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:31:50 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>237B341A-7D8D-3FC0-4968-410B8CD9617B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

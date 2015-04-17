@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Beneficiario_Contrato" directorySegmentName="seg_0" id="E4F3F934-64A2-7A0D-CEEC-7A45005CCF70">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:01:55 UTC</createdTime>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<engineerTo>
+<item key="ED64D555-1579-EB5B-3E3E-DDB0E6E5A5AC" value="true"/>
+</engineerTo>
+<sourcePk>946D5073-2B04-AF0B-1BB9-4770AF30942E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6564C3BE-AAE2-B618-49A1-DA466B51C438</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1568CA28-DDE3-3C87-A93A-54F3E0D117B4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

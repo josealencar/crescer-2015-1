@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7233B3D5-2026-255A-B07E-00AB33E148C5" name="Pedido">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>C6710427-BECE-D5E5-66D3-4CA2E6B7AA67</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPedido" id="1B51E41D-1E79-1715-3CD8-1C7E043939D1">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>480B87FC-FAE6-F3D9-8574-C6E02711E519</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_pedido" id="CF29549D-2BF1-BFD7-5465-7FA9C21CF172">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>DC6E053E-3C7D-9B0D-94ED-9001642C1D88</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente" id="172D56E7-C047-8797-A590-2F580DD2F13A">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>C8DD93E6-DD62-130E-66AE-564992F46B37</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor_pedido" id="2F648637-35C8-3220-EB9A-4C072A854E9B">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>5709427C-08C5-4C14-CBB5-31D8CAC2B6F4</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62170166-F598-9FD5-A4D2-020A272344AF" name="Pedido_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:11:15 UTC</createdTime>
+<generatorID>B29B61B1-CA11-89AF-18DF-9D66FAC35913</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B51E41D-1E79-1715-3CD8-1C7E043939D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

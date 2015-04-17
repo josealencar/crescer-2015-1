@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24E8BC43-AF01-50AB-C1FE-6C943092D810" name="Beneficiario">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>1568CA28-DDE3-3C87-A93A-54F3E0D117B4</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDBeneficiario" id="63C39A78-99EA-E964-0981-D203A9776A5D">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>F17D5238-0B2F-FA62-B871-665EAB59CE99</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDContrato" id="7A6F2CD9-41F2-921E-21B1-FA33D3D14BAC">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>10CB7F04-5346-ABA2-8C8C-2C850DEBB4C1</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>FD5093C2-AB6E-6196-CCAD-CACDACF78F11</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A646D9C5-6DCE-4707-8E6A-83AA69508136" referredColumn="FD5093C2-AB6E-6196-CCAD-CACDACF78F11"/>
+</associations>
+</Column>
+<Column name="IDCliente" id="D8924597-E035-BE87-D1DB-C473EDC5DB87">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:04:16 UTC</createdTime>
+<generatorID>A84E94BF-D83B-3DDA-5E79-8160345026C1</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>84004197-7E9E-504F-A676-42A958364AC2</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DFA2568-28DA-8931-99B0-077CA8DCDA14" referredColumn="84004197-7E9E-504F-A676-42A958364AC2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49B6EF6F-E549-8A77-B128-1F2BD6FF265E" name="Beneficiario_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>4446F047-BB06-EAB8-7A25-1D2E164E2E8B</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63C39A78-99EA-E964-0981-D203A9776A5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E184E2A-CD45-89CA-7A04-8A788995FE57" name="Beneficiario_Contrato_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:02:19 UTC</createdTime>
+<generatorID>E4F3F934-64A2-7A0D-CEEC-7A45005CCF70</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A6F2CD9-41F2-921E-21B1-FA33D3D14BAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C86A2A01-7104-9EAD-1A2A-4E179324731C" name="Beneficiario_Cliente_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 18:04:17 UTC</createdTime>
+<generatorID>CC41F6B8-A632-DE2D-2F0B-D11E14956414</generatorID>
+<ownerDesignName>Modelagem2-SeguradoraCliente</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8924597-E035-BE87-D1DB-C473EDC5DB87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

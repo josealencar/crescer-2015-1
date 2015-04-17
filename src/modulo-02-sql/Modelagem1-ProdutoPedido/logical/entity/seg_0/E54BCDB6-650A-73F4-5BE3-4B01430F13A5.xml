@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E54BCDB6-650A-73F4-5BE3-4B01430F13A5" name="Item">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:03:38 UTC</createdTime>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<engineerTo>
+<item key="15CF142F-2DDD-D3EC-1635-F76E1BC7DBD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDItem" id="90C3370E-3CA7-3D40-1912-34FAE14D01B5">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:03:46 UTC</createdTime>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<engineerTo>
+<item key="15CF142F-2DDD-D3EC-1635-F76E1BC7DBD8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Quantidade" id="FA44D61C-925E-E98E-9EF9-C614F59AE62E">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:04:53 UTC</createdTime>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<engineerTo>
+<item key="15CF142F-2DDD-D3EC-1635-F76E1BC7DBD8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+</Attribute>
+<Attribute name="Valor_item" id="F65E239F-71E8-B084-ECF8-CC6539B69535">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:05:17 UTC</createdTime>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<engineerTo>
+<item key="15CF142F-2DDD-D3EC-1635-F76E1BC7DBD8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="IDProduto" id="06E70CD8-6527-3AF1-95AB-23C1A27EC191">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:09:13 UTC</createdTime>
+<generatorID>CC1579C1-7D31-F4C7-33EA-87A59453761D</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<engineerTo>
+<item key="15CF142F-2DDD-D3EC-1635-F76E1BC7DBD8" value="true"/>
+</engineerTo>
+<referedAttribute>549F6F8C-3DE0-CC66-C3F1-79A9D9EB277D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDPedido" id="61AA4871-F14E-DB87-A909-587D91B02F80">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:10:28 UTC</createdTime>
+<generatorID>38BB1C36-4960-07BA-ED5F-1489F6269128</generatorID>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<engineerTo>
+<item key="15CF142F-2DDD-D3EC-1635-F76E1BC7DBD8" value="true"/>
+</engineerTo>
+<referedAttribute>480B87FC-FAE6-F3D9-8574-C6E02711E519</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A9BBE6F3-AD65-4CA5-7AA4-EEAA7C3FFB44" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-17 17:04:00 UTC</createdTime>
+<ownerDesignName>Modelagem1-ProdutoPedido</ownerDesignName>
+<engineerTo>
+<item key="15CF142F-2DDD-D3EC-1635-F76E1BC7DBD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>90C3370E-3CA7-3D40-1912-34FAE14D01B5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
