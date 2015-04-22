@@ -75,7 +75,7 @@ Where convert(datetime, DataAdmissao, 103) between
 	convert(datetime, '20/01/1982', 103);
 
 -- Exercício 4
-Select TOP 1 count(Cargo) as Funcionarios, Cargo
+Select TOP 1 WITH TIES Cargo,  count(Cargo) as Funcionarios
 From Empregado
 Group By Cargo
 Order By Funcionarios DESC;
@@ -103,7 +103,7 @@ Group By UF, Nome
 Having COUNT(Nome) > 1;
 
 -- Exercício 9
-Select MAX(IDAssociado)+1 as ProximoRegistro
+Select ISNULL(MAX(IDAssociado), 0) + 1 as ProximoRegistro
 From Associado;
 
 -- Exercício 10
