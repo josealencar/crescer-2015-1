@@ -140,16 +140,20 @@ SET @Nome = (Select Nome From CidadeTeste Where IDCidade = @ID);
 	End;
 SET @ID = @ID + 1;
 END;
+-- Resposta do professor
+Update CidadeTeste
+Set Nome = '*' + Nome
+Where Nome IN (Select Nome From CidadeTeste Group By Nome, UF Having COUNT(1) > 1);
 
 -- Exercício 12
-Select Nome, Case Sexo When 'F' Then 'Feminino' When 'M' then 'Masculino' End Genero
+Select Nome, Case Sexo When 'F' Then 'Feminino' When 'M' Then 'Masculino' Else 'Outro' End Genero
 From Associado;
 
 -- Exercício 13
 Select NomeEmpregado, Salario,
-	Case When Salario < 1164 Then '0%'
-		 When Salario < 2326 Then '15%'
-		 Else '27,5%'
+	Case When Salario <= 1164 Then 0
+		 When Salario <= 2326 Then (Salario*0.15)
+		 Else (Salario*0.275)
 		 End PercentualDesconto
 From Empregado;
 
@@ -174,6 +178,10 @@ SET @Nome14 = (Select Nome From CidadeTeste Where IDCidade = @ID14);
 	End;
 SET @ID14 = @ID14 + 1;
 END;
+-- Resposta do professor
+Delete
+From Cidade
+Where IDCidade IN (Select MAX(IDCidade) From Cidade Group By Nome, UF Having COUNT(1) > 1);
 
 -- Exercício 15
 IF OBJECT_ID('TGR_InserirDuplicados','TR') IS NOT NULL
@@ -205,3 +213,5 @@ Values(111, 'Taquara','RS'); -- Cancelou a inserção
 
 Insert into Cidade(IDCidade, Nome, UF)
 Values(111, 'Alegrete','RS');
+-- Resposta do professor
+Alter table Cidade add Constraint UK_Cidade_NomeUF Unique(Nome, UF);
