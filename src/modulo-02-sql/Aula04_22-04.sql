@@ -60,8 +60,8 @@ From Empregado
 	Departamento.IDDepartamento = Empregado.IDDepartamento;
 
 -- Exercício 02
-Select a.Nome,
-	c.Nome
+Select a.Nome as NomeAssociado,
+	c.Nome as NomeCidade
 From Associado a
 	LEFT JOIN Cidade c ON a.IDCidade = c.IDCidade;
 
