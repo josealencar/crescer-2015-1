@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="TrabSQL" id="21875FC0-4FC2-919F-FD60-EA085E8BAAF4" version="3.5">
+<createdBy>0158839</createdBy>
+<createdTime>2015-04-23 18:49:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>21875FC0-4FC2-919F-FD60-EA085E8BAAF4</designId>
+</OSDM_Design>
