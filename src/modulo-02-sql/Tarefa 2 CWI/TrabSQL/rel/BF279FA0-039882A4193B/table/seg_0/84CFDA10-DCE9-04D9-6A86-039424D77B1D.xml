@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84CFDA10-DCE9-04D9-6A86-039424D77B1D" name="Usuario">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 16:27:41 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDUsuario" id="9FACBD37-70A4-CB3B-3573-D27AA6A82C63">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 16:30:46 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Login" id="38B33F85-73B9-5F77-8844-5BA0C031F1EA">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 16:30:46 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Senha" id="D6C45DE4-E600-49C4-7AEB-43390D70B9AC">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 16:30:46 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="589D0924-9002-73C4-E9D9-99B683ADB09C">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 16:41:48 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8D2DE9C-A824-8C70-9134-7EEECEEB5C88" name="Usuario_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 16:30:46 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FACBD37-70A4-CB3B-3573-D27AA6A82C63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D63E771-3F97-E30A-D216-8258139CBDE8" name="Login__UN">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 16:31:30 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38B33F85-73B9-5F77-8844-5BA0C031F1EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

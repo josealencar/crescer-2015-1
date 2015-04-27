@@ -58,7 +58,7 @@
 <colUsage columnID="C524BB34-AFEC-0F17-E0CB-07A25C1D8CF9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E28C1B6C-7239-861A-472C-B638C34CB6F9" name="FK_ASS_14">
+<ind_PK_UK id="E28C1B6C-7239-861A-472C-B638C34CB6F9" name="FK_IDOpcional">
 <createdBy>José</createdBy>
 <createdTime>2015-04-27 08:18:44 UTC</createdTime>
 <generatorID>87C6E5A6-7FDB-136B-5630-4BD635393945</generatorID>
@@ -69,7 +69,7 @@
 <colUsage columnID="7EF35C4C-AD57-3BF4-7724-88652EB06D3B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5C28CF6E-174D-EA66-3C19-75E77BB63FE8" name="FK_ASS_15">
+<ind_PK_UK id="5C28CF6E-174D-EA66-3C19-75E77BB63FE8" name="FK_IDVeiculo">
 <createdBy>José</createdBy>
 <createdTime>2015-04-27 08:18:44 UTC</createdTime>
 <generatorID>87C6E5A6-7FDB-136B-5630-4BD635393945</generatorID>
