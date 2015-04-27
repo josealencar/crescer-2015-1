@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="A14D4FE2-BD23-8EE9-5646-2AC052146E2E" name="Cidade" seqName="seg_0"/>
+   <object objectType="Table" objectID="28717077-ACB2-FBC6-4005-65A9E1E33100" name="Cliente" seqName="seg_0"/>
+   <object objectType="Table" objectID="E0020686-7D10-B432-ED9C-ACD8EC675545" name="Condutor" seqName="seg_0"/>
+   <object objectType="Table" objectID="5F841CC9-7BBB-414E-BB41-AF3F9AB06BCE" name="Contato" seqName="seg_0"/>
+   <object objectType="Table" objectID="94EF5C32-9648-2286-8472-B977E1CF6687" name="Contrato" seqName="seg_0"/>
+   <object objectType="Table" objectID="420CE244-06A5-6434-92EA-F9DF68268D07" name="Endereco" seqName="seg_0"/>
+   <object objectType="Table" objectID="505C33E7-73AE-DF18-EAA9-E49F615F32C1" name="Fabricante" seqName="seg_0"/>
+   <object objectType="Table" objectID="256D9789-0587-F2A5-1499-666C542E6629" name="Modelo" seqName="seg_0"/>
+   <object objectType="Table" objectID="26E8D87D-2559-5DF1-3B62-A175004339AC" name="Opcional" seqName="seg_0"/>
+   <object objectType="Table" objectID="F8A5417F-F8EB-8907-8789-8DE1D7A473E0" name="PessoaFisica" seqName="seg_0"/>
+   <object objectType="Table" objectID="7A0D790E-32F4-ECCC-4DCA-0CAA4E77936E" name="PessoaJuridica" seqName="seg_0"/>
+   <object objectType="Table" objectID="95B89989-0265-7D78-BB62-D514527441B1" name="Plano" seqName="seg_0"/>
+   <object objectType="Table" objectID="1BCAED9B-6BB6-B7C5-DA3D-92162EE9A415" name="Tipo" seqName="seg_0"/>
+   <object objectType="Table" objectID="1CD236B2-72E0-FBB8-BB86-4175BC163C3A" name="Veiculo" seqName="seg_0"/>
+   <object objectType="Table" objectID="4D48744F-5D73-D919-F9BA-6356525CF608" name="VeiculoOpcional" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="029D11A3-F21D-CFC8-27A0-9F4C2DA72812" name="Condutor_PessoaFisica_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="DDE6CC5C-061B-24CC-2A04-49874692351E" name="Contato_Cliente_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5FB2C9D0-E73F-C846-DA3C-584A934E8893" name="Contrato_Cliente_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="45C44EB0-7042-1B5C-0B17-CB7AFA26744C" name="Contrato_Condutor_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0DEFA1FD-95E4-C61D-E132-D728322747D8" name="Contrato_Plano_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F03B455D-6FB9-8C0E-E543-FDB947463E04" name="Contrato_Veiculo_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="05FD6239-B3F1-102E-2B77-04935EB05A35" name="Endereco_Cidade_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="DFE48D83-4A57-7705-1645-DAC321E9D900" name="Endereco_Cliente_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F9AC7398-CCF2-7F0A-5870-0AE15AED748A" name="FK_ASS_14" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="DB31DACF-7945-D6E4-F714-4CFAE5C12B2F" name="FK_ASS_15" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B6F8881A-7227-E136-6D9D-ED1D1B4498F3" name="Modelo_Fabricante_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="19DFEFAE-D654-CB3F-14C7-549E5BF25A45" name="Modelo_Tipo_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="266B653C-4817-1A60-9F0E-BFFE7A50F086" name="PessoaFisica_Cliente_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="108A96B3-0C40-162F-321E-69F0C6F767C8" name="PessoaJuridica_Cliente_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="50D083EB-485E-CB08-85B7-63970507B1CC" name="Veiculo_Modelo_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

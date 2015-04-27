@@ -1,2 +1,31 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.logical.LogicalDesign/>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="92E51A7D-FA3F-3E74-5B3D-CEF56F96F820" name="Cidade" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3BC0FA9D-11B2-6745-D45C-7F699A125BE5" name="Cliente" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6D3F1823-0E23-7561-E00A-74C1F55D46ED" name="Condutor" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BF0DF3DF-3551-E41D-F35A-E8C9C876A445" name="Contato" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F4093ED6-1E5A-6F25-852B-5B67212F808C" name="Contrato" seqName="seg_0"/>
+   <object objectType="Entity" objectID="DC8F89B5-5FB0-6F33-F2DF-005AD6CA02FA" name="Endereco" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6D54CC73-FBBE-B3D0-DEBD-33DA0563A6FA" name="Fabricante" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D3F01F50-AE61-D027-957D-3B28FCD2979D" name="Modelo" seqName="seg_0"/>
+   <object objectType="Entity" objectID="DF8C5FE8-4618-BE3C-01B6-87FE0BEB3919" name="Opcional" seqName="seg_0"/>
+   <object objectType="Entity" objectID="33B9B8FB-3F10-1BB4-8B58-8FAF1BA4EC75" name="PessoaFisica" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3A6DECE2-D4D7-75E4-A3AF-02F45014E827" name="PessoaJuridica" seqName="seg_0"/>
+   <object objectType="Entity" objectID="176903E3-C426-8DC1-DE00-2DAFF2D9ECD1" name="Plano" seqName="seg_0"/>
+   <object objectType="Entity" objectID="30C46266-A660-A562-7B69-895258397169" name="Tipo" seqName="seg_0"/>
+   <object objectType="Entity" objectID="0B806B19-5F8F-F7B5-7A79-CDDB2D63DA8C" name="Veiculo" seqName="seg_0"/>
+   <object objectType="Relation" objectID="501B0FC6-D499-A066-AC29-7DF799916137" name="FK_Condutor_PessoaFisica" seqName="seg_0"/>
+   <object objectType="Relation" objectID="89696D09-4A76-36C7-7675-DD66140CFEA0" name="FK_Contrato_Cliente" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4827EF4B-38B7-110F-2617-0186B1A542E5" name="FK_Contrato_Condutor" seqName="seg_0"/>
+   <object objectType="Relation" objectID="08B794B4-EEC6-FFA8-188C-0B6CC516F3D7" name="FK_Contrato_Plano" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A41DFB17-E672-9B8C-6F80-FF383277C093" name="FK_Contrato_Veiculo" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A636CE59-40FE-3618-D43C-F359588A8048" name="FK_Endereco_Cidade" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A0EE2280-0BF8-8BBB-1196-0699C3C3B7CE" name="FK_Endereco_Cliente" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6249F05C-4AAD-2C73-3C0C-B98BFE113A63" name="FK_Endereco_Clientev1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8009D439-240A-5E71-2CBA-2795E0495B07" name="FK_Modelo_Fabricante" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2177E451-6D72-6488-83E5-8B56A687992C" name="FK_Modelo_Tipo" seqName="seg_0"/>
+   <object objectType="Relation" objectID="68A46182-A011-4F0A-A91F-95C5DD25D75A" name="FK_PessoaFisica_Cliente" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9CF5FFE8-1C72-C550-7A69-DBF17B03BB10" name="FK_PessoaJuridica_Cliente" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F6B07838-095F-BC80-D229-15C69F4F3531" name="FK_Veiculo_Modelo" seqName="seg_0"/>
+   <object objectType="Relation" objectID="87C6E5A6-7FDB-136B-5630-4BD635393945" name="FK_Veiculo_Opcional" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

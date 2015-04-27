@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D3F01F50-AE61-D027-957D-3B28FCD2979D" name="Modelo">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:02:55 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDModelo" id="D7575E56-2B8D-77BE-F202-3669CFE708A2">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:03:07 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Nome" id="C17F2545-5931-94AA-5559-8DE5CC8E5DA4">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:03:26 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="Motorizacao" id="E508228C-1152-BF0B-C151-B67B39230C79">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:04:01 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+</Attribute>
+<Attribute name="NumeroPortas" id="07CB68AA-1E0B-1D4D-E235-21D5128D03DA">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:04:32 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDTipo" id="3E965532-1C30-815B-BFEF-E3AA5BE41353">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:08:45 UTC</createdTime>
+<generatorID>2177E451-6D72-6488-83E5-8B56A687992C</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<referedAttribute>80B0DFF9-713E-781A-0C99-A9A2251FB30F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDFabricante" id="C319D351-4778-CFCA-3AF2-978B91476EDA">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:09:38 UTC</createdTime>
+<generatorID>8009D439-240A-5E71-2CBA-2795E0495B07</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<referedAttribute>4ED4DDA4-D846-8A34-C3D7-F0E242F943B2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1607BC20-755E-6378-197C-62F4C81E1ACD" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:03:25 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D7575E56-2B8D-77BE-F202-3669CFE708A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

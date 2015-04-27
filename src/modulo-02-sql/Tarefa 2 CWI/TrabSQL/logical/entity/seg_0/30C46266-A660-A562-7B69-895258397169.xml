@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="30C46266-A660-A562-7B69-895258397169" name="Tipo">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:06:38 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDTipo" id="80B0DFF9-713E-781A-0C99-A9A2251FB30F">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:06:44 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Descricao" id="712410CF-31DA-C627-A6B9-F6935A5F5B1F">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:06:54 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="69DA1BC8-4D1D-58FE-2BB4-3277DD52DBF7" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:06:53 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>80B0DFF9-713E-781A-0C99-A9A2251FB30F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D7EF3AA2-0921-61A5-D40B-5B6FB2923E06" name="UK_Tipo">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:07:18 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<newElementsIDs>712410CF-31DA-C627-A6B9-F6935A5F5B1F</newElementsIDs>
+<usedAttributes>
+<attributeRef>712410CF-31DA-C627-A6B9-F6935A5F5B1F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

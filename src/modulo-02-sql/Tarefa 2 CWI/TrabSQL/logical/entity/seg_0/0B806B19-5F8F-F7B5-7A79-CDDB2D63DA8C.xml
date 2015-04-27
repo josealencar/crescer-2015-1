@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0B806B19-5F8F-F7B5-7A79-CDDB2D63DA8C" name="Veiculo">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:56:44 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDVeiculo" id="E297160B-750A-7E4A-9C1E-11098D05DDBC">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:56:52 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Placa" id="BE210CBA-2B37-5FAE-457F-295ADEB1796A">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:57:05 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+</Attribute>
+<Attribute name="Chassi" id="BC720FC3-7A09-5F3C-2DF5-4C999C244257">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:57:30 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+</Attribute>
+<Attribute name="Ano" id="F3EC256C-D023-FCE8-6A71-D6C0564D062D">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:57:48 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="Quilometragem" id="172CE959-7309-2D8D-0C41-C043C71F0AEE">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:58:13 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="Cor" id="35E6E728-E893-CF1A-D955-9FBC571B8188">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:58:42 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+</Attribute>
+<Attribute name="NumeroApoliceSeguro" id="8877E3B1-47A7-319F-3A83-1FE07FCA8610">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:59:00 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="Combustivel" id="41857313-ABAA-B50D-073A-B649A1999CA7">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:59:33 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="MediaConsumo" id="3D5A66A3-9BF2-1BEE-72BA-28F5EF4089D6">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:59:54 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+</Attribute>
+<Attribute name="Valor" id="9B56F8D2-F3BC-181F-D94A-771E004203FC">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:00:27 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="IDModelo" id="CD8422C0-A645-6994-8ABC-F89C0E4909DC">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:10:04 UTC</createdTime>
+<generatorID>F6B07838-095F-BC80-D229-15C69F4F3531</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<referedAttribute>D7575E56-2B8D-77BE-F202-3669CFE708A2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="18117F6C-B6A5-D471-F8D5-F769B5001E97" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:57:03 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E297160B-750A-7E4A-9C1E-11098D05DDBC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="77DF1275-82AB-08F8-BC31-502617F76652" name="UK_Placa">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:00:43 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<newElementsIDs>BE210CBA-2B37-5FAE-457F-295ADEB1796A</newElementsIDs>
+<usedAttributes>
+<attributeRef>BE210CBA-2B37-5FAE-457F-295ADEB1796A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="957EF420-2CF7-D0EC-AA35-588E8D961D46" name="UK_Chassi">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:01:00 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<newElementsIDs>BC720FC3-7A09-5F3C-2DF5-4C999C244257</newElementsIDs>
+<usedAttributes>
+<attributeRef>BC720FC3-7A09-5F3C-2DF5-4C999C244257</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

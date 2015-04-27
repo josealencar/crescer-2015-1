@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF8C5FE8-4618-BE3C-01B6-87FE0BEB3919" name="Opcional">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:01:46 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDOpicional" id="C33B918A-3732-7D22-F835-B602B19D93EF">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:01:56 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Descricao" id="168B0AA6-A325-6EE4-C58E-303998C067BE">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:02:14 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FE9D0CCE-120E-3E6A-7389-F62E1A16F7CC" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:02:13 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C33B918A-3732-7D22-F835-B602B19D93EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

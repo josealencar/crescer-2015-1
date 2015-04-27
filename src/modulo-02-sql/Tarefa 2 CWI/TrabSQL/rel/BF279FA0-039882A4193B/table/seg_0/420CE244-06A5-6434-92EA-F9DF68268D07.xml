@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="420CE244-06A5-6434-92EA-F9DF68268D07" name="Endereco">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>DC8F89B5-5FB0-6F33-F2DF-005AD6CA02FA</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDEndereco" id="DA59E689-5907-46BC-4A19-81848BB8190D">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>0C55A172-7EC6-C7D1-4A52-7549947A0C84</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco" id="BAE0E8C5-EE8B-AC80-13B9-8F669DF13FF0">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>6FBFF555-D14B-516D-7478-2180F6722630</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bairro" id="70DF65D5-24A1-D289-A4F0-C4192A6309EB">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>9ABFC674-920C-68E9-4DBF-80C0B6037464</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="0EDF4AEE-A39A-065E-7EF1-8A666FC853C7">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>74B507BA-6093-6574-9C6C-36B751D37429</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDCliente" id="8E6D395A-B1F9-BE75-C556-0CD91B9B1FC6">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>37EEB3C5-DDF7-759C-ED33-EA0D5A26D90C</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>C9B8F64E-6F5F-D142-F14A-F1B371F79AC8</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFE48D83-4A57-7705-1645-DAC321E9D900" referredColumn="C9B8F64E-6F5F-D142-F14A-F1B371F79AC8"/>
+</associations>
+</Column>
+<Column name="IDCidade" id="0A3DFDE8-5BC8-5389-6783-88B712E1CE32">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>787C696F-F611-0488-DC1E-8F8CA6AE13E0</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>CA3B8AD2-A7D0-403D-53EA-398775AF39E6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05FD6239-B3F1-102E-2B77-04935EB05A35" referredColumn="CA3B8AD2-A7D0-403D-53EA-398775AF39E6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D47FEFC9-CBFB-7ADD-D363-96EE8B4E598B" name="Endereco_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>3F186FC8-475F-C0B0-B794-764EC4744A82</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA59E689-5907-46BC-4A19-81848BB8190D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D88559A-AB48-49BA-3077-F18AAFDA64E6" name="Endereco_Cidade_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>A636CE59-40FE-3618-D43C-F359588A8048</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A3DFDE8-5BC8-5389-6783-88B712E1CE32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D99DFA9-56CE-D058-C24D-BA8E42B37DC3" name="Endereco_Cliente_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>6249F05C-4AAD-2C73-3C0C-B98BFE113A63</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E6D395A-B1F9-BE75-C556-0CD91B9B1FC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

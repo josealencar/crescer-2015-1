@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="33B9B8FB-3F10-1BB4-8B58-8FAF1BA4EC75" name="PessoaFisica">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:47:46 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDPessoaFisica" id="CD225335-69DC-4DAB-7B9A-71B3D964C118">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:47:53 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="DataNascimento" id="ADD0EFDF-A0FA-1645-22A6-374B9CD9D636">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:48:10 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="RG" id="F4524149-F6E8-5E6F-CD29-9FB3B77D9014">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:48:29 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+</Attribute>
+<Attribute name="CPF" id="ED31144C-9535-260D-2F98-91D57EAFE1F2">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:48:51 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+</Attribute>
+<Attribute name="NomePai" id="D5076DD6-148D-616B-B951-CCEB56437C9B">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:49:06 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="NomeMae" id="556CA182-352E-8B81-1358-0A31D3A19B64">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:49:23 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="IDCliente" id="8AD78B33-4BDF-30FA-C194-8D72405DB678">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:12:20 UTC</createdTime>
+<generatorID>68A46182-A011-4F0A-A91F-95C5DD25D75A</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<referedAttribute>952581EB-9FE9-E701-A77D-60B0DA4CEFED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="46058890-A0AE-3637-EEA2-9625EDCBBF73" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:48:07 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CD225335-69DC-4DAB-7B9A-71B3D964C118</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D7092D1B-947E-9CE8-5FE2-48AF19157B0E" name="UK_CPF">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:49:49 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<newElementsIDs>ED31144C-9535-260D-2F98-91D57EAFE1F2</newElementsIDs>
+<usedAttributes>
+<attributeRef>ED31144C-9535-260D-2F98-91D57EAFE1F2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

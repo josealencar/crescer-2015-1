@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="176903E3-C426-8DC1-DE00-2DAFF2D9ECD1" name="Plano">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:54:08 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDPlano" id="4CD6CFDF-12D0-886B-2FF5-A5D6BA3821EC">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:54:25 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Descricao" id="0B672349-C1E6-714B-360A-062D541656B4">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:54:34 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="ValorDiaria" id="A9F04221-4002-B3AD-C7AD-C06D0AF7EF31">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:54:57 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="02816C8F-232C-95A9-5F94-56597AB78A86" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:54:33 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4CD6CFDF-12D0-886B-2FF5-A5D6BA3821EC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="059CE450-0E0A-D3A6-4FFA-109B5393ABAA" name="UK_Plano">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:55:58 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<newElementsIDs>0B672349-C1E6-714B-360A-062D541656B4</newElementsIDs>
+<usedAttributes>
+<attributeRef>0B672349-C1E6-714B-360A-062D541656B4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

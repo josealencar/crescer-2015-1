@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Condutor_PessoaFisica" directorySegmentName="seg_0" id="501B0FC6-D499-A066-AC29-7DF799916137">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:12:52 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<sourcePk>46058890-A0AE-3637-EEA2-9625EDCBBF73</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>33B9B8FB-3F10-1BB4-8B58-8FAF1BA4EC75</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6D3F1823-0E23-7561-E00A-74C1F55D46ED</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

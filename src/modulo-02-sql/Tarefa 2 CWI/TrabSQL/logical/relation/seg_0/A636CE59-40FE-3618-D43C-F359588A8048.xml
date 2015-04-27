@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Endereco_Cidade" directorySegmentName="seg_0" id="A636CE59-40FE-3618-D43C-F359588A8048">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:14:31 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<sourcePk>E5C67F69-A906-AB57-B2F5-03B12FD9F56B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>92E51A7D-FA3F-3E74-5B3D-CEF56F96F820</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DC8F89B5-5FB0-6F33-F2DF-005AD6CA02FA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

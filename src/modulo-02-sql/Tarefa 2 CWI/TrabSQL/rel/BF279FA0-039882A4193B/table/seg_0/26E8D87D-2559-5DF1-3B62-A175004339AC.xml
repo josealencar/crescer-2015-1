@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26E8D87D-2559-5DF1-3B62-A175004339AC" name="Opcional">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>DF8C5FE8-4618-BE3C-01B6-87FE0BEB3919</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDOpicional" id="1AD01F4A-306A-9E26-EE0C-BC409D87D39A">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>C33B918A-3732-7D22-F835-B602B19D93EF</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descricao" id="8B748E10-D9C8-AE19-F753-60D0C1F2D5A8">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>168B0AA6-A325-6EE4-C58E-303998C067BE</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E8AAB00-46DC-6AAB-CA01-9446BB38D83F" name="Opcional_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>FE9D0CCE-120E-3E6A-7389-F62E1A16F7CC</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AD01F4A-306A-9E26-EE0C-BC409D87D39A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

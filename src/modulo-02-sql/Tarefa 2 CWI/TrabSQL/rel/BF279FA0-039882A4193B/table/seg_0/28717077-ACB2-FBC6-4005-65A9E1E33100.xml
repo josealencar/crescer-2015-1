@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28717077-ACB2-FBC6-4005-65A9E1E33100" name="Cliente">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>3BC0FA9D-11B2-6745-D45C-7F699A125BE5</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDCliente" id="C9B8F64E-6F5F-D142-F14A-F1B371F79AC8">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>952581EB-9FE9-E701-A77D-60B0DA4CEFED</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="7D9978B8-7FD9-7F1F-E06B-B20516FAA996">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>70B689C6-D774-9D7D-0781-43485F6B27D9</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoCliente" id="9D634A98-B323-84D8-E6B5-969057ED8099">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>65E783BD-F887-2796-1CD8-1B6179719F99</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Situacao" id="2EA01A54-6EB4-7902-5743-2D19AA759647">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>D849AA34-49A5-978B-A332-5B900074F14A</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5A841E9-29BC-5F66-C049-59D19C5C0B40" name="Cliente_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>290911D1-C76A-5F7C-FAC3-A6B4C04B605B</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9B8F64E-6F5F-D142-F14A-F1B371F79AC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

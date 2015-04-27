@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PessoaJuridica_Cliente" directorySegmentName="seg_0" id="9CF5FFE8-1C72-C550-7A69-DBF17B03BB10">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:13:17 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<sourcePk>290911D1-C76A-5F7C-FAC3-A6B4C04B605B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3BC0FA9D-11B2-6745-D45C-7F699A125BE5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3A6DECE2-D4D7-75E4-A3AF-02F45014E827</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

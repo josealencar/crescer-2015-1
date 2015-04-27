@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1CD236B2-72E0-FBB8-BB86-4175BC163C3A" name="Veiculo">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>0B806B19-5F8F-F7B5-7A79-CDDB2D63DA8C</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDVeiculo" id="41A31298-D0C4-DDDD-31B7-B6FCA6D918B7">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>E297160B-750A-7E4A-9C1E-11098D05DDBC</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Placa" id="F3CAB5C5-1CE1-7F13-F6AE-9AFAF736CBED">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>BE210CBA-2B37-5FAE-457F-295ADEB1796A</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Chassi" id="2360B510-B50A-E5FE-8F9F-D23BF17FF717">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>BC720FC3-7A09-5F3C-2DF5-4C999C244257</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ano" id="22CFB773-8684-842B-A458-3F323341657F">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>F3EC256C-D023-FCE8-6A71-D6C0564D062D</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Quilometragem" id="A22DE0BE-E998-AD67-8C69-7CEBA70DBF79">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>172CE959-7309-2D8D-0C41-C043C71F0AEE</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cor" id="11108BEF-A8CE-CA0C-53F1-7BE8D4E7AACC">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>35E6E728-E893-CF1A-D955-9FBC571B8188</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumeroApoliceSeguro" id="7B791BC9-CE1F-EF8D-A3AD-C7D567895F4C">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>8877E3B1-47A7-319F-3A83-1FE07FCA8610</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Combustivel" id="807896FB-A497-D7AE-ACDC-89FC844F75CF">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>41857313-ABAA-B50D-073A-B649A1999CA7</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MediaConsumo" id="5F61C7DC-8E14-C942-6887-D11CF594F405">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>3D5A66A3-9BF2-1BEE-72BA-28F5EF4089D6</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor" id="C987CB95-AA8B-5F7A-7A50-719B0232CF21">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>9B56F8D2-F3BC-181F-D94A-771E004203FC</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDModelo" id="1AD95C2B-5F76-1A30-D368-6995C78EC383">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>CD8422C0-A645-6994-8ABC-F89C0E4909DC</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D1B9FABA-1EE5-5456-7E1A-C2B826AA3D38</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50D083EB-485E-CB08-85B7-63970507B1CC" referredColumn="D1B9FABA-1EE5-5456-7E1A-C2B826AA3D38"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62E538B2-DC44-4E7F-98C8-60EF37FFC84B" name="Veiculo_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>18117F6C-B6A5-D471-F8D5-F769B5001E97</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41A31298-D0C4-DDDD-31B7-B6FCA6D918B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79949E52-5623-44A8-36C3-1DD224006702" name="Veiculo__UN">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>77DF1275-82AB-08F8-BC31-502617F76652</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3CAB5C5-1CE1-7F13-F6AE-9AFAF736CBED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F15BDD87-C048-9670-2AC0-9E615F533838" name="Veiculo__UNv1">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>957EF420-2CF7-D0EC-AA35-588E8D961D46</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2360B510-B50A-E5FE-8F9F-D23BF17FF717"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC7600F1-CBB2-B2F3-5AC2-4288066569B2" name="Veiculo_Modelo_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>F6B07838-095F-BC80-D229-15C69F4F3531</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AD95C2B-5F76-1A30-D368-6995C78EC383"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="05FD6239-B3F1-102E-2B77-04935EB05A35" name="Endereco_Cidade_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>A636CE59-40FE-3618-D43C-F359588A8048</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<containerWithKeyObject>420CE244-06A5-6434-92EA-F9DF68268D07</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>4D88559A-AB48-49BA-3077-F18AAFDA64E6</localFKIndex>
+<keyObject>BA826DD7-028E-F189-8919-922F69F92330</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

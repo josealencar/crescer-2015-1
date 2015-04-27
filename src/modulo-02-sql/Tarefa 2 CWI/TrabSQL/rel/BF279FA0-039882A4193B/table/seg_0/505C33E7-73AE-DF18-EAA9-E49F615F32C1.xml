@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="505C33E7-73AE-DF18-EAA9-E49F615F32C1" name="Fabricante">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>6D54CC73-FBBE-B3D0-DEBD-33DA0563A6FA</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDFabricante" id="590E99C9-1805-7ADF-0AB8-F08F3C2C0510">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>4ED4DDA4-D846-8A34-C3D7-F0E242F943B2</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="899E29F0-BD8C-3850-1D5A-1950D52FF630">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>67D80757-68AD-3997-69C2-4AD9F85D40B1</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1F2A436-A169-8B03-DBD7-45CD17A42602" name="Fabricante_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>C1BAD96E-4860-9FC9-3B6D-7992B112629A</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="590E99C9-1805-7ADF-0AB8-F08F3C2C0510"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BFA3EEA-2747-0B1E-34D8-67167A72553E" name="Fabricante__UN">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>E99D4973-1337-339A-543C-7CD1A6A4B426</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="899E29F0-BD8C-3850-1D5A-1950D52FF630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

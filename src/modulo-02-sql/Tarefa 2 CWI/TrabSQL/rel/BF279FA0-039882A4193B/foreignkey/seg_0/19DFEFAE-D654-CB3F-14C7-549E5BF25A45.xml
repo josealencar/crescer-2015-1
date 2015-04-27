@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="19DFEFAE-D654-CB3F-14C7-549E5BF25A45" name="Modelo_Tipo_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>2177E451-6D72-6488-83E5-8B56A687992C</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<containerWithKeyObject>256D9789-0587-F2A5-1499-666C542E6629</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>C086AA56-43F3-D8D6-9075-85ABFEC41A54</localFKIndex>
+<keyObject>1489EC04-0836-1071-0C07-699CF21461EB</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

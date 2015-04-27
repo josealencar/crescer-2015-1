@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6D54CC73-FBBE-B3D0-DEBD-33DA0563A6FA" name="Fabricante">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:05:07 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDFabricante" id="4ED4DDA4-D846-8A34-C3D7-F0E242F943B2">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:05:19 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="Nome" id="67D80757-68AD-3997-69C2-4AD9F85D40B1">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:05:36 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C1BAD96E-4860-9FC9-3B6D-7992B112629A" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:05:34 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4ED4DDA4-D846-8A34-C3D7-F0E242F943B2</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E99D4973-1337-339A-543C-7CD1A6A4B426" name="UK_NomeFabricante">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:05:59 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<newElementsIDs>67D80757-68AD-3997-69C2-4AD9F85D40B1</newElementsIDs>
+<usedAttributes>
+<attributeRef>67D80757-68AD-3997-69C2-4AD9F85D40B1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Contrato_Condutor" directorySegmentName="seg_0" id="4827EF4B-38B7-110F-2617-0186B1A542E5">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:11:17 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<sourcePk>599E4747-0E3C-BCCD-8737-5177CC9D4DF6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6D3F1823-0E23-7561-E00A-74C1F55D46ED</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F4093ED6-1E5A-6F25-852B-5B67212F808C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

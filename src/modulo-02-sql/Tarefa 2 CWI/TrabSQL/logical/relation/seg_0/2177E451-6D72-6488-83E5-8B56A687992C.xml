@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Modelo_Tipo" directorySegmentName="seg_0" id="2177E451-6D72-6488-83E5-8B56A687992C">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:08:45 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<sourcePk>69DA1BC8-4D1D-58FE-2BB4-3277DD52DBF7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>30C46266-A660-A562-7B69-895258397169</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D3F01F50-AE61-D027-957D-3B28FCD2979D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

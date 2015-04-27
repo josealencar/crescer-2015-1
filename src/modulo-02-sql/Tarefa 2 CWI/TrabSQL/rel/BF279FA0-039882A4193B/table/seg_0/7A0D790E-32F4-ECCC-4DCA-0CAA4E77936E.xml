@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A0D790E-32F4-ECCC-4DCA-0CAA4E77936E" name="PessoaJuridica">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>3A6DECE2-D4D7-75E4-A3AF-02F45014E827</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPessoaJuridica" id="1D708A37-DA11-593F-8C78-C90844AC0D2B">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>9B440FEE-F51D-95B9-B5D8-BD47A925A871</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RazaoSocial" id="7E912503-5A3D-E9B6-D1F3-6371465549A5">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>1A60DCAE-5D8C-EF77-1006-A6C068A093F0</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNPJ" id="B02B7C49-E973-2FB6-BBE4-9DBA391678E7">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>36D31506-2DBC-05D2-E5DF-86C4FA510958</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDCliente" id="3F96A771-6808-2AB5-77AA-0E0EC8E27A99">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>921C8E6D-3823-D783-984A-8C6515F5FD4A</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>C9B8F64E-6F5F-D142-F14A-F1B371F79AC8</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="108A96B3-0C40-162F-321E-69F0C6F767C8" referredColumn="C9B8F64E-6F5F-D142-F14A-F1B371F79AC8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FEEC9BEC-348D-C2FA-F49A-2B066BC0DF28" name="PessoaJuridica_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>352DAEB8-7892-C115-A249-09123F38E3D4</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D708A37-DA11-593F-8C78-C90844AC0D2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7605CD4B-507B-0ACB-FFD7-2B9A2A2E8721" name="PessoaJuridica__UN">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>EEE901BA-7AD6-3DBE-A4AA-2AACD975A087</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B02B7C49-E973-2FB6-BBE4-9DBA391678E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="320B2486-8759-A274-1CD3-6C2EBDABC998" name="PessoaJuridica_Cliente_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>9CF5FFE8-1C72-C550-7A69-DBF17B03BB10</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F96A771-6808-2AB5-77AA-0E0EC8E27A99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

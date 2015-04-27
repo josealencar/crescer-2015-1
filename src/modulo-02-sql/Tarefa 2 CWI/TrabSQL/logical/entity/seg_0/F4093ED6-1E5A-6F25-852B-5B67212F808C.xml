@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4093ED6-1E5A-6F25-852B-5B67212F808C" name="Contrato">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:52:00 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDContrato" id="7DD88DFE-972F-C412-9342-CB06E911D257">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:52:07 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="InicioVigencia" id="A177458D-A2C5-30A4-C839-6C4F5D66B040">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:52:39 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="FinalVigencia" id="6C577BE9-7E88-41F3-3604-BA7FE5BA4370">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:52:50 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="Situacao" id="BEB475CA-2ED6-D2B8-B9C1-4CD7A65E2213">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:53:07 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="ValorTotal" id="51DA2E97-FE7C-1320-8EF3-265E1D40B466">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:53:23 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="IDVeiculo" id="95BDAFC9-40CA-F415-DF25-12FA9F23A692">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:10:52 UTC</createdTime>
+<generatorID>A41DFB17-E672-9B8C-6F80-FF383277C093</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<referedAttribute>E297160B-750A-7E4A-9C1E-11098D05DDBC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDCondutor" id="575DEEED-6A39-8A4E-7DF4-58BC28547700">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:11:17 UTC</createdTime>
+<generatorID>4827EF4B-38B7-110F-2617-0186B1A542E5</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<referedAttribute>8BC2EF4D-4D99-FF0F-3CA4-16F5F19EA5A9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDPlano" id="05CB133A-1475-B4F7-4DA6-254A202AB67A">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:11:37 UTC</createdTime>
+<generatorID>08B794B4-EEC6-FFA8-188C-0B6CC516F3D7</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<referedAttribute>4CD6CFDF-12D0-886B-2FF5-A5D6BA3821EC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="IDCliente" id="7AD23302-F807-9B72-0B3A-C64BE8319EE9">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:11:52 UTC</createdTime>
+<generatorID>89696D09-4A76-36C7-7675-DD66140CFEA0</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<referedAttribute>952581EB-9FE9-E701-A77D-60B0DA4CEFED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="86B0D097-9CCE-C0AE-CCE9-27AECAAD08FA" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:52:17 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7DD88DFE-972F-C412-9342-CB06E911D257</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

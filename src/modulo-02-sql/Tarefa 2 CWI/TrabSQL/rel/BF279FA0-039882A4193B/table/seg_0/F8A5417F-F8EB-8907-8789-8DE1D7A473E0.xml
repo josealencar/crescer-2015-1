@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8A5417F-F8EB-8907-8789-8DE1D7A473E0" name="PessoaFisica">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>33B9B8FB-3F10-1BB4-8B58-8FAF1BA4EC75</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPessoaFisica" id="B42E2E37-9724-DF45-7604-2737BEB78A86">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>CD225335-69DC-4DAB-7B9A-71B3D964C118</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DataNascimento" id="17CFEC52-2F95-3E26-9D0E-051346993A24">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>ADD0EFDF-A0FA-1645-22A6-374B9CD9D636</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RG" id="7168AD55-BDF6-6435-1736-A5F597EF9C81">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>F4524149-F6E8-5E6F-CD29-9FB3B77D9014</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF" id="499206DA-F6AC-5BEB-9F47-97BABB2FC3F2">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>ED31144C-9535-260D-2F98-91D57EAFE1F2</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NomePai" id="2B8A4333-5979-C0CD-04D9-226F3F40588D">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>D5076DD6-148D-616B-B951-CCEB56437C9B</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NomeMae" id="EFB3A25C-3562-CB07-2F68-58FDE7FCE771">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>556CA182-352E-8B81-1358-0A31D3A19B64</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDCliente" id="A0443C0E-F525-3108-232F-AD12C98F8BB8">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>8AD78B33-4BDF-30FA-C194-8D72405DB678</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>C9B8F64E-6F5F-D142-F14A-F1B371F79AC8</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="266B653C-4817-1A60-9F0E-BFFE7A50F086" referredColumn="C9B8F64E-6F5F-D142-F14A-F1B371F79AC8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D6E4928-F9D5-A545-84F7-96A8FE4FD05B" name="PessoaFisica_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>46058890-A0AE-3637-EEA2-9625EDCBBF73</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B42E2E37-9724-DF45-7604-2737BEB78A86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDA6219A-439D-7E01-62D8-ADC29E9701F7" name="PessoaFisica__UN">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>D7092D1B-947E-9CE8-5FE2-48AF19157B0E</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="499206DA-F6AC-5BEB-9F47-97BABB2FC3F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2066F5F6-41CA-79FF-DA6C-D2CFB55567EB" name="PessoaFisica_Cliente_FK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>68A46182-A011-4F0A-A91F-95C5DD25D75A</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0443C0E-F525-3108-232F-AD12C98F8BB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

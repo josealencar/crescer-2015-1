@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Veiculo_Opcional" directorySegmentName="seg_0" id="87C6E5A6-7FDB-136B-5630-4BD635393945">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:08:02 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DF8C5FE8-4618-BE3C-01B6-87FE0BEB3919</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0B806B19-5F8F-F7B5-7A79-CDDB2D63DA8C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

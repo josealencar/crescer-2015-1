@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D48744F-5D73-D919-F9BA-6356525CF608" name="VeiculoOpcional">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDOpicional" id="7EF35C4C-AD57-3BF4-7724-88652EB06D3B">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>1AD01F4A-306A-9E26-EE0C-BC409D87D39A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9AC7398-CCF2-7F0A-5870-0AE15AED748A" referredColumn="1AD01F4A-306A-9E26-EE0C-BC409D87D39A"/>
+</associations>
+</Column>
+<Column name="IDVeiculo" id="5CF8F01F-B3F2-3980-D78C-3AF366FC2E78">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>41A31298-D0C4-DDDD-31B7-B6FCA6D918B7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB31DACF-7945-D6E4-F714-4CFAE5C12B2F" referredColumn="41A31298-D0C4-DDDD-31B7-B6FCA6D918B7"/>
+</associations>
+</Column>
+<Column name="IDVeiculoOpcional" id="C524BB34-AFEC-0F17-E0CB-07A25C1D8CF9">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:28:22 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C2B7E8BA-1342-E23E-5E92-893BE62FF348" name="FK_Veiculo_Opcional_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EF35C4C-AD57-3BF4-7724-88652EB06D3B"/>
+<colUsage columnID="5CF8F01F-B3F2-3980-D78C-3AF366FC2E78"/>
+<colUsage columnID="C524BB34-AFEC-0F17-E0CB-07A25C1D8CF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E28C1B6C-7239-861A-472C-B638C34CB6F9" name="FK_ASS_14">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>87C6E5A6-7FDB-136B-5630-4BD635393945</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EF35C4C-AD57-3BF4-7724-88652EB06D3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C28CF6E-174D-EA66-3C19-75E77BB63FE8" name="FK_ASS_15">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:18:44 UTC</createdTime>
+<generatorID>87C6E5A6-7FDB-136B-5630-4BD635393945</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CF8F01F-B3F2-3980-D78C-3AF366FC2E78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

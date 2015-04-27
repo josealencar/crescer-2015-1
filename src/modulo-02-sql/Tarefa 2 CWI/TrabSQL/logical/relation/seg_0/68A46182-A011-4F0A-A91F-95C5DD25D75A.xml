@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PessoaFisica_Cliente" directorySegmentName="seg_0" id="68A46182-A011-4F0A-A91F-95C5DD25D75A">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:12:20 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<sourcePk>290911D1-C76A-5F7C-FAC3-A6B4C04B605B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3BC0FA9D-11B2-6745-D45C-7F699A125BE5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>33B9B8FB-3F10-1BB4-8B58-8FAF1BA4EC75</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

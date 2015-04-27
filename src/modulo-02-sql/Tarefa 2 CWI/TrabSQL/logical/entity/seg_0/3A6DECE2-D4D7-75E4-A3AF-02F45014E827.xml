@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A6DECE2-D4D7-75E4-A3AF-02F45014E827" name="PessoaJuridica">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:41:06 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDPessoaJuridica" id="9B440FEE-F51D-95B9-B5D8-BD47A925A871">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:41:17 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="RazaoSocial" id="1A60DCAE-5D8C-EF77-1006-A6C068A093F0">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:41:32 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="CNPJ" id="36D31506-2DBC-05D2-E5DF-86C4FA510958">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:41:55 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+</Attribute>
+<Attribute name="IDCliente" id="921C8E6D-3823-D783-984A-8C6515F5FD4A">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 08:13:17 UTC</createdTime>
+<generatorID>9CF5FFE8-1C72-C550-7A69-DBF17B03BB10</generatorID>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<referedAttribute>952581EB-9FE9-E701-A77D-60B0DA4CEFED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="352DAEB8-7892-C115-A249-09123F38E3D4" name="{entity} PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:41:29 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9B440FEE-F51D-95B9-B5D8-BD47A925A871</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EEE901BA-7AD6-3DBE-A4AA-2AACD975A087" name="UK_CNPJ">
+<createdBy>José</createdBy>
+<createdTime>2015-04-27 07:42:33 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<engineerTo>
+<item key="BF279FA0-D76C-746F-A023-039882A4193B" value="true"/>
+</engineerTo>
+<newElementsIDs>36D31506-2DBC-05D2-E5DF-86C4FA510958</newElementsIDs>
+<usedAttributes>
+<attributeRef>36D31506-2DBC-05D2-E5DF-86C4FA510958</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
