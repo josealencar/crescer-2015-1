@@ -2,6 +2,9 @@
 Select Distinct Situacao
 From Produto
 Order By Situacao ASC;
+-- Resposta Professor
+Select COUNT(DISTINCT Situacao) as Total_Valores
+From Produto;
 
 -- Exercício 02
 Select * From Cliente;
@@ -9,6 +12,10 @@ Select * From Cliente;
 Select IDCliente, Nome, RazaoSocial
 From Cliente
 Where Nome LIKE '%LTDA' OR RazaoSocial LIKE '%LTDA';
+-- Resposta Professor
+Select IDCliente, Nome, RazaoSocial
+From Cliente
+Where Nome LIKE '%LTDA%' OR RazaoSocial LIKE '%LTDA%';
 
 -- Exercício 03
 Select * from Produto;
@@ -24,6 +31,12 @@ Where NOT EXISTS(Select 1 From PedidoItem
 				AND EXISTS(Select 1 From Pedido
 							Where Pedido.IDPedido = PedidoItem.IDPedido))
 Order By Produto.IDProduto;
+-- Resposta Professor
+Select IDProduto, Nome
+From Produto
+Where NOT EXISTS (Select 1 From PedidoItem Where PedidoItem.IDProduto = Produto.IDProduto);
+
+Create Index IX_PedidoItem_Produto ON PedidoItem (IDProduto);
 
 -- Exercício 05
 Select TOP 1 WITH TIES UF as CidadeComMaisClientes,
@@ -36,6 +49,16 @@ From Cidade
 	INNER JOIN Cliente ON Cidade.IDCidade = Cliente.IDCidade
 Group By UF
 Order By COUNT(Cliente.IDCliente) DESC;
+-- Resposta do professor
+Create View vwEstados as
+	Select Cidade.UF, COUNT(Cliente.IDCliente) as ClientesPorUF
+	From Cidade
+		INNER JOIN Cliente ON Cliente.IDCidade = Cidade.IDCidade
+	Group By Cidade.UF;
+
+Select * from vwEstados
+Where ClientesPorUF = (Select MIN(ClientesPorUF) From vwEstados)
+	OR ClientesPorUF = (Select MAX(ClientesPorUF) From vwEstados);
 
 -- Exercício 06
 Select DISTINCT Cidade.Nome as NomeCidade
@@ -43,6 +66,12 @@ From Cidade
 	INNER JOIN Cliente ON Cidade.IDCidade = Cliente.IDCidade
 	INNER JOIN Pedido ON Cliente.IDCliente = Pedido.IDCliente
 Order By Cidade.Nome ASC;
+-- Resposta do Professor
+Select COUNT(DISTINCT Nome) as TotalCidades
+From Cidade
+Where EXISTS (Select 1 From Cliente
+				INNER JOIN Pedido ON Pedido.IDCliente = Cliente.IDCliente
+			Where Cliente.IDCidade = Cidade.IDCidade);
 
 -- Exercício 07
 Select Produto.Nome as NomeDoProduto
