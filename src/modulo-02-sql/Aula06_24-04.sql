@@ -74,7 +74,7 @@ Where EXISTS (Select 1 From Cliente
 			Where Cliente.IDCidade = Cidade.IDCidade);
 
 -- Exercício 07
-Select Produto.Nome as NomeDoProduto
+Select Produto.IDProduto as IDProduto, Produto.Nome as NomeDoProduto
 From Produto
 Where NOT EXISTS (Select ProdutoMaterial.IDProduto
 					From ProdutoMaterial
@@ -89,6 +89,24 @@ From Produto
 	INNER JOIN ProdutoMaterial ON Produto.IDProduto = ProdutoMaterial.IDProduto
 	INNER JOIN Material ON ProdutoMaterial.IDMaterial = Material.IDMaterial
 Group By Produto.IDProduto, Produto.Nome, Produto.PrecoCusto;
+-- Resposta Professor
+
+Create Function busca_precoCusto_Material (@IDProduto INT)
+	Returns Decimal(9,2) as
+Begin
+	Declare @preco_custo Decimal(9,2)
+
+	Select @preco_custo = SUM(ma.PrecoCusto * ISNULL(pm.Quantidade, 1))
+	From ProdutoMaterial pm
+		INNER JOIN Material ma ON pm.IDMaterial = ma.IDMaterial
+	Where pm.IDProduto = @IDProduto;
+
+	Return @preco_custo
+End;
+
+Select IDProduto, Nome, PrecoCusto, dbo.busca_precoCusto_Material(IDProduto) as CustoMaterial
+From Produto;
+
 
 -- Exercício 09
 Select * INTO ProdutoAUX From Produto;
