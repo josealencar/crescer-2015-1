@@ -3,3 +3,4 @@
 3 - Nunca deve ter número no final de coluna
 4 - Máximo 30% de colunas opcionais
 5 - Não salvar arquivos em banco
+6 - Toda chave estrangeira (FK) deve ter índice
