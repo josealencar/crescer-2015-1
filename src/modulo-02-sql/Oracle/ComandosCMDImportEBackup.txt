@@ -1,0 +1,96 @@
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\José>impdp system/system@xe directory=cursosql remap_schema=crescer15:crescer15 dumpfile=CRESCER15 logfile=Import_CRESCER15
+
+Import: Release 11.2.0.2.0 - Production on Thu Apr 30 15:16:11 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Master table "SYSTEM"."SYS_IMPORT_FULL_01" successfully loaded/unloaded
+Starting "SYSTEM"."SYS_IMPORT_FULL_01":  system/********@xe directory=cursosql remap_schema=crescer15:crescer15 dumpfile=CRESCER15 logfile=Import_CRESCER15
+Processing object type SCHEMA_EXPORT/USER
+ORA-31684: Object type USER:"CRESCER15" already exists
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/ROLE_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+. . imported "CRESCER15"."PEDIDOITEM"                    14.24 MB  537993 rows
+. . imported "CRESCER15"."CLIENTE"                       1.198 MB   12501 rows
+. . imported "CRESCER15"."MATERIAL"                      927.0 KB   25000 rows
+. . imported "CRESCER15"."PEDIDO"                        1.376 MB   40000 rows
+. . imported "CRESCER15"."PRODUTOMATERIAL"               1.348 MB   67617 rows
+. . imported "CRESCER15"."PRODUTO"                       353.1 KB    8000 rows
+. . imported "CRESCER15"."CIDADE"                        113.3 KB    4668 rows
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+Job "SYSTEM"."SYS_IMPORT_FULL_01" completed with 1 error(s) at 15:17:28
+
+
+C:\Users\José>expdp crescer15/crescer15@xe directory=cursosql dumpfile=Crescer15_2 ligfile=Crescer15_2
+LRM-00101: unknown parameter name 'ligfile'
+
+
+C:\Users\José>expdp crescer15/crescer15@xe directory=cursosql dumpfile=Crescer15_2 logfile=Crescer15_2
+
+Export: Release 11.2.0.2.0 - Production on Thu Apr 30 16:15:40 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Pro
+duction
+ORA-39002: invalid operation
+ORA-39070: Unable to open the log file.
+ORA-39087: directory name CURSOSQL is invalid
+
+
+
+C:\Users\José>expdp system/system@xe schemas=CRESCER15 directory=cursosql dumpfile=Crescer15_2 logfile=Crescer15_2
+
+Export: Release 11.2.0.2.0 - Production on Thu Apr 30 16:17:32 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Pro
+duction
+Starting "SYSTEM"."SYS_EXPORT_SCHEMA_01":  system/********@xe schemas=CRESCER15
+directory=cursosql dumpfile=Crescer15_2 logfile=Crescer15_2
+Estimate in progress using BLOCKS method...
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Total estimation using BLOCKS method: 26.68 MB
+Processing object type SCHEMA_EXPORT/USER
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/ROLE_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+. . exported "CRESCER15"."PEDIDOITEM"                    14.24 MB  537993 rows
+. . exported "CRESCER15"."CLIENTE"                       1.198 MB   12501 rows
+. . exported "CRESCER15"."MATERIAL"                      927.0 KB   25000 rows
+. . exported "CRESCER15"."PEDIDO"                        1.376 MB   40000 rows
+. . exported "CRESCER15"."PRODUTOMATERIAL"               1.348 MB   67617 rows
+. . exported "CRESCER15"."PRODUTO"                       353.1 KB    8000 rows
+. . exported "CRESCER15"."CIDADE"                        113.3 KB    4668 rows
+Master table "SYSTEM"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for SYSTEM.SYS_EXPORT_SCHEMA_01 is:
+  C:\ORACLE\DATAPUMP\CRESCER15_2.DMP
+Job "SYSTEM"."SYS_EXPORT_SCHEMA_01" successfully completed at 16:18:44
+
+
+C:\Users\José>
