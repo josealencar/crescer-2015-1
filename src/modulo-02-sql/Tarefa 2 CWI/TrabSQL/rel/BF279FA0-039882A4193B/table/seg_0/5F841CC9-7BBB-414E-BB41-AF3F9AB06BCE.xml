@@ -67,6 +67,17 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="846439F8-52E7-676B-7355-AC7CB7F13668" name="Contato_PK">
+<createdBy>José</createdBy>
+<createdTime>2015-04-30 16:51:00 UTC</createdTime>
+<ownerDesignName>TrabSQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11054852-2DFE-ECF1-0AA3-B643D906D4DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="80C061E6-0F7A-C30E-59BA-3E80F3FB59F5" name="Contato_Cliente_FK">
 <createdBy>José</createdBy>
 <createdTime>2015-04-27 08:18:44 UTC</createdTime>
