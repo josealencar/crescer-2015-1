@@ -147,9 +147,11 @@ Begin
 End;
 
 -- Exercício 03
+drop view vwMateriaisMaisUtilizados;
+
 Create View vwMateriaisMaisUtilizados AS
 Select TOP 1 WITH TIES
-		Material.IDMaterial, Material.Descricao,
+		Material.IDMaterial AS IDMaterial, Material.Descricao AS DescricaoMaterial,
 		COUNT(DISTINCT ProdutoMaterial.IDProduto) AS Total
 From Material
 	INNER JOIN ProdutoMaterial ON ProdutoMaterial.IDMaterial = Material.IDMaterial
@@ -158,30 +160,71 @@ Group By Material.IDMaterial, Material.Descricao
 Order By Total DESC;
 
 Begin
-	
+	Declare @vIDMaterial Int,
+	@vDescricaoMaterial varchar(100),
+	@vQtdPedidosRealizados int,
+	@vTotalVendas decimal(12,2)
+
+	Select @vIDMaterial = IDMaterial, @vDescricaoMaterial = DescricaoMaterial
+	From vwMateriaisMaisUtilizados;
+
+	Select @vQtdPedidosRealizados = COUNT(1)
+	From Pedido
+	Where EXISTS (Select Produto.IDProduto,
+							Produto.Nome
+					From Produto, PedidoItem
+					Where Pedido.IDPedido = PedidoItem.IDPedido
+					AND PedidoItem.IDProduto = Produto.IDProduto AND
+					EXISTS (Select 1 From ProdutoMaterial
+									Where ProdutoMaterial.IDProduto = Produto.IDProduto
+									AND ProdutoMaterial.IDMaterial IN
+									(Select IDMaterial From vwMateriaisMaisUtilizados)))
+
+	Select @vTotalVendas = SUM(Pedido.ValorPedido)
+	From Pedido
+	Where DataPedido BETWEEN DATEADD(DAY, -60, GETDATE()) AND GETDATE();
+
+	Print 'ID do material mais utilizado: ' + CAST(@vIDMaterial as varchar) + 
+			' Descrição: ' + @vDescricaoMaterial
+	Print 'Total de pedidos realizados contendo este material: ' + 
+			CAST(@vQtdPedidosRealizados as varchar)
+	Print 'Total de venda dos últimos 60 dias: R$' + CAST(@vTotalVendas as varchar)
 End;
 
-Select Produto.IDProduto,
-		Produto.Nome
-From Produto
-Where EXISTS (Select 1 From ProdutoMaterial
-				Where ProdutoMaterial.IDProduto = Produto.IDProduto
-				AND ProdutoMaterial.IDMaterial IN
-				(Select IDMaterial From vwMateriaisMaisUtilizados));
+-- Exercício 04
+Create View vwCidadesDuplicadas as
+Select Nome, UF
+From Cidade
+Group By Nome, UF
+Having COUNT(1) > 1;
+-- Resposta do professor
+BEGIN
+  SET NOCOUNT ON
+  Declare @CidadeDuplicada table 
+    (
+     IDCidadeMenor  int,
+     Nome           varchar(50),
+     UF             varchar(2)
+     )
 
-Select COUNT(DISTINCT Pedido.IDPedido) AS TotalPedidos,
-		COUNT(1) TotalItens
-From Pedido
-	INNER JOIN PedidoItem ON PedidoItem.IDPedido = Pedido.IDPedido
-Where EXISTS (Select 1 From ProdutoMaterial
-				Where ProdutoMaterial.IDProduto = PedidoItem.IDProduto
-				AND ProdutoMaterial.IDMaterial IN
-				(Select IDMaterial From vwMateriaisMaisUtilizados));
+  Insert @CidadeDuplicada 
+         (IDCidadeMenor, Nome, UF)
+     select MIN(IDCidade) MenorID, 
+            Nome, 
+            UF
+     from   Cidade dup
+     group  by Nome, UF
+     having COUNT(1) > 1
 
-Select Pedido.IDPedido, PedidoItem.IDPedidoItem, Produto.IDProduto, Produto.Nome, PedidoItem.Quantidade
-From Pedido
-	INNER JOIN PedidoItem ON PedidoItem.IDPedido = Pedido.IDPedido
-	INNER JOIN Produto ON PedidoItem.IDProduto = Produto.IDProduto
-	--INNER JOIN ProdutoMaterial ON Produto.IDProduto = ProdutoMaterial.IDProduto
-Where DataPedido BETWEEN DATEADD(DAY, -60, GETDATE()) AND GETDATE();
-
+  Select Cliente.IDCliente, Cliente.Nome,  Cidade.IDCidade, Cidade.Nome as Nome_Cidade
+    From  Cliente
+   inner join Cidade on Cidade.IDCidade = Cliente.IDCidade
+   Where exists (Select 1
+                 From   @CidadeDuplicada dup
+                 Where  dup.Nome          = Cidade.Nome
+                 and    dup.UF            = Cidade.UF
+                 and    dup.IDCidadeMenor < Cidade.IDCidade)
+  order by Nome_Cidade
+  --
+  SET NOCOUNT OFF  
+END
