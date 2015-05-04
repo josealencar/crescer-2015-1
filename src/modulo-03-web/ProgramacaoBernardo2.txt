@@ -1,0 +1,7 @@
+1 - WEB/ HTML
+2 - HTML/ CSS
+3 - CSS/ JavaScript
+4 - JavaScript
+5 - JQuery
+6 - JQuery
+7 - Desafio
