@@ -264,4 +264,36 @@ public class ExercitoDeElfosTest
             throw error;
         }
     }
+    
+    @Test
+    public void estrategiaNormalDeAtaque(){
+        // Arrange
+        Elfo elfo1 = new ElfoVerde("Green 1");
+        Elfo elfo2 = new ElfoNoturno("Nigth 1");
+        Elfo elfo3 = new ElfoVerde("Green 2");
+        
+        ArrayList<Elfo> elfos = new ArrayList<>();
+        elfos.add(elfo1);
+        elfos.add(elfo2);
+        elfos.add(elfo3);
+        
+        ArrayList<Orc> orcs = new ArrayList<>();
+        orcs.add(new Orc());
+        orcs.add(new Orc());
+        orcs.add(new Orc());
+        orcs.add(new Orc());
+        orcs.add(new Orc());
+        orcs.add(new Orc());
+        orcs.add(new Orc());
+        orcs.add(new Orc());
+        orcs.add(new Orc());
+        orcs.add(new Orc());
+        // Act
+        EstrategiaDeAtaque ataque = new EstrategiaNormal();
+        ataque.atacarOrcs(elfos, orcs);
+        // Assert
+        int flechasEsperadas = 32;
+        
+        assertEquals(flechasEsperadas, elfo1.getFlechas());
+    }
 }
