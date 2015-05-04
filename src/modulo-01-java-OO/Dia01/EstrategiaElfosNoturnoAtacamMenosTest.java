@@ -14,7 +14,7 @@ import org.junit.Test;
 public class EstrategiaElfosNoturnoAtacamMenosTest
 {
     @Test
-    public void estrategiaNormalDeAtaque(){
+    public void estrategiaElfosNoturnosAtacamMenos(){
         // Arrange
         Elfo elfo1 = new ElfoVerde("Green 1");
         Elfo elfo2 = new ElfoNoturno("Nigth 1");
