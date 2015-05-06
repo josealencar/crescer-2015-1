@@ -5,6 +5,29 @@
         <title>Cadastro de Elfos</title>
     </head>
     <body>
+        <script>
+            function validarExt(){
+                var inputFile = document.getElementsByName('imagem')[0];
+                var nomeArquivo = inputFile.value;
+                var valida = false;
+                var extensoesValidas = ['.jgp','.jpeg','.png'];
+                for (var i = 0, len = extensoesValidas.length; i < len; i++){
+                    var ext = extensoesValidas[i];
+                    
+                    if (nomeArquivo.substring(nomeArquivo.length - ext.length, nomeArquivo.length).toLowerCase() === ext.toLowerCase()){
+                        valida = true;
+                        break;
+                    }
+                }
+                
+                if (valida === false){
+                    inputFile.value = null;
+                    alert("Extensão inválida!");
+                }
+                
+                return valida;
+            }
+        </script>
         <form method="post" enctype="multipart/form-data">
             <div>
                 <label for="nome">Nome:</label>
@@ -38,7 +61,7 @@
             </div>
             <div>
                 <label for="imagem">Imagem:</label>
-                <input type="file" name="imagem" placeholder="Escolha uma Imagem" accept="image/jpeg, image/x-png" pattern="([^\s]+(\.(?i)(jpg|png|gif|bmp))$)">
+                <input type="file" name="imagem" placeholder="Escolha uma Imagem" accept="image/jpeg, image/x-png" pattern="([^\s]+(\.(?i)(jpg|png|gif|bmp))$)" onchange="return validarExt();">
             </div>
             <div>
                 <input type="submit" value="Cadastrar">
