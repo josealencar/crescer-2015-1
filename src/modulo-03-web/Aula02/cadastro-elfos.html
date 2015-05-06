@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Elfos</title>
+    </head>
+    <body>
+        <form method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" pattern=".{6,}" title="Mínimo 6 caracteres para o nome." required>
+            </div>
+            <div>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" value="Masculino" required>Masculino
+                <input type="radio" name="sexo" value="Feminino" required>Feminino
+            </div>
+            <div>
+                <label for="qtdFlechas">Quantidade de flechas:</label>
+                <input type="number" name="qdtFlechas" value="42">
+            </div>
+            <div>
+                <label for="dtNascimento">Data Nascimento:</label>
+                <input type="date" name="dtNascimento" required>
+            </div>
+            <div>
+                <label for="status">Status Inicial:</label>
+                <input type="radio" name="status" value="Dormindo">Dormindo
+                <input type="radio" name="status" value="Cacando">Caçando
+                <input type="radio" name="status" value="ContandoPiada">Contando Piada
+            </div>
+            <div>
+                <label for="itens">Itens Iniciais do Elfo:</label>
+                <input type="checkbox" name="itens" value="ArcoEFlecha" checked>Arco e Flecha
+                <input type="checkbox" name="itens" value="EspadadeaçoPorto-alegrense">Espada de aço Porto-alegrense
+                <input type="checkbox" name="itens" value="Escudodeamburana" checked>Escudo de amburana
+                <input type="checkbox" name="itens" value="PocaoHP">Poção HP
+            </div>
+            <div>
+                <label for="imagem">Imagem:</label>
+                <input type="file" name="imagem" placeholder="Escolha uma Imagem" accept="image/jpeg, image/x-png" pattern="([^\s]+(\.(?i)(jpg|png|gif|bmp))$)">
+            </div>
+            <div>
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </body>
+</html>
