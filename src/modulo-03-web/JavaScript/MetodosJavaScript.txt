@@ -1,0 +1,13 @@
+Métodos de Array
+
+pop() -> remove o último elemento do array
+
+reverse() -> inverte a ordem do array
+
+shift() -> remove o primeiro do array
+
+unshift() -> adiciona um elemento no início do array
+
+slice(inicio, fim) -> substring, retorna os valores do arrey iniciando no inicio até antes do fim
+
+splice(inicio, quantosQuerRemover, itensAInserir) -> Pode remover itens e adicionar novos itens no meio (posição do inicio, remove os valores a partir do inicio (se não quiser remover usar 0), insere o(s) valor(es) partindo do valor inicial e seguindo até o que for preciso)
