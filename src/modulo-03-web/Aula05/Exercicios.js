@@ -84,3 +84,20 @@ var somarPorTodosTitulos = function(Array){
 };
 
 //Exercício 04
+var apenasOsMelhores = function(Array){
+    var time = Array.filter(function(i){ return i.titulos[0].qtd > 18});
+    return time;
+}
+
+//Exercício 05
+//Exercício 5A
+var apenasOsMelhoresParaJSON = function(Array){
+    var time = apenasOsMelhores(Array).map(function(i){ return JSON.stringify(i)});
+    return time;
+}
+
+// Exercício 5B
+var apenasOsMelhoresRecebendoJSON = function(String){
+    var retorno = eval("(" + String + ")");
+    return retorno;
+}
