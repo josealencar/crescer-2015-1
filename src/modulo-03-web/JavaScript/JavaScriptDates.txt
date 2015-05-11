@@ -1,0 +1,6 @@
+O mês em JavaScript é um Array, ou seja:
+00 -> Janeiro
+01 -> Fevereiro
+.
+.
+.
