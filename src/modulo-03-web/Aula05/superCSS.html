@@ -14,38 +14,51 @@
         
       .azul {
         color: blue;
-        font-size: 2em;
+        
       }
       .vermelho {
-        font-size: 2em;
+        
         color: red;
       }
-        
+        .font2em {
+            font-size: 2em;
+        }
         
         .preto {
             background-color: black;
         }
         
+        .largura {
+            width: 400px;
+        }
+        
+        .ima {
+            float: left;
+        }
+        
       .caixinha-preta {
-        float: left;
-        width: 400px;
         height: 50px;
         border-radius: 15px;
       }
-      #sqn {
-        background-color: black;
-      }
+        
+        .margin-esquerda{
+            margin-left: 50;
+        }
+        
+        .margem {
+            margin: 0 0 0 50;
+        }
     </style>
   </head>
   <body>
-    <div class="caixinha-preta comicSansMS centralizarTexto preto">
-      <span class="azul">CSS</span>
-      <span class="vermelho">é</span> 
+    <div class="caixinha-preta comicSansMS centralizarTexto preto largura ima">
+      <span class="azul font2em">CSS</span>
+      <span class="vermelho font2em">é</span> 
     </div>
-    <div class="comicSansMS centralizarTexto preto" style="width: 400px; float: left;">
-      <span class="azul">super</span>
+    <div class="comicSansMS centralizarTexto preto largura ima">
+      <span class="azul font2em">super</span>
     </div>
-    <span class="centralizarTexto" id="sqn" style="color: red; margin: 0 0 0 50;">legal</span>
-    <span class="centralizarTexto vermelho" style="margin-left: 50">#sqn</span>
+    <span class="centralizarTexto preto vermelho margem" id="sqn">legal</span>
+    <span class="centralizarTexto vermelho font2em margin-esquerda">#sqn</span>
   </body>
 </html>
