@@ -64,7 +64,7 @@ function palindromo(String){
     var ePalindromo = false;
     var palavras = ['iluminatti','ledesma','dante','verdemusgo','bacon'];
     var er = /[@$1234567890©`´~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi;
-    var comparar = String.replace('/\s/gi','');
+    var comparar = String.replace(/\s/gi,'');
     comparar = comparar.replace(er,'');
 	comparar = comparar.replace(/[âáàã]/gi,"a");
 	comparar = comparar.replace(/[éèê]/gi,"e");
