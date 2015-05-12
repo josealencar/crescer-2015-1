@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            var data = {
+                resource_id: '1ac41c33-fcd5-4b42-890f-a7bad6216663', // the resource id
+              };
+              $.ajax({
+                url: 'http://datapoa.com.br/api/action/datastore_search',
+                data: data,
+                dataType: 'jsonp',
+                success: function(data) {
+                  alert('Total results found: ' + data.result.total)
+                }
+              });
+        </script>
+    </body>
+</html>
