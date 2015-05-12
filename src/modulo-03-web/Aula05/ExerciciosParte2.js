@@ -4,7 +4,7 @@ var brewdog = function(a, b){
     var array1 = a.split('');
     var array2 = b.split('');
     var contador = 0;
-    var len = array1.length < array2.length? array1.length: array2.length;
+    var len = Math.min(array1.length, array2.length);
     for (var i = 0; i < len; i ++){
         var teste1 = array1[i];
         var teste2 = array2[i];
@@ -12,7 +12,7 @@ var brewdog = function(a, b){
             contador = contador + 1;
         }
     }
-    var retorno = array2.length - contador;
+    var retorno = Math.max(array1.length, array2.length) - contador;
     return retorno;
 };
 
@@ -42,19 +42,19 @@ function Emprestimo(valorTotal, taxaJuros, quantidadeParcelas){
 
 //Exercício 2C
 function Emprestimo(valorTotal, taxaJuros, quantidadeParcelas){
-    quantidadeParcelas = quantidadeParcelas || 3;
+    //quantidadeParcelas = quantidadeParcelas || 3;
     
     this.valorTotal = valorTotal;
     this.taxaJuros = taxaJuros;
-    this.quantidadeParcelas = quantidadeParcelas;
+    this.quantidadeParcelas = quantidadeParcelas || 3;
     
     this.valorParcela = function(){
-        var valor = valorTotal / ((1 - (Math.pow((1+taxaJuros), -quantidadeParcelas))) / taxaJuros);
+        var valor = this.valorTotal / ((1 - (Math.pow((1+this.taxaJuros), -this.quantidadeParcelas))) / this.taxaJuros);
         return Math.round(valor*100)/100;
     }
     
     this.valorTotalJuros = function(){
-        var valor = this.valorParcela() * quantidadeParcelas - valorTotal;
+        var valor = this.valorParcela() * this.quantidadeParcelas - this.valorTotal;
         return Math.round(valor*100)/100;
     }
 };
@@ -73,12 +73,9 @@ function palindromo(String){
 	comparar = comparar.replace(/[úùû]/gi,"u");
 	comparar = comparar.replace("ç","c");
     comparar = comparar.toLowerCase();
-    var len = palavras.length;
-    for(var i=0; i<len; i++){
-        var testar = palavras[i];
-        if(comparar === testar){
-            ePalindromo = true;
-        }
+    var teste = palavras.indexOf(comparar);
+    if (teste != -1){
+        ePalindromo = true;
     }
     var testar = comparar.split('').reverse().join('');
     if(comparar === testar){
