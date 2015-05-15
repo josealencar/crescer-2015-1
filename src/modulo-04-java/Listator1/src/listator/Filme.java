@@ -26,7 +26,7 @@ public class Filme {
 		return elenco;
 	}
 	
-	private void adicionaAoElenco(Ator ator) {
+	public void adicionaAoElenco(Ator ator) {
 		Filme.elenco.add(ator);
 	};
 	
@@ -41,5 +41,6 @@ public class Filme {
 	}
 	
 	public String toString() {
-		return null;};
+		return this.getNome();
+	}
 }

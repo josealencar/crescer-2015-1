@@ -1,7 +1,5 @@
 package listator;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Ator {
 	private String nome;
@@ -21,5 +19,6 @@ public class Ator {
 	}
 	
 	public String toString() {
-		return null;};
+		return this.getNome();
+	}
 }
