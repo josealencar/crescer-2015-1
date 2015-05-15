@@ -1,10 +1,13 @@
-package Listator;
+package listator;
 
 import static org.junit.Assert.*;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
+import listator.Ator;
+import listator.Filme;
 
 import org.junit.After;
 import org.junit.Assert;

@@ -1,4 +1,4 @@
-package Listator;
+package listator;
 
 import java.util.ArrayList;
 
