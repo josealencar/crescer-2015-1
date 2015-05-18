@@ -61,7 +61,7 @@ public class CWITest {
 	}
 	
 	@Test
-	public void AddElenco() throws Exception{
+	public void addElenco() throws Exception{
 		//Arrange
 		Ator ator1 = new Ator("UmNome","M");
 		Ator ator2 = new Ator("UmNome","F");
