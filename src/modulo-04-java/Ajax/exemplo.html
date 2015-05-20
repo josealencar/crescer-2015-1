@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+  <h1>AJAX</h1>
+  <button id="btn" style="padding: 20px; background: red; color: #fff">BUSCAR</button>
+  
+  <ul id="conteudo" style="background: yellow; padding: 50px; width: 100%">
+    
+  </ul>
+  <script>
+    $(function(){
+      $('#btn').click(function(){
+
+       executaAjax();
+        
+      
+      })
+    })
+
+    function executaAjax(){
+       $.ajax({
+          url: 'http://datapoa.com.br/api/action/datastore_search?resource_id=1ac41c33-fcd5-4b42-890f-a7bad6216663&limit=5',
+          type: 'GET',
+          dataType: 'json'
+        }).done(function(resposta){
+          var resultados = resposta.result.records;
+          resultados.forEach(function(resultado){
+              $('#conteudo').append('<li>' + resultado.Name + '</li>')
+          });
+          console.log('done');
+        }).fail(function(){
+
+        }).always(function(){
+          console.log('always')
+        })
+
+
+    }
+  </script>
+</body>
+</html>
