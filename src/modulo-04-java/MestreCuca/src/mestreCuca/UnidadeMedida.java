@@ -11,5 +11,6 @@ public enum UnidadeMedida {
 	ML,
 	LATA,
 	LATAS,
-	PACOTE
+	PACOTE,
+	KG
 }

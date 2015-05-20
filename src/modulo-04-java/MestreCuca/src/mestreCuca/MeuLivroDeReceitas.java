@@ -68,7 +68,7 @@ public class MeuLivroDeReceitas implements LivroReceitas{
 	}
 	
 	private boolean validaReceita(Receita receita){
-		boolean podeAdicionar = receita.getNome() != null && !receita.getNome().equals("");
+		boolean podeAdicionar = receita != null && receita.getNome() != null && !receita.getNome().trim().equals("");
 		return podeAdicionar;
 	}
 	
