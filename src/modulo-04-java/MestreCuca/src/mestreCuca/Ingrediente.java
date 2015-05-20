@@ -22,6 +22,10 @@ public class Ingrediente {
 		return this.quantidade;
 	}
 	
+	public void setQuantidade(double quantidade) {
+		this.quantidade = quantidade;
+	}
+	
 	public UnidadeMedida getUnidade() {
 		return this.unidade;
 	}

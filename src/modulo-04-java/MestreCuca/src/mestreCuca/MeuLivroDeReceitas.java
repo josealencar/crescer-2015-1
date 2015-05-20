@@ -59,7 +59,7 @@ public class MeuLivroDeReceitas implements LivroReceitas{
 	}
 	
 	@Override
-	public void inserir(Receita receita) {
+	public void inserir(Receita receita){
 		if(validaReceita(receita)){
 			this.receitas.add(receita);
 		} else {
@@ -98,5 +98,26 @@ public class MeuLivroDeReceitas implements LivroReceitas{
 		return receitasOk;
 	}
 	
-	
+	public List<Ingrediente> listaDeCompras(List<Receita> comprarIngredientes){
+		List<Ingrediente> listaDeCompras = new ArrayList<>();
+		boolean temNaLista = false;
+		for(Receita r : comprarIngredientes){
+			List<Ingrediente> novaLista = new ArrayList<>();
+			novaLista.addAll(r.getIngredientes());
+			for(Ingrediente i : novaLista){
+				for(Ingrediente li : listaDeCompras){
+					if(i.getNome().equals(li.getNome()) && i.getUnidade().equals(li.getUnidade())){
+						temNaLista = true;
+						double total = i.getQuantidade() + li.getQuantidade();
+						li.setQuantidade(total);
+					}
+				}
+				if(temNaLista == false){
+					listaDeCompras.add(i);
+				}
+				temNaLista = false;
+			}
+		}
+		return listaDeCompras;
+	}
 }

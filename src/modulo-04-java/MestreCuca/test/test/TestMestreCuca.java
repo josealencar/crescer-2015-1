@@ -435,4 +435,59 @@ public class TestMestreCuca {
 		List<Receita> receitasEsperado = new ArrayList<>();
 		assertEquals(receitasEsperado, resultado);		
 	}
+	
+	@Test
+	public void testListaDeCompras() throws Exception{
+		//Arrange
+		//Ingredientes
+		Ingrediente ingredienteUm = new Ingrediente("Arroz", 1, UnidadeMedida.XICARA, 0.30);
+		Ingrediente ingredienteDois = new Ingrediente("Cacau", 5, UnidadeMedida.COLHERES_SOPA, 0.50);
+		Ingrediente ingredienteTres = new Ingrediente("Agua", 1, UnidadeMedida.XICARA, 0.10);
+		Ingrediente ingredienteQuatro = new Ingrediente("Leite", 1, UnidadeMedida.XICARA, 0.30);
+		Ingrediente ingredienteCinco = new Ingrediente("Farinha", 1, UnidadeMedida.XICARA, 0.30);
+		//ListasDeIngredientes
+		//ListaReceitaUm
+		List<Ingrediente> ingredientesUm = new ArrayList<>();
+		ingredientesUm.add(ingredienteUm);
+		ingredientesUm.add(ingredienteDois);
+		ingredientesUm.add(ingredienteTres);
+		ingredientesUm.add(ingredienteQuatro);
+		//ListaReceitaDois
+		List<Ingrediente> ingredientesDois = new ArrayList<>();
+		ingredientesDois.add(ingredienteDois);
+		ingredientesDois.add(ingredienteQuatro);
+		//ListaReceitaTres
+		List<Ingrediente> ingredientesTres = new ArrayList<>();
+		ingredientesTres.add(ingredienteDois);
+		ingredientesTres.add(ingredienteTres);
+		ingredientesTres.add(ingredienteCinco);
+		//ModoPreparo
+		List<Instrucao> modoPreparo = new ArrayList<>();
+		modoPreparo.add(new Instrucao("Ferver em fogo brando"));
+		//Receitas
+		Receita receitaUm = new Receita("Receita um", ingredientesUm, modoPreparo);
+		Receita receitaDois = new Receita("Receita dois", ingredientesDois, modoPreparo);
+		Receita receitaTres = new Receita("Receita tres", ingredientesTres, modoPreparo);
+		MeuLivroDeReceitas book = new MeuLivroDeReceitas();
+		book.inserir(receitaUm);
+		book.inserir(receitaDois);
+		book.inserir(receitaTres);
+		//ListReceitas
+		List<Receita> listaCompra = new ArrayList<>();
+		listaCompra.add(receitaUm);
+		listaCompra.add(receitaDois);
+		listaCompra.add(receitaTres);
+		//ListRetorno
+		List<Ingrediente> resultado = new ArrayList<>();
+		//Act
+		resultado.addAll(book.listaDeCompras(listaCompra));
+		//Assert
+		List<Ingrediente> esperado = new ArrayList<>();
+		esperado.add(new Ingrediente("Arroz", 1, UnidadeMedida.XICARA, 0.30));
+		esperado.add(new Ingrediente("Cacau", 15, UnidadeMedida.COLHERES_SOPA, 0.50));
+		esperado.add(new Ingrediente("Agua", 2, UnidadeMedida.XICARA, 0.10));
+		esperado.add(new Ingrediente("Leite", 2, UnidadeMedida.XICARA, 0.30));
+		esperado.add(new Ingrediente("Farinha", 1, UnidadeMedida.XICARA, 0.30));
+		assertEquals(esperado, resultado);
+	}
 }
