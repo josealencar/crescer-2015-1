@@ -4,8 +4,9 @@ $(function(){ //http://content.guardianapis.com/search?q=manchester%20united&api
 });
 
 function resultado(res) {
+    var container = $('.container');
     albums = $.extend({}, res.items);
 		$.each(albums, function(i, umAlbum){
-			$('.container').append($('<img/>', {src: umAlbum.images[1].url}));
+			container.append($('<img/>', {src: umAlbum.images[1].url}));
 		})
 };
