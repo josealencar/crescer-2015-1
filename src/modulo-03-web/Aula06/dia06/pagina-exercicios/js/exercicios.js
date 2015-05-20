@@ -57,8 +57,15 @@ var irmaos = $('#slideshow').addClass('current').siblings().addClass('disabled')
 
 //Exercício 03
 //Exercício 3A
-var adicionaLi = $('#myList li:last').append(function(){return '<li>List item '+(($(this).parent().find('li').size())+1)+'</li>'});
-//Ver como utilizar a função 5 vezes.
+var adicionaLi = $('#myList').append(function(){resultado()});
+function resultado() {
+    var container = $('#myList li:last');
+    var tamanho = $('#myList').find('li').size();
+    var array = [1,2,3,4,5];
+		$.each(array, function(i, item){
+			container.append('<li>List item '+(tamanho+item)+'</li>')
+		})
+};
 
 //Exercício 3B
 
