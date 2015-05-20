@@ -112,7 +112,7 @@ public class MeuLivroDeReceitas implements LivroReceitas{
 						li.setQuantidade(total);
 					}
 				}
-				if(temNaLista == false){
+				if(!temNaLista){
 					listaDeCompras.add(i);
 				}
 				temNaLista = false;
