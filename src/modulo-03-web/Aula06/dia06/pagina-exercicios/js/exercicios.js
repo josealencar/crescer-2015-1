@@ -68,7 +68,13 @@ function resultado() {
 };
 
 //Exercício 3B
-
+var removeLi = $('#myList').append(function(){resultado()});
+function resultado() {
+    var container = $('#myList li');
+		$.each(container, function(i, item){
+			if((i%2)===0){container.eq(i).remove();}
+		})
+};
 
 //Exercício 3C
 var insereDiv = $('dov.module').last().after($('<div/>').addClass('module').append($('img:eq(0)').clone()));
