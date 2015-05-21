@@ -13,6 +13,10 @@ public class Receita {
 		this.nome = nome;
 	}
 	
+	public Receita() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Receita(String nome, List<Ingrediente> ingredientes, List<Instrucao> instrucao){
 		this(nome);
 		this.ingredientes.addAll(ingredientes);

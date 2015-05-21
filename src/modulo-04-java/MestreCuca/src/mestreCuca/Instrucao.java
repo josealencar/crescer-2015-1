@@ -8,6 +8,10 @@ public class Instrucao {
 		this.descricao = descricao;
 	}
 	
+	public Instrucao() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public String getDescricao() {
 		return this.descricao;
 	}

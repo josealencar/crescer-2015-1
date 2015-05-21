@@ -2,6 +2,7 @@ package test;
 
 import static org.junit.Assert.*;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -489,5 +490,11 @@ public class TestMestreCuca {
 		esperado.add(new Ingrediente("Leite", 2, UnidadeMedida.XICARA, 0.30));
 		esperado.add(new Ingrediente("Farinha", 1, UnidadeMedida.XICARA, 0.30));
 		assertEquals(esperado, resultado);
+	}
+	
+	@Test
+	public void criaArquivoNoDiretorio() throws Exception{
+		String caminho = "C:\\Users\\José\\Documents\\GitHub\\ProjetoCrescer\\src\\modulo-04-java\\ReceitasSalvas\\";
+		LivroReceitasJson novo = new LivroReceitasJson(caminho);
 	}
 }

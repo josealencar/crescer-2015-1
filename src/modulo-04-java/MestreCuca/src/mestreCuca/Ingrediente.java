@@ -14,6 +14,10 @@ public class Ingrediente {
 		this.preco = preco;
 	}
 	
+	public Ingrediente() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public String getNome() {
 		return this.nome;
 	}
