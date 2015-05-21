@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import listator.Ator;
 import listator.Filme;
@@ -19,21 +20,13 @@ public class CWITest {
 	@Before
     public void setUp()
     {
-		Filme.elenco.removeAll(Filme.elenco);
-		Netflox.acervo.removeAll(Netflox.acervo);
-		Netflox.exibido.clear();
-		Iltube.acervo.removeAll(Iltube.acervo);
-		Iltube.exibido.clear();
+		
     }
 	
 	@After
     public void tearDown()
     {
-		Filme.elenco.removeAll(Filme.elenco);
-		Netflox.acervo.removeAll(Netflox.acervo);
-		Netflox.exibido.clear();
-		Iltube.acervo.removeAll(Iltube.acervo);
-		Iltube.exibido.clear();
+		
     }
 	
 	@Test
@@ -66,16 +59,17 @@ public class CWITest {
 		Ator ator1 = new Ator("UmNome","M");
 		Ator ator2 = new Ator("UmNome","F");
 		Ator ator3 = new Ator("UmNome","M");
+		Filme filme = new Filme("Resident Evil", Genero.SUSPENSE);
 		//Act
-		Filme.elenco.add(ator1);
-		Filme.elenco.add(ator2);
-		Filme.elenco.add(ator3);
+		filme.elenco.add(ator1);
+		filme.elenco.add(ator2);
+		filme.elenco.add(ator3);
 		//Assert
 		ArrayList<Ator> esperado = new ArrayList<>();
 		esperado.add(ator1);
 		esperado.add(ator2);
 		esperado.add(ator3);
-		ArrayList<Ator> retornado = Filme.getElenco();
+		ArrayList<Ator> retornado = filme.getElenco();
 		
 		Assert.assertEquals(esperado, retornado);
 	}
@@ -86,15 +80,16 @@ public class CWITest {
 		Ator ator1 = new Ator("Albert","M");
 		Ator ator2 = new Ator("Borat","F");
 		Ator ator3 = new Ator("BoraBora","M");
+		Filme filme = new Filme("Resident Evil", Genero.SUSPENSE);
 		//Act
-		Filme.elenco.add(ator1);
-		Filme.elenco.add(ator2);
-		Filme.elenco.add(ator3);
+		filme.elenco.add(ator1);
+		filme.elenco.add(ator2);
+		filme.elenco.add(ator3);
 		//Assert
 		ArrayList<Ator> esperado = new ArrayList<>();
 		esperado.add(ator2);
 		esperado.add(ator3);
-		ArrayList<Ator> retornado = Filme.contemNoNome("Bo");
+		ArrayList<Ator> retornado = filme.contemNoNome("Bo");
 		
 		Assert.assertEquals(esperado, retornado);
 	}
@@ -103,13 +98,14 @@ public class CWITest {
 	public void addUmFilmeNoAcervoNetflox() throws Exception{
 		//Arrange
 		Filme umFilme = new Filme("Resident Evil", Genero.SUSPENSE);
+		Netflox net = new Netflox();
 		//Act
-		Netflox.acervo.add(umFilme);
+		net.acervo.add(umFilme);
 		//Assert
 		ArrayList<Filme> esperado = new ArrayList<>();
 		esperado.add(umFilme);
 		
-		Assert.assertEquals(esperado, Netflox.acervo);
+		Assert.assertEquals(esperado, net.acervo);
 	}
 	
 	@Test
@@ -117,15 +113,16 @@ public class CWITest {
 		//Arrange
 		Filme umFilme = new Filme("Resident Evil", Genero.SUSPENSE);
 		Filme doisFilmes = new Filme("Uma noite no museu", Genero.COMEDIA);
+		Netflox net = new Netflox();
 		//Act
-		Netflox.acervo.add(umFilme);
-		Netflox.acervo.add(doisFilmes);
+		net.acervo.add(umFilme);
+		net.acervo.add(doisFilmes);
 		//Assert
 		ArrayList<Filme> esperado = new ArrayList<>();
 		esperado.add(umFilme);
 		esperado.add(doisFilmes);
 		
-		Assert.assertEquals(esperado, Netflox.acervo);
+		Assert.assertEquals(esperado, net.acervo);
 	}
 	
 	@Test
@@ -134,30 +131,32 @@ public class CWITest {
 		Filme umFilme = new Filme("Resident Evil", Genero.SUSPENSE);
 		Filme doisFilmes = new Filme("Uma noite no museu", Genero.COMEDIA);
 		Filme tresFilmes = new Filme("Avengers", Genero.ACAO);
+		Netflox net = new Netflox();
 		//Act
-		Netflox.acervo.add(umFilme);
-		Netflox.acervo.add(doisFilmes);
-		Netflox.acervo.add(tresFilmes);
+		net.acervo.add(umFilme);
+		net.acervo.add(doisFilmes);
+		net.acervo.add(tresFilmes);
 		//Assert
 		ArrayList<Filme> esperado = new ArrayList<>();
 		esperado.add(umFilme);
 		esperado.add(doisFilmes);
 		esperado.add(tresFilmes);
 		
-		Assert.assertEquals(esperado, Netflox.acervo);
+		Assert.assertEquals(esperado, net.acervo);
 	}
 	
 	@Test
 	public void addUmFilmeNoAcervoIltube() throws Exception{
 		//Arrange
 		Filme umFilme = new Filme("Resident Evil", Genero.SUSPENSE);
+		Iltube il = new Iltube();
 		//Act
-		Iltube.acervo.add(umFilme);
+		il.acervo.add(umFilme);
 		//Assert
 		ArrayList<Filme> esperado = new ArrayList<>();
 		esperado.add(umFilme);
 		
-		Assert.assertEquals(esperado, Iltube.acervo);
+		Assert.assertEquals(esperado, il.acervo);
 	}
 	
 	@Test
@@ -165,15 +164,16 @@ public class CWITest {
 		//Arrange
 		Filme umFilme = new Filme("Resident Evil", Genero.SUSPENSE);
 		Filme doisFilmes = new Filme("Uma noite no museu", Genero.COMEDIA);
+		Iltube il = new Iltube();
 		//Act
-		Iltube.acervo.add(umFilme);
-		Iltube.acervo.add(doisFilmes);
+		il.acervo.add(umFilme);
+		il.acervo.add(doisFilmes);
 		//Assert
 		ArrayList<Filme> esperado = new ArrayList<>();
 		esperado.add(umFilme);
 		esperado.add(doisFilmes);
 		
-		Assert.assertEquals(esperado, Iltube.acervo);
+		Assert.assertEquals(esperado, il.acervo);
 	}
 	
 	@Test
@@ -182,17 +182,18 @@ public class CWITest {
 		Filme umFilme = new Filme("Resident Evil", Genero.SUSPENSE);
 		Filme doisFilmes = new Filme("Uma noite no museu", Genero.COMEDIA);
 		Filme tresFilmes = new Filme("Avengers", Genero.ACAO);
+		Iltube il = new Iltube();
 		//Act
-		Iltube.acervo.add(umFilme);
-		Iltube.acervo.add(doisFilmes);
-		Iltube.acervo.add(tresFilmes);
+		il.acervo.add(umFilme);
+		il.acervo.add(doisFilmes);
+		il.acervo.add(tresFilmes);
 		//Assert
 		ArrayList<Filme> esperado = new ArrayList<>();
 		esperado.add(umFilme);
 		esperado.add(doisFilmes);
 		esperado.add(tresFilmes);
 		
-		Assert.assertEquals(esperado, Iltube.acervo);
+		Assert.assertEquals(esperado, il.acervo);
 	}
 	
 	@Test
@@ -205,6 +206,44 @@ public class CWITest {
 		Netflox net = new Netflox();
 		//Act
 		net.reproduzirFilme(umFilme);
+		net.reproduzirFilme(doisFilmes);
+		net.reproduzirFilme(tresFilmes);
+		net.reproduzirFilme(umFilme);
+		net.reproduzirFilme(quatroFilme);
 		//Assert
+		String esperado = "Visualizações por Gênero:";
+		esperado += "\nGênero: COMEDIA Visualizações: 1";
+		esperado += "\nGênero: ACAO Visualizações: 1";
+		esperado += "\nGênero: SUSPENSE Visualizações: 3";
+		Assert.assertEquals(esperado, net.geraRelatorio());
+	}
+	
+	@Test
+	public void gerarRelatorioIltube() throws Exception{
+		//Arrange
+		Filme umFilme = new Filme("Resident Evil", Genero.SUSPENSE);
+		Filme doisFilmes = new Filme("Uma noite no museu", Genero.COMEDIA);
+		Filme tresFilmes = new Filme("Avengers", Genero.ACAO);
+		Filme quatroFilme = new Filme("Resident Evil 2", Genero.SUSPENSE);
+		Iltube il = new Iltube();
+		//Act
+		il.reproduzirFilme(umFilme);
+		il.reproduzirFilme(doisFilmes);
+		il.reproduzirFilme(tresFilmes);
+		il.reproduzirFilme(umFilme);
+		il.reproduzirFilme(quatroFilme);
+		il.reproduzirFilme(umFilme);
+		il.reproduzirFilme(doisFilmes);
+		il.reproduzirFilme(tresFilmes);
+		il.reproduzirFilme(umFilme);
+		il.reproduzirFilme(quatroFilme);
+		il.reproduzirFilme(doisFilmes);
+		il.reproduzirFilme(doisFilmes);
+		//Assert
+		String esperado = "Visualizações por Gênero:";
+		esperado += "\nGênero: COMEDIA Visualizações: 4";
+		esperado += "\nGênero: ACAO Visualizações: 2";
+		esperado += "\nGênero: SUSPENSE Visualizações: 6";
+		Assert.assertEquals(esperado, il.geraRelatorio());
 	}
 }

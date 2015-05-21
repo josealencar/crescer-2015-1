@@ -7,7 +7,7 @@ public class Filme {
 	private String nome;
 	private Genero genero;
 
-	public static ArrayList<Ator> elenco = new ArrayList<>();
+	public ArrayList<Ator> elenco = new ArrayList<>();
 	
 	public Filme(String nome, Genero genero) {
 		this.nome = nome;
@@ -22,17 +22,17 @@ public class Filme {
 		return this.genero;
 	}
 	
-	public static ArrayList<Ator> getElenco() {
-		return elenco;
+	public ArrayList<Ator> getElenco() {
+		return this.elenco;
 	}
 	
 	public void adicionaAoElenco(Ator ator) {
-		Filme.elenco.add(ator);
+		this.elenco.add(ator);
 	};
 	
-	public static ArrayList<Ator> contemNoNome(String sequencia) {
+	public ArrayList<Ator> contemNoNome(String sequencia) {
 		ArrayList<Ator> contem = new ArrayList<>();
-		for(Ator a: elenco){
+		for(Ator a: this.elenco){
 			if(a.getNome().contains(sequencia)){
 				contem.add(a);
 			}

@@ -7,8 +7,8 @@ public class Iltube extends Canais{
 
 	private int visualizacao;
 	
-	public static ArrayList<Filme> acervo = new ArrayList<>();
-	public static HashMap<Genero, Integer> exibido = new HashMap<>();
+	public ArrayList<Filme> acervo = new ArrayList<>();
+	public HashMap<Genero, Integer> exibido = new HashMap<>();
 	
 	public Iltube() {
 		
@@ -23,16 +23,16 @@ public class Iltube extends Canais{
 	}
 	
 	public void reproduzirFilme(Filme filme) {
-		if(Iltube.exibido.get(filme.getGenero())!=null){
-			int contador = Iltube.exibido.get(filme.getGenero());
+		if(this.exibido.get(filme.getGenero())!=null){
+			int contador = this.exibido.get(filme.getGenero());
 			contador ++;
-			Iltube.exibido.replace(filme.getGenero(), contador);
+			this.exibido.replace(filme.getGenero(), contador);
 		} else{
-			Iltube.exibido.put(filme.getGenero(), 1);
+			this.exibido.put(filme.getGenero(), 1);
 		}
 	}
 	
-	public void geraRelatorio(){
-		super.geraRelatorio(Iltube.exibido);
+	public String geraRelatorio(){
+		return super.geraRelatorio(this.exibido);
 	}
 }

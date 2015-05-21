@@ -7,20 +7,20 @@ public class Netflox extends Canais{
 
 	private int visualizacao;
 	
-	public static ArrayList<Filme> acervo = new ArrayList<>();
-	public static HashMap<Genero, Integer> exibido = new HashMap<>();
+	public ArrayList<Filme> acervo = new ArrayList<>();
+	public HashMap<Genero, Integer> exibido = new HashMap<>();
 	
 	public Netflox() {
 		
 	}
 	
 	public void reproduzirFilme(Filme filme) {
-		if(Netflox.exibido.get(filme.getGenero())!=null){
-			int contador = Netflox.exibido.get(filme.getGenero());
+		if(this.exibido.get(filme.getGenero())!=null){
+			int contador = this.exibido.get(filme.getGenero());
 			contador ++;
-			Netflox.exibido.replace(filme.getGenero(), contador);
+			this.exibido.replace(filme.getGenero(), contador);
 		} else{
-			Netflox.exibido.put(filme.getGenero(), 1);
+			this.exibido.put(filme.getGenero(), 1);
 		}
 	}
 	
@@ -28,7 +28,7 @@ public class Netflox extends Canais{
 		return visualizacao;
 	}
 	
-	public void geraRelatorio(){
-		super.geraRelatorio(Netflox.exibido);
+	public String geraRelatorio(){
+		return super.geraRelatorio(this.exibido);
 	}
 }
