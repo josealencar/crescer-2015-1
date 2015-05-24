@@ -1,10 +1,10 @@
-package mestreCuca;
+package mestrecuca;
 
 public class Ingrediente {
 
 	private String nome;
 	private double quantidade;
-	UnidadeMedida unidade;
+	private UnidadeMedida unidade;
 	private double preco;
 	
 	public Ingrediente(String nome, double quantidade, UnidadeMedida unidade, double preco) {

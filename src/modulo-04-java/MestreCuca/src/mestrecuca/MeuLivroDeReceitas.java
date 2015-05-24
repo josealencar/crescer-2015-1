@@ -1,4 +1,4 @@
-package mestreCuca;
+package mestrecuca;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,18 +12,14 @@ public class MeuLivroDeReceitas implements LivroReceitas{
 	private List<Receita> receitas = new ArrayList<>();
 
 	@Override
-	public void atualizar(String nome, Receita receitaAtualizada) {
+	public void atualizar(String nome, Receita receitaAtualizada) throws Exception {
 		Receita receita;
-		try {
-			if(validaReceita(receitaAtualizada)){
-				receita = buscaReceitaPeloNome(nome);
-				int index = buscaIndexDaReceita(receita);
-				this.receitas.set(index, receitaAtualizada);
-			} else {
-				JOptionPane.showMessageDialog(null, MESSAGE_INSERT);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
+		if(validaReceita(receitaAtualizada)){
+			receita = buscaReceitaPeloNome(nome);
+			int index = buscaIndexDaReceita(receita);
+			this.receitas.set(index, receitaAtualizada);
+		} else {
+			JOptionPane.showMessageDialog(null, MESSAGE_INSERT);
 		}
 	}
 	
@@ -43,14 +39,10 @@ public class MeuLivroDeReceitas implements LivroReceitas{
 	}
 	
 	@Override
-	public void excluir(String nome) {
+	public void excluir(String nome) throws Exception {
 		Receita paraExcluir;
-		try {
-			paraExcluir = buscaReceitaPeloNome(nome);
-			this.receitas.remove(paraExcluir);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		paraExcluir = buscaReceitaPeloNome(nome);
+		this.receitas.remove(paraExcluir);
 	}
 	
 	@Override

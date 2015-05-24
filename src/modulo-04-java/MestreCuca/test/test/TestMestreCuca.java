@@ -6,7 +6,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import mestreCuca.*;
+import mestrecuca.*;
 
 import org.junit.Before;
 import org.junit.Test;
