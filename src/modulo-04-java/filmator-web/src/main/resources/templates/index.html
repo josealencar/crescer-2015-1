@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		{{>link}}
+		<title>Home</title>
+	</head>
+	<body>
+	<div class="welcome">
+		<h1>Bem-vindo ao filmator Java.</h1>
+		<br>
+		{{#mensagem}}
+		<p class="errorMessage">{{mensagem}}</p>
+		{{/mensagem}}
+		<br>
+	</div>
+	<div class="login">
+		<form action="/logar" method="POST">
+			<div class="input">
+				<input name="usuario" type="text" size="40" required placeholder="Digite seu nome."/><br><br>
+				<input name="senha" type="password" size="40" required placeholder="Digite sua senha."/>
+			</div>
+			<div class="button">
+				<br>
+				<input type="submit" value="Entrar"/>
+			</div>
+		</form>
+	</div>
+
+	<div class="rodape">
+		<a href="/cadastroUsuario">Cadastre-se</a>
+	</div>
+	</body>
+</html>

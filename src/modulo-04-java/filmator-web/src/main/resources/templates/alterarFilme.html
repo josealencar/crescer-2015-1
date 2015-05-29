@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	{{>link}}
+	<script type="text/javascript" src="script/scriptAlterar.js"></script>
+	<title>Alterando Filme</title>
+</head>
+<body>
+	<div class="welcome">
+		<h1>Formulári para alteração de Filme.</h1>
+	</div>
+	<div class="formalterar">
+		<form action="/alterarFilme" method="POST">
+			{{#filme}}
+			<input type="hidden" name="idfilme" value="{{idfilme}}">
+			<label for="nome">Nome:</label><br>
+			<input name="nome" type="text" value="{{nome}}" size="60" required/><br>
+			{{/filme}}
+			<label for="genero">Genero:</label><br>
+			<select name="genero" width="60" required>
+				{{#genero}}
+				<option value="{{.}}">{{descricao}}</option>
+				{{/genero}}
+			</select><br>
+			{{#filme}}
+			<label for="ano">Ano lançamento:</label><br>
+			<input name="ano" type="number" value="{{ano}}" required/><br>
+			<label for="sinopse">Sinopse:</label><br>
+			<textarea name="sinopse" required>{{sinopse}}</textarea><br>
+			<label for="imagem">Imagem (url):</label><br>
+			<input name="imagem" type="url" value="{{imagem}}" size="60" required/><br><br>
+			<input name="salvar" type="submit" value="Alterar Filme" size="60"/>
+			{{/filme}}
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	{{>link}}
+	<title>Consultar filmes</title>
+</head>
+<body>
+	<div class="welcome">
+		<h1>Você pode alterar e excluir filmes existentes por aqui.</h1>
+	</div>
+	<div class="filmes" align="center">
+		<table>
+			<thead>
+				<tr>
+					<th>Alterar filme</th>
+					<th>Nome</th>
+					<th>Genero</th>
+					<th>Ano</th>
+					<th>Sinopse</th>
+					<th>Imagem</th>
+					<th>Excluir</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#filmes}}
+				<tr>
+					<td><a href="/alterar?id={{idfilme}}">Alterar Filme</a></td>
+					<td>{{nome}}</td>
+					<td>{{genero.descricao}}</td>
+					<td>{{ano}}</td>
+					<td>{{sinopse}}</td>
+					<td><img src="{{imagem}}" heigth="150" width="150"></td>
+					<td><a href="/excluir?id={{idfilme}}"><img src="img/x.jpg"></a></td>
+				</tr>
+				{{/filmes}}
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+
+<!--private int idfilme;
+	private String nome;
+	private Genero genero;
+	private int ano;
+	private String sinopse;
+	private String imagem; -->

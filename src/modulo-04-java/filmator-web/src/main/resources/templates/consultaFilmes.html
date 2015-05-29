@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+{{>link}}
+<title>Consultar Filmes</title>
+</head>
+<body>
+	<script type="text/javascript" src="script/scriptAvaliar.js"></script>
+	<div class="welcome">
+		<h1>Você pode avaliar filmes existentes por aqui.</h1>
+	</div>
+	<div class="filmes" align="center">
+		<table>
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Genero</th>
+					<th>Ano</th>
+					<th>Sinopse</th>
+					<th>Imagem</th>
+					<th>Avaliar filme</th>
+					<th>Média das Avaliações</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#filmes}}
+				<tr>
+					<td>{{nome}}</td>
+					<td>{{genero.descricao}}</td>
+					<td>{{ano}}</td>
+					<td>{{sinopse}}</td>
+					<td><img src="{{imagem}}" heigth="150" width="150"></td>
+					<td><img id="1" class="{{idfilme}}" src="/img/estrela1.jpg" onclick="avaliarJS(1,{{idfilme}}, this)" onload="minhaAvaliacao(1, {{idfilme}}, this)">
+						<img id="2" class="{{idfilme}}" src="/img/estrela1.jpg" onclick="avaliarJS(2,{{idfilme}}, this)" onload="minhaAvaliacao(2, {{idfilme}}, this)">
+						<img id="3" class="{{idfilme}}" src="/img/estrela1.jpg" onclick="avaliarJS(3,{{idfilme}}, this)" onload="minhaAvaliacao(3, {{idfilme}}, this)">
+						<img id="4" class="{{idfilme}}" src="/img/estrela1.jpg" onclick="avaliarJS(4,{{idfilme}}, this)" onload="minhaAvaliacao(4, {{idfilme}}, this)">
+						<img id="5" class="{{idfilme}}" src="/img/estrela1.jpg" onclick="avaliarJS(5,{{idfilme}}, this)" onload="minhaAvaliacao(5, {{idfilme}}, this)"></td>
+					<td><img id="media{{idfilme}}" src="/img/avaliacao0estrelas.jpg" onload="buscaMediaAtual({{idfilme}}, this)"></td>
+				</tr>
+				{{/filmes}}
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

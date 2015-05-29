@@ -1,0 +1,16 @@
+- Cadastro de filmes
+- Consulta de filmes (filtros)
+- Exclusão de filmes
+
+Página cadastro
+
+Nome: input text
+Genero: input select
+Ano lançamento: input text
+Sinopse: input textarea
+Imagem: input file (apenas o html da imagem)
+
+
+Página de Consulta
+
+Table com informações do filme

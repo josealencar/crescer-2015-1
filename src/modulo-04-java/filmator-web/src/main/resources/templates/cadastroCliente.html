@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	{{>link}}
+	<title>Cadastro Usuário</title>
+</head>
+<body>
+	<div class="welcome">
+		<h1>Favor preencha seus dados no campo abaixo.</h1>
+	</div>
+	<div class="usuario">
+		<form action="/cadastroUsuario" method="POST">
+			<div class="input">
+				<input name="nomeusuario" type="text" required placeholder="Digite seu nome de Usuário." size="60"/><br><br>
+				<input name="senhausuario" type="password" required placeholder="Digite sua senha." size="60"/>
+			</div>
+			<div class="button">
+				<br>
+				<input type="submit" value="Inscrever-se"/>
+			</div>
+		</form>
+	</div>
+
+	<div class="rodape">
+		<br>
+		<a href="/">Voltar a página inicial.</a>
+	</div>
+</body>
+</html>
