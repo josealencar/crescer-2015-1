@@ -1,0 +1,6 @@
+C:\Users\José\Documents\GitHub\ProjetoCrescer\src\modulo-05-csharp\Dia01.ConsoleApp\Dia01.ConsoleApp\bin\Debug\Dia01.ConsoleApp.exe.config
+C:\Users\José\Documents\GitHub\ProjetoCrescer\src\modulo-05-csharp\Dia01.ConsoleApp\Dia01.ConsoleApp\bin\Debug\Dia01.ConsoleApp.exe
+C:\Users\José\Documents\GitHub\ProjetoCrescer\src\modulo-05-csharp\Dia01.ConsoleApp\Dia01.ConsoleApp\bin\Debug\Dia01.ConsoleApp.pdb
+C:\Users\José\Documents\GitHub\ProjetoCrescer\src\modulo-05-csharp\Dia01.ConsoleApp\Dia01.ConsoleApp\obj\Debug\Dia01.ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\José\Documents\GitHub\ProjetoCrescer\src\modulo-05-csharp\Dia01.ConsoleApp\Dia01.ConsoleApp\obj\Debug\Dia01.ConsoleApp.exe
+C:\Users\José\Documents\GitHub\ProjetoCrescer\src\modulo-05-csharp\Dia01.ConsoleApp\Dia01.ConsoleApp\obj\Debug\Dia01.ConsoleApp.pdb
