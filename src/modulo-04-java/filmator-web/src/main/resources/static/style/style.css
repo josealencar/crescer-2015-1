@@ -25,7 +25,7 @@ input[type="number"], input[type="url"], textarea {
   transition: border 0.3s;
 }
 
-input[type="text"]:focus, input[type="text"].focus, 
+input[type="text"]:focus, input[type="text"].focus,
 input[type="password"]:focus, input[type="password"].focus,
 input[type="number"]:focus, input[type="number"].focus,
 input[type="url"]:focus, input[type="url"].focus,
@@ -34,9 +34,12 @@ textarea:focus, textarea.focus{
 }
 
 input[type="submit"] {
+	width: 300px;
+}
+
+input[type="submit"], input[type="button"] {
 	background-color: #696969;
 	border-radius: 10px;
-	width: 300px;
 	height: 30px;
 	font-size: 18px;
 	color: #FFFFFF;
@@ -44,7 +47,9 @@ input[type="submit"] {
 }
 
 input[type="submit"]:focus, input[type="submit"].focus,
-input[type="submit"]:hover, input[type="submit"].hover {
+input[type="submit"]:hover, input[type="submit"].hover,
+input[type="button"]:focus, input[type="button"].focus,
+input[type="button"]:hover, input[type="button"].hover {
 	background-color: #228B22;
 	border: none;
 	color: #000000;
@@ -97,4 +102,13 @@ body textarea {
 
 input["number"]{
 	width: 450px;
+}
+
+.welcome p {
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+.welcome a {
+	text-decoration: none;
 }

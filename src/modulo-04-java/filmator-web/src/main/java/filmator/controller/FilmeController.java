@@ -13,9 +13,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import filmator.dao.AvaliacaoDao;
+import filmator.dao.FavoritosDao;
 import filmator.dao.FilmeDao;
 import filmator.dao.UsuarioDao;
 import filmator.model.Avaliacao;
+import filmator.model.Favoritos;
 import filmator.model.Filme;
 import filmator.model.Genero;
 import filmator.model.Usuario;
@@ -33,6 +35,9 @@ public class FilmeController {
 	
 	@Inject
 	private AvaliacaoDao avaliacaoDao;
+	
+	@Inject
+	private FavoritosDao favoritosDao;
 	
 	private boolean isAdmin(Usuario usuario){
 		boolean eAdmin = usuario != null && usuario.getNomeusuario().equals(ADMIN);
@@ -162,6 +167,16 @@ public class FilmeController {
 		return "redirect:/listarAdmin";
 	}
 	
+	@RequestMapping(value = "/filmesFavoritos", method = RequestMethod.GET)
+	public String listarFavoritos(Model model, HttpSession session) {
+		Usuario usuarioLogado = (Usuario) session.getAttribute("usuarioLogado");
+		if(usuarioLogado == null){
+			return "redirect:/";
+		}
+		model.addAttribute("filmes", favoritosDao.buscaFilmesFavoritos(usuarioLogado.getIdusuario()));
+		return "filmesFavoritos";
+	}
+	
 	@ResponseBody //@ResponseBody faz transformar o retorno para JSON!
 	@RequestMapping(value = "/avaliar", method = RequestMethod.POST)
 	public Avaliacao avaliarFilme(Model model, @RequestParam("estrelas") int estrelas,
@@ -193,5 +208,23 @@ public class FilmeController {
 			HttpSession session) {
 		Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
 		return avaliacaoDao.avaliacaoUsuario(idfilme, usuario.getIdusuario());
+	}
+	
+	@ResponseBody //@ResponseBody faz transformar o retorno para JSON!
+	@RequestMapping(value = "/adicionaFavoritos", method = RequestMethod.POST)
+	public String adicionaFavoritos(Model model, @RequestParam("idfilme") int idfilme,
+			HttpSession session) {
+		Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
+		Favoritos novo = new Favoritos(usuario.getIdusuario(), idfilme);
+		return favoritosDao.adicionarAosFavoritos(novo);
+	}
+	
+	@ResponseBody //@ResponseBody faz transformar o retorno para JSON!
+	@RequestMapping(value = "/removeFavoritos", method = RequestMethod.POST)
+	public String removeFavoritos(Model model, @RequestParam("idfilme") int idfilme,
+			HttpSession session) {
+		Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
+		Favoritos novo = new Favoritos(usuario.getIdusuario(), idfilme);
+		return favoritosDao.removerDosFavoritos(novo);
 	}
 }
