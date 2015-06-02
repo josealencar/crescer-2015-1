@@ -10,6 +10,6 @@ namespace Dia01.ConsoleApp
     {
         internal string Name { get; set; }
 
-        public Grau Grau { get; set; }
+        internal Grau Grau { get; set; }
     }
 }

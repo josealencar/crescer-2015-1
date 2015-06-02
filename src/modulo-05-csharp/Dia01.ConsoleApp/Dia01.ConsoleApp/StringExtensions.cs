@@ -8,9 +8,9 @@ namespace Dia01.ConsoleApp
 {
     internal static class StringExtensions
     {
-        internal static string ToBacon(this string str)
+        internal static string ToBacon(this string str, bool? upperCase)
         {
-            return str + " bacon!!!";
+            return str = upperCase.HasValue && upperCase.Value ? str + " BACON!!!" : str + " bacon!!!";
         }
     }
 }
