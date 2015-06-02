@@ -69,7 +69,7 @@ namespace Dia01.ConsoleApp
 
             #region Extension Methods
 
-            Console.WriteLine("Ana".ToBacon());
+            Console.WriteLine("Ana".ToBacon(null));
 
             #endregion
 
@@ -85,7 +85,7 @@ namespace Dia01.ConsoleApp
 
             var baconJedi = new
             {
-                Name = yoda.Name.ToBacon()
+                Name = yoda.Name.ToBacon(null)
             };
 
             Console.WriteLine(yoda.Name);
