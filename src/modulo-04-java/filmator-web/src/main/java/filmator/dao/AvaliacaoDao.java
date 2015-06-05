@@ -54,7 +54,7 @@ public class AvaliacaoDao {
 
 	public Avaliacao avaliacaoUsuario(int idfilme,
 			int idusuario) {
-		return (Avaliacao) jdbcTemplate.queryForObject("SELECT * FROM avaliacao WHERE idfilme=? AND idusuario=?",
+		List<Avaliacao> avaliacoes = jdbcTemplate.query("SELECT * FROM avaliacao WHERE idfilme=? AND idusuario=?",
 				new RowMapper<Avaliacao>(){
 			@Override
 			public Avaliacao mapRow(ResultSet rs, int numRow)
@@ -65,6 +65,11 @@ public class AvaliacaoDao {
 				nova.setNota(rs.getInt("nota"));
 				return nova;
 			}}, idfilme, idusuario);
+		if(avaliacoes.size() > 0){
+			return avaliacoes.get(0);
+		} else {
+			return null;
+		}
 	}
 
 	public List<Avaliacao> notasDoFilme(int idfilme) {

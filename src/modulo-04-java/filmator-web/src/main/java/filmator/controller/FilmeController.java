@@ -197,7 +197,7 @@ public class FilmeController {
 		for(Avaliacao a : notas){
 			n += a.getNota();
 		}
-		media = (int) (n/notas.size());
+		media = notas.size() > 0 ? (int) (n/notas.size()) : 0;
 		Avaliacao retorno = new Avaliacao(idfilme, usuario.getIdusuario(), media);
 		return retorno;
 	}
@@ -207,7 +207,8 @@ public class FilmeController {
 	public Avaliacao minhaAvaliacao(Model model, @RequestParam("idfilme") int idfilme,
 			HttpSession session) {
 		Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
-		return avaliacaoDao.avaliacaoUsuario(idfilme, usuario.getIdusuario());
+		Avaliacao retorno = avaliacaoDao.avaliacaoUsuario(idfilme, usuario.getIdusuario());
+		return retorno;
 	}
 	
 	@ResponseBody //@ResponseBody faz transformar o retorno para JSON!
@@ -226,5 +227,13 @@ public class FilmeController {
 		Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
 		Favoritos novo = new Favoritos(usuario.getIdusuario(), idfilme);
 		return favoritosDao.removerDosFavoritos(novo);
+	}
+	
+	@ResponseBody //@ResponseBody faz transformar o retorno para JSON!
+	@RequestMapping(value = "/verFavoritos", method = RequestMethod.POST)
+	public String verFavoritos(Model model, @RequestParam("idfilme") int idfilme,
+			HttpSession session) {
+		Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
+		return favoritosDao.consultaLista(idfilme, usuario.getIdusuario());
 	}
 }

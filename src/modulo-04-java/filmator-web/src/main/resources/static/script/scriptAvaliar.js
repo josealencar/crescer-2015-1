@@ -3,7 +3,7 @@ function avaliarJS(avaliacao, filme, elemento){
 	    url: '/avaliar?idfilme='+filme+'&estrelas='+avaliacao,
 	    type: 'POST'
 	}).done(function(res){sobreEscreveEstrelas(res, elemento); atualizaMedia(filme);})
-	.fail(function(res){console.log(res);});
+	.fail(function(res){});
 };
 
 function sobreEscreveEstrelas(res, elemento){
@@ -18,7 +18,7 @@ function atualizaMedia(filme){
 	$.ajax({
 	    url: '/atualiarMedia?idfilme='+filme,
 	    type: 'POST'
-	}).done(function(res){trocarImagemMedia(res);}).fail(function(res){console.log(res)});
+	}).done(function(res){trocarImagemMedia(res);}).fail(function(res){});
 };
 
 function trocarImagemMedia(res){
@@ -34,7 +34,7 @@ function buscaMediaAtual(filme, elemento){
 	$.ajax({
 	    url: '/atualiarMedia?idfilme='+filme,
 	    type: 'POST'
-	}).done(function(res){$(elemento).attr('onload', ''); trocarImagemMedia(res);}).fail(function(res){console.log(res)});
+	}).done(function(res){$(elemento).attr('onload', ''); trocarImagemMedia(res);}).fail(function(res){});
 };
 
 function minhaAvaliacao(imagem, filme, elemento){
@@ -42,5 +42,5 @@ function minhaAvaliacao(imagem, filme, elemento){
 	    url: '/minhaAva?idfilme='+filme,
 	    type: 'POST'
 	}).done(function(res){ $(elemento).attr('onload', ''); if(res.nota === imagem) {sobreEscreveEstrelas(res, elemento);}})
-	.fail(function(res){console.log(res);});
+	.fail(function(res){});
 };

@@ -54,4 +54,25 @@ public class FavoritosDao {
 			}
 		}, idusuario);
 	}
+
+	public String consultaLista(int idfilme, int idusuario) {
+		List<Favoritos> lista = jdbcTemplate.query(
+				"SELECT * FROM favoritos WHERE idfilme=? AND idusuario=?",
+				new RowMapper<Favoritos>(){
+			@Override
+			public Favoritos mapRow(ResultSet rs, int rowNum)
+					throws SQLException {
+				Favoritos novo = new Favoritos();
+				novo.setIdfilme(rs.getInt("idfilme"));
+				novo.setIdusuario(rs.getInt("idusuario"));
+				return novo;
+			}
+			
+		}, idfilme, idusuario);
+		if(lista.size() > 0){
+			return "removerFavoritos";
+		}else {
+			return "adicionarFavoritos";
+		}
+	}
 }

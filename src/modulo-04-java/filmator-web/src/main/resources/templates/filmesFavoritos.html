@@ -5,7 +5,7 @@
 	{{>link}}
 	<title>Filmes Favoritos</title>
 </head>
-<body>
+<body onload="carregaStatusBotoes()">
 	<script type="text/javascript" src="script/scriptAvaliar.js"></script>
 	<script type="text/javascript" src="script/scriptFavoritos.js"></script>
 	<div class="welcome">
@@ -40,7 +40,7 @@
 						<img id="4" class="{{idfilme}}" src="/img/estrela1.jpg" onclick="avaliarJS(4,{{idfilme}}, this)" onload="minhaAvaliacao(4, {{idfilme}}, this)">
 						<img id="5" class="{{idfilme}}" src="/img/estrela1.jpg" onclick="avaliarJS(5,{{idfilme}}, this)" onload="minhaAvaliacao(5, {{idfilme}}, this)"></td>
 					<td><img id="media{{idfilme}}" src="/img/avaliacao0estrelas.jpg" onload="buscaMediaAtual({{idfilme}}, this)"></td>
-					<td><input type="button" value="Adicionar aos Favoritos" onclick="adicionarFavoritos({{idfilme}}, this)"></td>
+					<td><input type="button" value="Adicionar aos Favoritos" onclick="recuperaStatus({{idfilme}}, this)"></td>
 				</tr>
 				{{/filmes}}
 			</tbody>
