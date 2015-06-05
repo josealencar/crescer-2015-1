@@ -78,6 +78,7 @@ input[type="button"]:hover, input[type="button"].hover {
 }
 
 body table{
+	border-collapse: collapse;
 	text-align: center;
 	background-color: #FFFFFF;
 	border-radius: 10px;
