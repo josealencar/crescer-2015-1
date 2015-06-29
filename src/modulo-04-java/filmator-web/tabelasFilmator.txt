@@ -1,0 +1,36 @@
+create table Filme(
+idfilme int auto_increment primary key,
+nome varchar2(200) not null,
+genero varchar2(500) not null,
+ano int not null,
+sinopse varchar2(500) not null,
+imagem varchar2(300) not null
+);
+
+create table usuario(
+idusuario int primary key auto_increment,
+nomeusuario varchar2(150) not null,
+senhausuario varchar2(100) not null
+);
+
+create table avaliacao(
+idfilme int not null,
+totalavaliacao number(10) not null,
+totalpontos number(15) not null,
+constraint fk_idfilme foreign key(idfilme) references filme(idfilme)
+);
+
+create table avaliacao(
+idfilme int not null,
+idusuario int not null,
+nota int not null,
+constraint fk_idfilme foreign key(idfilme) references filme(idfilme) on delete cascade,
+constraint fk_idusuario foreign key(idusuario) references usuario(idusuario) on delete cascade
+);
+
+create table favoritos(
+idfilme int not null,
+idusuario int not null,
+constraint fk_favoritos_filme foreign key(idfilme) references filme(idfilme) on delete cascade,
+constraint fk_favoritos_idusuario foreign key(idusuario) references usuario(idusuario) on delete cascade
+);
